@@ -1,0 +1,1721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Assault">
+	<Package name="Main">
+		<Key ID="STR_RIP_RIFLEMAN">
+			<Original>Schütze</Original>
+			<German>Schütze</German>
+			<French>Rifleman</French>
+			<Polish>Rifleman</Polish>
+			<Portuguese>Rifleman</Portuguese>
+			<Italian>Rifleman</Italian>
+			<Czech>Rifleman</Czech>
+			<Russian>Стрелок</Russian>
+			<Spanish>Rifleman</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MEDIC">
+			<Original>Sanitäter</Original>
+			<German>Sanitäter</German>
+			<French>Medic</French>
+			<Polish>Medic</Polish>
+			<Portuguese>Medic</Portuguese>
+			<Italian>Medic</Italian>
+			<Czech>Medic</Czech>
+			<Russian>Медик</Russian>
+			<Spanish>Medic</Spanish>
+		</Key>
+		<Key ID="STR_RIP_PILOT">
+			<Original>Pilot</Original>
+			<German>Pilot</German>
+			<French>Pilot</French>
+			<Polish>Pilot</Polish>
+			<Portuguese>Pilot</Portuguese>
+			<Italian>Pilot</Italian>
+			<Czech>Pilot</Czech>
+			<Russian>Пилот</Russian>
+			<Spanish>Pilot</Spanish>
+		</Key>
+		<Key ID="STR_RIP_ENGINEER">
+			<Original>Pionier</Original>
+			<German>Pionier</German>
+			<French>Engineer</French>
+			<Polish>Engineer</Polish>
+			<Portuguese>Engineer</Portuguese>
+			<Italian>Engineer</Italian>
+			<Czech>Engineer</Czech>
+			<Russian>Инженер</Russian>
+			<Spanish>Engineer</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MENUOPTIONS">
+			<Original>Einstellungen</Original>
+			<German>Einstellungen</German>
+			<French>Settings</French>
+			<Polish>Settings</Polish>
+			<Portuguese>Settings</Portuguese>
+			<Italian>Settings</Italian>
+			<Czech>Settings</Czech>
+			<Russian>Настройки</Russian>
+			<Spanish>Settings</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MENUSQUADMANAGEMENT">
+			<Original>Team Management</Original>
+			<German>Team Management</German>
+			<French>Squad Management</French>
+			<Polish>Squad Management</Polish>
+			<Portuguese>Squad Management</Portuguese>
+			<Italian>Squad Management</Italian>
+			<Czech>Squad Management</Czech>
+			<Russian>Управление группами</Russian>
+			<Spanish>Squad Management</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MENUBUYVEHICLE">
+			<Original>Fahrzeuge/Waffen kaufen</Original>
+			<German>Fahrzeuge/Waffen kaufen</German>
+			<French>Purchasing vehicles\weapons</French>
+			<Polish>Purchasing vehicles\weapons</Polish>
+			<Portuguese>Purchasing vehicles\weapons</Portuguese>
+			<Italian>Purchasing vehicles\weapons</Italian>
+			<Czech>Purchasing vehicles\weapons</Czech>
+			<Russian>Приобретение техники\вооружения</Russian>
+			<Spanish>Purchasing vehicles\weapons</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MENUPOINTSTRANSFER">
+			<Original>Punkte übertragen</Original>
+			<German>Punkte übertragen</German>
+			<French>Points transfer</French>
+			<Polish>Points transfer</Polish>
+			<Portuguese>Points transfer</Portuguese>
+			<Italian>Points transfer</Italian>
+			<Czech>Points transfer</Czech>
+			<Russian>Перевод очков</Russian>
+			<Spanish>Points transfer</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGSETTINGS">
+			<Original>EINSTELLUNGEN</Original>
+			<German>EINSTELLUNGEN</German>
+			<French>SETTINGS</French>
+			<Polish>SETTINGS</Polish>
+			<Portuguese>SETTINGS</Portuguese>
+			<Italian>SETTINGS</Italian>
+			<Czech>SETTINGS</Czech>
+			<Russian>НАСТРОЙКИ</Russian>
+			<Spanish>SETTINGS</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGAPPLY">
+			<Original>Anwenden</Original>
+			<German>Anwenden</German>
+			<French>Apply</French>
+			<Polish>Apply</Polish>
+			<Portuguese>Apply</Portuguese>
+			<Italian>Apply</Italian>
+			<Czech>Apply</Czech>
+			<Russian>Применить</Russian>
+			<Spanish>Apply</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGVIEWDISTANCE">
+			<Original>Sichtweite, m.</Original>
+			<German>Sichtweite, m.</German>
+			<French>Viewdistance, m.</French>
+			<Polish>Viewdistance, m.</Polish>
+			<Portuguese>Viewdistance, m.</Portuguese>
+			<Italian>Viewdistance, m.</Italian>
+			<Czech>Viewdistance, m.</Czech>
+			<Russian>Видимость, м.</Russian>
+			<Spanish>Viewdistance, m.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGGRASSLAYER">
+			<Original>Grasdichte</Original>
+			<German>Grasdichte</German>
+			<French>Grass layer</French>
+			<Polish>Grass layer</Polish>
+			<Portuguese>Grass layer</Portuguese>
+			<Italian>Grass layer</Italian>
+			<Czech>Grass layer</Czech>
+			<Russian>Уровень травы</Russian>
+			<Spanish>Grass layer</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLG3DMARKERPLAYER">
+			<Original>Marker über den Spielern</Original>
+			<German>Marker über den Spielern</German>
+			<French>Markers over the heads players</French>
+			<Polish>Markers over the heads players</Polish>
+			<Portuguese>Markers over the heads players</Portuguese>
+			<Italian>Markers over the heads players</Italian>
+			<Czech>Markers over the heads players</Czech>
+			<Russian>Метки над головами игроков</Russian>
+			<Spanish>Markers over the heads players</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGMARKERSPLAYER">
+			<Original>Spielermarker auf Karte</Original>
+			<German>Spielermarker auf Karte</German>
+			<French>Markers players on map</French>
+			<Polish>Markers players on map</Polish>
+			<Portuguese>Markers players on map</Portuguese>
+			<Italian>Markers players on map</Italian>
+			<Czech>Markers players on map</Czech>
+			<Russian>Метки игроков на карте</Russian>
+			<Spanish>Markers players on map</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGMARKERSVEHICLES">
+			<Original>Fahrzeugmarker auf Karte</Original>
+			<German>Fahrzeugmarker auf Karte</German>
+			<French>Vehicle markers on map</French>
+			<Polish>Vehicle markers on map</Polish>
+			<Portuguese>Vehicle markers on map</Portuguese>
+			<Italian>Vehicle markers on map</Italian>
+			<Czech>Vehicle markers on map</Czech>
+			<Russian>Метки техники на карте</Russian>
+			<Spanish>Vehicle markers on map</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGDISABLE">
+			<Original>Ausschalten</Original>
+			<German>Ausschalten</German>
+			<French>Disable</French>
+			<Polish>Disable</Polish>
+			<Portuguese>Disable</Portuguese>
+			<Italian>Disable</Italian>
+			<Czech>Disable</Czech>
+			<Russian>Выкл</Russian>
+			<Spanish>Disable</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGENABLE">
+			<Original>Einschalten</Original>
+			<German>Einschalten</German>
+			<French>Enable</French>
+			<Polish>Enable</Polish>
+			<Portuguese>Enable</Portuguese>
+			<Italian>Enable</Italian>
+			<Czech>Enable</Czech>
+			<Russian>Вкл</Russian>
+			<Spanish>Enable</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGLOW">
+			<Original>Gering</Original>
+			<German>Gering</German>
+			<French>Low</French>
+			<Polish>Low</Polish>
+			<Portuguese>Low</Portuguese>
+			<Italian>Low</Italian>
+			<Czech>Low</Czech>
+			<Russian>Мало</Russian>
+			<Spanish>Low</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGNORMAL">
+			<Original>Normal</Original>
+			<German>Normal</German>
+			<French>Normal</French>
+			<Polish>Normal</Polish>
+			<Portuguese>Normal</Portuguese>
+			<Italian>Normal</Italian>
+			<Czech>Normal</Czech>
+			<Russian>Норма</Russian>
+			<Spanish>Normal</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGHIGHT">
+			<Original>Hoch</Original>
+			<German>Hoch</German>
+			<French>Hight</French>
+			<Polish>Hight</Polish>
+			<Portuguese>Hight</Portuguese>
+			<Italian>Hight</Italian>
+			<Czech>Hight</Czech>
+			<Russian>Много</Russian>
+			<Spanish>Hight</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGMARKERS">
+			<Original>Marker</Original>
+			<German>Marker</German>
+			<French>Markers</French>
+			<Polish>Markers</Polish>
+			<Portuguese>Markers</Portuguese>
+			<Italian>Markers</Italian>
+			<Czech>Markers</Czech>
+			<Russian>Метки</Russian>
+			<Spanish>Markers</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGNAMES">
+			<Original>Namen</Original>
+			<German>Namen</German>
+			<French>Names</French>
+			<Polish>Names</Polish>
+			<Portuguese>Names</Portuguese>
+			<Italian>Names</Italian>
+			<Czech>Names</Czech>
+			<Russian>Имена</Russian>
+			<Spanish>Names</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGBUYVEHICLE">
+			<Original>FAHRZEUGE KAUFEN</Original>
+			<German>FAHRZEUGE KAUFEN</German>
+			<French>PURCHASING VEHICLES</French>
+			<Polish>PURCHASING VEHICLES</Polish>
+			<Portuguese>PURCHASING VEHICLES</Portuguese>
+			<Italian>PURCHASING VEHICLES</Italian>
+			<Czech>PURCHASING VEHICLES</Czech>
+			<Russian>ПРИОБРЕТЕНИЕ ТЕХНИКИ</Russian>
+			<Spanish>PURCHASING VEHICLES</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGPOINTSTRANSFER">
+			<Original>PUNKTE ÜBERTRAGEN</Original>
+			<German>PUNKTE ÜBERTRAGEN</German>
+			<French>POINTS TRANSFER</French>
+			<Polish>POINTS TRANSFER</Polish>
+			<Portuguese>POINTS TRANSFER</Portuguese>
+			<Italian>POINTS TRANSFER</Italian>
+			<Czech>POINTS TRANSFER</Czech>
+			<Russian>ПЕРЕВОД ОЧКОВ</Russian>
+			<Spanish>POINTS TRANSFER</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGWHICHPLAYER">
+			<Original>Wähle einen Spieler zum Punktetransfer</Original>
+			<German>Wähle einen Spieler zum Punktetransfer</German>
+			<French>Select the player you want to transfer points</French>
+			<Polish>Select the player you want to transfer points</Polish>
+			<Portuguese>Select the player you want to transfer points</Portuguese>
+			<Italian>Select the player you want to transfer points</Italian>
+			<Czech>Select the player you want to transfer points</Czech>
+			<Russian>Игрок, которому нужно передать очки</Russian>
+			<Spanish>Select the player you want to transfer points</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGPOINTSCOUNT">
+			<Original>Punktestand</Original>
+			<German>Punktestand</German>
+			<French>Score count</French>
+			<Polish>Score count</Polish>
+			<Portuguese>Score count</Portuguese>
+			<Italian>Score count</Italian>
+			<Czech>Score count</Czech>
+			<Russian>Количество передаваемых очков</Russian>
+			<Spanish>Score count</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGAVAILABLEVEHICLES">
+			<Original>Verfügbare Fahrzeuge</Original>
+			<German>Available vehicles</German>
+			<French>Available vehicles</French>
+			<Polish>Available vehicles</Polish>
+			<Portuguese>Available vehicles</Portuguese>
+			<Italian>Available vehicles</Italian>
+			<Czech>Available vehicles</Czech>
+			<Russian>Доступная техника</Russian>
+			<Spanish>Available vehicles</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGPRICE">
+			<Original>Kosten</Original>
+			<German>Kosten</German>
+			<French>Price</French>
+			<Polish>Price</Polish>
+			<Portuguese>Price</Portuguese>
+			<Italian>Price</Italian>
+			<Czech>Price</Czech>
+			<Russian>Стоимость</Russian>
+			<Spanish>Price</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGMONEY">
+			<Original>Punkteanzahl : %1</Original>
+			<German>Punkteanzahl : %1</German>
+			<French>The number of points : %1</French>
+			<Polish>The number of points : %1</Polish>
+			<Portuguese>The number of points : %1</Portuguese>
+			<Italian>The number of points : %1</Italian>
+			<Czech>The number of points : %1</Czech>
+			<Russian>Количество очков : %1</Russian>
+			<Spanish>The number of points : %1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGBUY">
+			<Original>Kaufen</Original>
+			<German>Kaufen</German>
+			<French>Buy</French>
+			<Polish>Buy</Polish>
+			<Portuguese>Buy</Portuguese>
+			<Italian>Buy</Italian>
+			<Czech>Buy</Czech>
+			<Russian>Купить</Russian>
+			<Spanish>Buy</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGTRANSFER">
+			<Original>Übertragen</Original>
+			<German>Übertragen</German>
+			<French>Transfer</French>
+			<Polish>Transfer</Polish>
+			<Portuguese>Transfer</Portuguese>
+			<Italian>Transfer</Italian>
+			<Czech>Transfer</Czech>
+			<Russian>Перевести</Russian>
+			<Spanish>Transfer</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGCLOSE">
+			<Original>Schließen</Original>
+			<German>Schließen</German>
+			<French>Close</French>
+			<Polish>Close</Polish>
+			<Portuguese>Close</Portuguese>
+			<Italian>Close</Italian>
+			<Czech>Close</Czech>
+			<Russian>Закрыть</Russian>
+			<Spanish>Close</Spanish>
+		</Key>
+		<Key ID="STR_RIP_ENABLE">
+			<Original>EINSCHALTEN</Original>
+			<German>EINSCHALTEN</German>
+			<French>ENABLE</French>
+			<Polish>ENABLE</Polish>
+			<Portuguese>ENABLE</Portuguese>
+			<Italian>ENABLE</Italian>
+			<Czech>ENABLE</Czech>
+			<Russian>ВКЛЮЧЕНО</Russian>
+			<Spanish>ENABLE</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DISABLE">
+			<Original>AUSSCHLATEN</Original>
+			<German>AUSSCHLATEN</German>
+			<French>DISABLE</French>
+			<Polish>DISABLE</Polish>
+			<Portuguese>DISABLE</Portuguese>
+			<Italian>DISABLE</Italian>
+			<Czech>DISABLE</Czech>
+			<Russian>ОТКЛЮЧЕНО</Russian>
+			<Spanish>DISABLE</Spanish>
+		</Key>
+		<Key ID="STR_RIP_YES">
+			<Original>JA</Original>
+			<German>JA</German>
+			<French>YES</French>
+			<Polish>YES</Polish>
+			<Portuguese>YES</Portuguese>
+			<Italian>YES</Italian>
+			<Czech>YES</Czech>
+			<Russian>ДА</Russian>
+			<Spanish>YES</Spanish>
+		</Key>
+		<Key ID="STR_RIP_NO">
+			<Original>NEIN</Original>
+			<German>NEIN</German>
+			<French>NO</French>
+			<Polish>NO</Polish>
+			<Portuguese>NO</Portuguese>
+			<Italian>NO</Italian>
+			<Czech>NO</Czech>
+			<Russian>НЕТ</Russian>
+			<Spanish>NO</Spanish>
+		</Key>
+		<Key ID="STR_RIP_TIME">
+			<Original>ZEIT</Original>
+			<German>ZEIT</German>
+			<French>TIME</French>
+			<Polish>TIME</Polish>
+			<Portuguese>TIME</Portuguese>
+			<Italian>TIME</Italian>
+			<Czech>TIME</Czech>
+			<Russian>ВРЕМЯ СУТОК</Russian>
+			<Spanish>TIME</Spanish>
+		</Key>
+		<Key ID="STR_RIP_RANDOMTIME">
+			<Original>ZUFÄLLIGE ZEIT FÜR JEDE STADT</Original>
+			<German>ZUFÄLLIGE ZEIT FÜR JEDE STADT</German>
+			<French>RANDOM TIME FOR EACH CITY</French>
+			<Polish>RANDOM TIME FOR EACH CITY</Polish>
+			<Portuguese>RANDOM TIME FOR EACH CITY</Portuguese>
+			<Italian>RANDOM TIME FOR EACH CITY</Italian>
+			<Czech>RANDOM TIME FOR EACH CITY</Czech>
+			<Russian>СЛУЧАЙНОЕ ВРЕМЯ СУТОК ДЛЯ КАЖДОГО ГОРОДА</Russian>
+			<Spanish>RANDOM TIME FOR EACH CITY</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DISTANCE">
+			<Original>SICHTWEITE, M.</Original>
+			<German>SICHTWEITE, M.</German>
+			<French>VIEWDISTANCE, M.</French>
+			<Polish>VIEWDISTANCE, M.</Polish>
+			<Portuguese>VIEWDISTANCE, M.</Portuguese>
+			<Italian>VIEWDISTANCE, M.</Italian>
+			<Czech>VIEWDISTANCE, M.</Czech>
+			<Russian>ДИСТАНЦИЯ ВИДИМОСТИ, М.</Russian>
+			<Spanish>VIEWDISTANCE, M.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_FASTTIME">
+			<Original>ZEITRAFFER</Original>
+			<German>ZEITRAFFER</German>
+			<French>FAST TIME</French>
+			<Polish>FAST TIME</Polish>
+			<Portuguese>FAST TIME</Portuguese>
+			<Italian>FAST TIME</Italian>
+			<Czech>FAST TIME</Czech>
+			<Russian>УСКОРЕНИЕ ВРЕМЕНИ</Russian>
+			<Spanish>FAST TIME</Spanish>
+		</Key>
+		<Key ID="STR_RIP_CHANGESIDE">
+			<Original>SEITENWECHSEL NACH, MIN.</Original>
+			<German>SEITENWECHSEL NACH, MIN.</German>
+			<French>CHANGE SIDE AFTER, MIN.</French>
+			<Polish>CHANGE SIDE AFTER, MIN.</Polish>
+			<Portuguese>CHANGE SIDE AFTER, MIN.</Portuguese>
+			<Italian>CHANGE SIDE AFTER, MIN.</Italian>
+			<Czech>CHANGE SIDE AFTER, MIN.</Czech>
+			<Russian>СМЕНА СТОРОНЫ ДОСТУПНА ЧЕРЕЗ, МИН.</Russian>
+			<Spanish>CHANGE SIDE AFTER, MIN.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_WEATHER">
+			<Original>WETTER</Original>
+			<German>WETTER</German>
+			<French>WEATHER</French>
+			<Polish>WEATHER</Polish>
+			<Portuguese>WEATHER</Portuguese>
+			<Italian>WEATHER</Italian>
+			<Czech>WEATHER</Czech>
+			<Russian>ПОГОДНЫЕ УСЛОВИЯ</Russian>
+			<Spanish>WEATHER</Spanish>
+		</Key>
+		<Key ID="STR_RIP_WEATHERCLEAR">
+			<Original>KLAR</Original>
+			<German>KLAR</German>
+			<French>CLEAR</French>
+			<Polish>CLEAR</Polish>
+			<Portuguese>CLEAR</Portuguese>
+			<Italian>CLEAR</Italian>
+			<Czech>CLEAR</Czech>
+			<Russian>БЕЗОБЛАЧНО</Russian>
+			<Spanish>CLEAR</Spanish>
+		</Key>
+		<Key ID="STR_RIP_WEATHEROVERCAST">
+			<Original>BEWÖLKUNG</Original>
+			<German>BEWÖLKUNG</German>
+			<French>OVERCAST</French>
+			<Polish>OVERCAST</Polish>
+			<Portuguese>OVERCAST</Portuguese>
+			<Italian>OVERCAST</Italian>
+			<Czech>OVERCAST</Czech>
+			<Russian>ОБЛАЧНО</Russian>
+			<Spanish>OVERCAST</Spanish>
+		</Key>
+		<Key ID="STR_RIP_WEATHERRAIN">
+			<Original>REGEN</Original>
+			<German>REGEN</German>
+			<French>RAIN</French>
+			<Polish>RAIN</Polish>
+			<Portuguese>RAIN</Portuguese>
+			<Italian>RAIN</Italian>
+			<Czech>RAIN</Czech>
+			<Russian>ДОЖДЬ</Russian>
+			<Spanish>RAIN</Spanish>
+		</Key>
+		<Key ID="STR_RIP_WEATHERFOG">
+			<Original>NEBEL</Original>
+			<German>NEBEL</German>
+			<French>FOG</French>
+			<Polish>FOG</Polish>
+			<Portuguese>FOG</Portuguese>
+			<Italian>FOG</Italian>
+			<Czech>FOG</Czech>
+			<Russian>ТУМАН</Russian>
+			<Spanish>FOG</Spanish>
+		</Key>
+		<Key ID="STR_RIP_WEATHERDYNAMIC">
+			<Original>DYNAMISCH</Original>
+			<German>DYNAMISCH</German>
+			<French>DYNAMIC</French>
+			<Polish>DYNAMIC</Polish>
+			<Portuguese>DYNAMIC</Portuguese>
+			<Italian>DYNAMIC</Italian>
+			<Czech>DYNAMIC</Czech>
+			<Russian>ДИНАМИЧЕСКИЕ</Russian>
+			<Spanish>DYNAMIC</Spanish>
+		</Key>
+		<Key ID="STR_RIP_PLAYERMARKERS">
+			<Original>SPIELERMARKER</Original>
+			<German>SPIELERMARKER</German>
+			<French>PLAYER MARKERS</French>
+			<Polish>PLAYER MARKERS</Polish>
+			<Portuguese>PLAYER MARKERS</Portuguese>
+			<Italian>PLAYER MARKERS</Italian>
+			<Czech>PLAYER MARKERS</Czech>
+			<Russian>МАРКЕРЫ ИГРОКОВ НА КАРТЕ</Russian>
+			<Spanish>PLAYER MARKERS</Spanish>
+		</Key>
+		<Key ID="STR_RIP_3DPLAYERMARKERS">
+			<Original>MARKER ÜBER SPIELER</Original>
+			<German>MARKER ÜBER SPIELER</German>
+			<French>MARKERS OVER HEAD PLAYERS</French>
+			<Polish>MARKERS OVER HEAD PLAYERS</Polish>
+			<Portuguese>MARKERS OVER HEAD PLAYERS</Portuguese>
+			<Italian>MARKERS OVER HEAD PLAYERS</Italian>
+			<Czech>MARKERS OVER HEAD PLAYERS</Czech>
+			<Russian>МАРКЕРЫ НАД ГОЛОВАМИ ИГРОКОВ</Russian>
+			<Spanish>MARKERS OVER HEAD PLAYERS</Spanish>
+		</Key>
+		<Key ID="STR_RIP_GRASSLAYER">
+			<Original>GRASDICHTE ZU BEGINN</Original>
+			<German>GRASDICHTE ZU BEGINN</German>
+			<French>GRASS LAYER ON START</French>
+			<Polish>GRASS LAYER ON START</Polish>
+			<Portuguese>GRASS LAYER ON START</Portuguese>
+			<Italian>GRASS LAYER ON START</Italian>
+			<Czech>GRASS LAYER ON START</Czech>
+			<Russian>УРОВЕНЬ ТРАВЫ ПРИ СТАРТЕ</Russian>
+			<Spanish>GRASS LAYER ON START</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DISABLEGRASS">
+			<Original>SPIELER KÖNNEN GRAS ABSCHALTEN</Original>
+			<German>SPIELER KÖNNEN GRAS ABSCHALTEN</German>
+			<French>PLAYER CAN DISABLE GRASS</French>
+			<Polish>PLAYER CAN DISABLE GRASS</Polish>
+			<Portuguese>PLAYER CAN DISABLE GRASS</Portuguese>
+			<Italian>PLAYER CAN DISABLE GRASS</Italian>
+			<Czech>PLAYER CAN DISABLE GRASS</Czech>
+			<Russian>ИГРОК МОЖЕТ ОТКЛЮЧИТЬ ТРАВУ</Russian>
+			<Spanish>PLAYER CAN DISABLE GRASS</Spanish>
+		</Key>
+		<Key ID="STR_RIP_AISKILL">
+			<Original>KI SKILL</Original>
+			<German>KI SKILL</German>
+			<French>AI SKILL</French>
+			<Polish>AI SKILL</Polish>
+			<Portuguese>AI SKILL</Portuguese>
+			<Italian>AI SKILL</Italian>
+			<Czech>AI SKILL</Czech>
+			<Russian>УРОВЕНЬ БОТОВ</Russian>
+			<Spanish>AI SKILL</Spanish>
+		</Key>
+		<Key ID="STR_RIP_LOW">
+			<Original>GERING</Original>
+			<German>GERING</German>
+			<French>LOW</French>
+			<Polish>LOW</Polish>
+			<Portuguese>LOW</Portuguese>
+			<Italian>LOW</Italian>
+			<Czech>LOW</Czech>
+			<Russian>НИЗКИЙ</Russian>
+			<Spanish>LOW</Spanish>
+		</Key>
+		<Key ID="STR_RIP_NORMAL">
+			<Original>NORMAL</Original>
+			<German>NORMAL</German>
+			<French>NORMAL</French>
+			<Polish>NORMAL</Polish>
+			<Portuguese>NORMAL</Portuguese>
+			<Italian>NORMAL</Italian>
+			<Czech>NORMAL</Czech>
+			<Russian>НОРМАЛЬНЫЙ</Russian>
+			<Spanish>NORMAL</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HIGHT">
+			<Original>HOCH</Original>
+			<German>HOCH</German>
+			<French>HIGHT</French>
+			<Polish>HIGHT</Polish>
+			<Portuguese>HIGHT</Portuguese>
+			<Italian>HIGHT</Italian>
+			<Czech>HIGHT</Czech>
+			<Russian>ВЫСОКИЙ</Russian>
+			<Spanish>HIGHT</Spanish>
+		</Key>
+		<Key ID="STR_RIP_AICOUNT">
+			<Original>FEINDANZAHL, INFANTERIE</Original>
+			<German>FEINDANZAHL, INFANTERIE</German>
+			<French>NUMBER OF ENEMY INFANTRIES</French>
+			<Polish>NUMBER OF ENEMY INFANTRIES</Polish>
+			<Portuguese>NUMBER OF ENEMY INFANTRIES</Portuguese>
+			<Italian>NUMBER OF ENEMY INFANTRIES</Italian>
+			<Czech>NUMBER OF ENEMY INFANTRIES</Czech>
+			<Russian>КОЛИЧЕСТВО ПЕХОТЫ ПРОТИВНИКА</Russian>
+			<Spanish>NUMBER OF ENEMY INFANTRIES</Spanish>
+		</Key>
+		<Key ID="STR_RIP_LITTLE">
+			<Original>GERING</Original>
+			<German>GERING</German>
+			<French>LITTLE</French>
+			<Polish>LITTLE</Polish>
+			<Portuguese>LITTLE</Portuguese>
+			<Italian>LITTLE</Italian>
+			<Czech>LITTLE</Czech>
+			<Russian>МАЛО</Russian>
+			<Spanish>LITTLE</Spanish>
+		</Key>
+		<Key ID="STR_RIP_NORMALLY">
+			<Original>NORMAL</Original>
+			<German>NORMAL</German>
+			<French>NORMALLY</French>
+			<Polish>NORMALLY</Polish>
+			<Portuguese>NORMALLY</Portuguese>
+			<Italian>NORMALLY</Italian>
+			<Czech>NORMALLY</Czech>
+			<Russian>НОРМАЛЬНО</Russian>
+			<Spanish>NORMALLY</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MANY">
+			<Original>VIELE</Original>
+			<German>VIELE</German>
+			<French>MANY</French>
+			<Polish>MANY</Polish>
+			<Portuguese>MANY</Portuguese>
+			<Italian>MANY</Italian>
+			<Czech>MANY</Czech>
+			<Russian>МНОГО</Russian>
+			<Spanish>MANY</Spanish>
+		</Key>
+		<Key ID="STR_RIP_AILIGHTVEHCOUNT">
+			<Original>FEINDANZAHL, LEICHTE FAHRZEUGE</Original>
+			<German>FEINDANZAHL, LEICHTE FAHRZEUGE</German>
+			<French>NUMBER OF ENEMY LIGHT VEHICLES</French>
+			<Polish>NUMBER OF ENEMY LIGHT VEHICLES</Polish>
+			<Portuguese>NUMBER OF ENEMY LIGHT VEHICLES</Portuguese>
+			<Italian>NUMBER OF ENEMY LIGHT VEHICLES</Italian>
+			<Czech>NUMBER OF ENEMY LIGHT VEHICLES</Czech>
+			<Russian>КОЛИЧЕСТВО ЛЕГКОЙ ТЕХНИКИ ПРОТИВНИКА</Russian>
+			<Spanish>NUMBER OF ENEMY LIGHT VEHICLES</Spanish>
+		</Key>
+		<Key ID="STR_RIP_AIHEAVYVEHCOUNT">
+			<Original>FEINDANZAHL, SCHWERE FAHRZEUGE</Original>
+			<German>FEINDANZAHL, SCHWERE FAHRZEUGE</German>
+			<French>NUMBER OF ENEMY HEAVY VEHICLES</French>
+			<Polish>NUMBER OF ENEMY HEAVY VEHICLES</Polish>
+			<Portuguese>NUMBER OF ENEMY HEAVY VEHICLES</Portuguese>
+			<Italian>NUMBER OF ENEMY HEAVY VEHICLES</Italian>
+			<Czech>NUMBER OF ENEMY HEAVY VEHICLES</Czech>
+			<Russian>КОЛИЧЕСТВО ТЯЖЕЛОЙ ТЕХНИКИ ПРОТИВНИКА</Russian>
+			<Spanish>NUMBER OF ENEMY HEAVY VEHICLES</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DESERTEDVEHICLEDELAY">
+			<Original>VERLASSENE HELIKOPTER ZUR BASIS BRINGEN NACH, MIN.</Original>
+			<German>VERLASSENE HELIKOPTER ZUR BASIS BRINGEN NACH, MIN.</German>
+			<French>RETURN ABANDONED HELI ON BASE, MIN.</French>
+			<Polish>RETURN ABANDONED HELI ON BASE, MIN.</Polish>
+			<Portuguese>RETURN ABANDONED HELI ON BASE, MIN.</Portuguese>
+			<Italian>RETURN ABANDONED HELI ON BASE, MIN.</Italian>
+			<Czech>RETURN ABANDONED HELI ON BASE, MIN.</Czech>
+			<Russian>ВОЗВРАЩЕНИЕ БРОШЕННЫХ ВЕРТОЛЕТОВ НА БАЗУ, МИН.</Russian>
+			<Spanish>RETURN ABANDONED HELI ON BASE, MIN.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_VEHICLEREMOVETIME">
+			<Original>ZERSTÖRTE FAHRZEUGE LÖSCHEN NACH, MIN.</Original>
+			<German>ZERSTÖRTE FAHRZEUGE LÖSCHEN NACH, MIN.</German>
+			<French>DESTROYED VEHICLES REMOVE TIME, MIN.</French>
+			<Polish>DESTROYED VEHICLES REMOVE TIME, MIN.</Polish>
+			<Portuguese>DESTROYED VEHICLES REMOVE TIME, MIN.</Portuguese>
+			<Italian>DESTROYED VEHICLES REMOVE TIME, MIN.</Italian>
+			<Czech>DESTROYED VEHICLES REMOVE TIME, MIN.</Czech>
+			<Russian>ВРЕМЯ УДАЛЕНИЯ УНИЧТОЖЕНОЙ ТЕХНИКИ, МИН.</Russian>
+			<Spanish>DESTROYED VEHICLES REMOVE TIME, MIN.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MHQRESPAWNTIME">
+			<Original>MHQ RESPAWN ZEIT, MIN.</Original>
+			<German>MHQ RESPAWN ZEIT, MIN.</German>
+			<French>MHQ RESPAWN TIME, MIN.</French>
+			<Polish>MHQ RESPAWN TIME, MIN.</Polish>
+			<Portuguese>MHQ RESPAWN TIME, MIN.</Portuguese>
+			<Italian>MHQ RESPAWN TIME, MIN.</Italian>
+			<Czech>MHQ RESPAWN TIME, MIN.</Czech>
+			<Russian>ВРЕМЯ ВОЗРОЖДЕНИЯ КШМ, МИН.</Russian>
+			<Spanish>MHQ RESPAWN TIME, MIN.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_AIRRELOADTIME">
+			<Original>SERVICE DAUER IN DER BASIS FÜR LUFTFAHRZEUGE, MIN.</Original>
+			<German>SERVICE DAUER IN DER BASIS FÜR LUFTFAHRZEUGE, MIN..</German>
+			<French>TIME TO REPAIR AND RELOAD AIR VEHICLES ON BASE, MIN.</French>
+			<Polish>TIME TO REPAIR AND RELOAD AIR VEHICLES ON BASE, MIN.</Polish>
+			<Portuguese>TIME TO REPAIR AND RELOAD AIR VEHICLES ON BASE, MIN.</Portuguese>
+			<Italian>TIME TO REPAIR AND RELOAD AIR VEHICLES ON BASE, MIN.</Italian>
+			<Czech>TIME TO REPAIR AND RELOAD AIR VEHICLES ON BASE, MIN.</Czech>
+			<Russian>ВРЕМЯ РЕМОНТА И ПЕРЕЗАРЯДКИ АВИАЦИИ НА БАЗЕ, МИН.</Russian>
+			<Spanish>TIME TO REPAIR AND RELOAD AIR VEHICLES ON BASE, MIN.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_LANDRELOADTIME">
+			<Original>SERVICE DAUER IN DER BASIS FÜR LANDFAHRZEUGE, MIN.</Original>
+			<German>SERVICE DAUER IN DER BASIS FÜR LANDFAHRZEUGE, MIN.</German>
+			<French>TIME TO REPAIR AND RELOAD LAND VEHICLES ON BASE, MIN.</French>
+			<Polish>TIME TO REPAIR AND RELOAD LAND VEHICLES ON BASE, MIN.</Polish>
+			<Portuguese>TIME TO REPAIR AND RELOAD LAND VEHICLES ON BASE, MIN.</Portuguese>
+			<Italian>TIME TO REPAIR AND RELOAD LAND VEHICLES ON BASE, MIN.</Italian>
+			<Czech>TIME TO REPAIR AND RELOAD LAND VEHICLES ON BASE, MIN.</Czech>
+			<Russian>ВРЕМЯ РЕМОНТА И ПЕРЕЗАРЯДКИ НАЗЕМНОЙ ТЕХНИКИ НА БАЗЕ, МИН.</Russian>
+			<Spanish>TIME TO REPAIR AND RELOAD LAND VEHICLES ON BASE, MIN.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_ANTIATGMSYSTEM">
+			<Original>ANTI-ATGM SYSTEM</Original>
+			<German>ANTI-ATGM SYSTEM</German>
+			<French>ANTI-ATGM SYSTEM</French>
+			<Polish>ANTI-ATGM SYSTEM</Polish>
+			<Portuguese>ANTI-ATGM SYSTEM</Portuguese>
+			<Italian>ANTI-ATGM SYSTEM</Italian>
+			<Czech>ANTI-ATGM SYSTEM</Czech>
+			<Russian>СИСТЕМА ЗАЩИТЫ ОТ ПТУР НА ТЕХНИКЕ</Russian>
+			<Spanish>ANTI-ATGM SYSTEM</Spanish>
+		</Key>
+		<Key ID="STR_RIP_VEHICLEMARKERS">
+			<Original>FAHRZEUG MARKER</Original>
+			<German>FAHRZEUG MARKER</German>
+			<French>VEHICLE MARKERS</French>
+			<Polish>VEHICLE MARKERS</Polish>
+			<Portuguese>VEHICLE MARKERS</Portuguese>
+			<Italian>VEHICLE MARKERS</Italian>
+			<Czech>VEHICLE MARKERS</Czech>
+			<Russian>МАРКЕРЫ ТЕХНИКИ НА КАРТЕ</Russian>
+			<Spanish>VEHICLE MARKERS</Spanish>
+		</Key>
+		<Key ID="STR_RIP_TELEPORTTOMHQ">
+			<Original>TELEPORT ZUM MHQ</Original>
+			<German>TELEPORT ZUM MHQ</German>
+			<French>TELEPORT TO MHQ</French>
+			<Polish>TELEPORT TO MHQ</Polish>
+			<Portuguese>TELEPORT TO MHQ</Portuguese>
+			<Italian>TELEPORT TO MHQ</Italian>
+			<Czech>TELEPORT TO MHQ</Czech>
+			<Russian>ТЕЛЕПОРТ НА КШМ</Russian>
+			<Spanish>TELEPORT TO MHQ</Spanish>
+		</Key>
+		<Key ID="STR_RIP_TELEPORTTOBASE">
+			<Original>TELEPORT ZUR BASIS</Original>
+			<German>TELEPORT ZUR BASIS</German>
+			<French>TELEPORT TO BASE</French>
+			<Polish>TELEPORT TO BASE</Polish>
+			<Portuguese>TELEPORT TO BASE</Portuguese>
+			<Italian>TELEPORT TO BASE</Italian>
+			<Czech>TELEPORT TO BASE</Czech>
+			<Russian>ТЕЛЕПОРТ НА БАЗУ</Russian>
+			<Spanish>TELEPORT TO BASE</Spanish>
+		</Key>
+		<Key ID="STR_RIP_3DPERSONDISABLE">
+			<Original>3D PERSON VIEW NUR IN FAHRZEUGEN</Original>
+			<German>3D PERSON VIEW NUR IN FAHRZEUGEN</German>
+			<French>3D PERSON VIEW ONLY IN VEHICLES</French>
+			<Polish>3D PERSON VIEW ONLY IN VEHICLES</Polish>
+			<Portuguese>3D PERSON VIEW ONLY IN VEHICLES</Portuguese>
+			<Italian>3D PERSON VIEW ONLY IN VEHICLES</Italian>
+			<Czech>3D PERSON VIEW ONLY IN VEHICLES</Czech>
+			<Russian>ВИД ОТ 3ГО ЛИЦА ТОЛЬКО В ТЕХНИКЕ</Russian>
+			<Spanish>3D PERSON VIEW ONLY IN VEHICLES</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DISABLETI">
+			<Original>MAX. SICHTWEITE THERMALSICHT, M.</Original>
+			<German>MAX. SICHTWEITE THERMALSICHT, M.</German>
+			<French>LIMIT VIEWDISTANCE TI, M.</French>
+			<Polish>LIMIT VIEWDISTANCE TI, M.</Polish>
+			<Portuguese>LIMIT VIEWDISTANCE TI, M.</Portuguese>
+			<Italian>LIMIT VIEWDISTANCE TI, M.</Italian>
+			<Czech>LIMIT VIEWDISTANCE TI, M.</Czech>
+			<Russian>ОГРАНИЧИТЬ ВИДИМОСТЬ ТЕПЛОВИЗОРА, М.</Russian>
+			<Spanish>LIMIT VIEWDISTANCE TI, M.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_VEHICLEBUY">
+			<Original>FAHRZEUGKAUF IN DER BASIS</Original>
+			<German>FAHRZEUGKAUF IN DER BASIS</German>
+			<French>BUYING VEHICLES ON BASE</French>
+			<Polish>BUYING VEHICLES ON BASE</Polish>
+			<Portuguese>BUYING VEHICLES ON BASE</Portuguese>
+			<Italian>BUYING VEHICLES ON BASE</Italian>
+			<Czech>BUYING VEHICLES ON BASE</Czech>
+			<Russian>ПОКУПКА ТЕХНИКИ НА БАЗЕ</Russian>
+			<Spanish>BUYING VEHICLES ON BASE</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MISSIONPARAMS">
+			<Original>Einstellungen der laufenden Mission</Original>
+			<German>Einstellungen der laufenden Mission</German>
+			<French>Current mission settings</French>
+			<Polish>Current mission settings</Polish>
+			<Portuguese>Current mission settings</Portuguese>
+			<Italian>Current mission settings</Italian>
+			<Czech>Current mission settings</Czech>
+			<Russian>Текущие настройки миссии</Russian>
+			<Spanish>Current mission settings</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MISSIONINFO">
+			<Original>Missionsregeln</Original>
+			<German>Missionsregeln</German>
+			<French>Mission rules</French>
+			<Polish>Mission rules</Polish>
+			<Portuguese>Mission rules</Portuguese>
+			<Italian>Mission rules</Italian>
+			<Czech>Mission rules</Czech>
+			<Russian>Описание миссии</Russian>
+			<Spanish>Mission rules</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MISSIONINFOTEXT">
+			<Original>HAUPTMENÜ:&lt;br/&gt;Aufrufbar durch die Tastenkombination 'Strg' + 'N'&lt;br/&gt;&lt;img image='Pics\Briefing\MainMenuWIN.paa'/&gt;&lt;br/&gt;&lt;br/&gt;Missionsziel - Nimm die Stadt durch Punktesieg ein.&lt;br/&gt;Um die Stadt zu erobern muss man:&lt;br/&gt;1. den Funkturm zerstören&lt;br/&gt;&lt;img image='Pics\Briefing\Radiotower.paa'/&gt;&lt;br/&gt;2. alle aufständischen Truppen vernichten&lt;br/&gt;3. den Kommandoturm einnehmen&lt;br/&gt;&lt;img image='Pics\Briefing\Tower.paa'/&gt;.&lt;br/&gt;4. zwei Bunker einnehmen&lt;br/&gt;&lt;img image='Pics\Briefing\Fort.paa'/&gt;.&lt;br/&gt;Um einen Kommandoturm oder Bunker einzunehemen muss man die Aktion "Flagge hissen" auswählen. Verteidige eingenommene Punkte, da die Gegenseite sie die streitig machen wird.&lt;br/&gt;Falls Blufor und Opfor mehr als vier Spieler haben, muss man die Flagge min fünf Minuten halten.&lt;br/&gt;Der Sieg in einer Stadt wird dem Team zugeschrieben, dass die meisten Punkte und die Bunker sowie den Kommandotuem eingenommen hat.&lt;br/&gt;Bei Missionswechsel werden die Punkte zurückgesetzt.&lt;br/&gt;&lt;br/&gt;PUNKTEVERTEILUNG:&lt;br/&gt;Einen Widerstandkämpfer vernichten: 1 Punkt,&lt;br/&gt;Ein Fahrzeuge zerstören: 2 Punkte,&lt;br/&gt;Ein gepanzertes Fahrzeug zerstören: 3 Punkte,&lt;br/&gt;Ein Flugzeug/Helikopter zerstören: 5 Punkte,&lt;br/&gt;Funkttuem zerstören: 10 Punkte,&lt;br/&gt;Einen Spieler des anderen Teams töten aus weniger als 6 Meter: 10 Punkte,&lt;br/&gt;Einen Spieler des anderen Teams töten aus 6 bis 50 Meter: 5 Punkte,&lt;br/&gt;Einen Spieler des anderen Teams töten aus 50 to 150 Meter: 4 Punkte,&lt;br/&gt;Einen Spieler des anderen Teams töten aus 150 to 300 Meter: 2 Punkte,&lt;br/&gt;Einen Spieler des anderen Teams töten aus mehr als 300 Meter: 1 Punkt.&lt;br/&gt;Vom Widerstand besetzen Kommandoturm einnehmen: 5 Punkte,&lt;br/&gt;Vom Feind besetztren Kommandoturm einnehmen: 10 Punkte&lt;br/&gt;&lt;br/&gt;TELEPORT:&lt;br/&gt;When the relevant parameter settings to run mission teleport players available from the base to the MHQ and from the MHQ to the base.&lt;br/&gt;To use the teleport, you must:&lt;br/&gt;- Go to the flag at the base or MHQ and select the mouse wheel menu 'Teleport'&lt;br/&gt;- In the window click button 'Teleport to the base', 'Teleport to MHQ1' or 'Teleport to MHQ2'&lt;br/&gt;-cliques on the minimap to indicate the endpoint to teleport. The position must be within the green zone around the MHQ.&lt;br/&gt;&lt;br/&gt;ENGINEERS:&lt;br/&gt;-can do a full repair of vehicles  (If you have a repair kit in your inventory. After using this option, repair kit is removed from the inventory.)&lt;br/&gt;-unflip vehicles (If you have a repair kit in your inventory)&lt;br/&gt;&lt;br/&gt;BUYING VEHICLE:&lt;br/&gt;-on points earned you can buy vehicles. Purchase appear in front of you. Each player at a time can own only one vehicle. UAV backpack appear on the back.&lt;br/&gt;&lt;br/&gt;TRANSFER POINTS OTHER PLAYERS:&lt;br/&gt;-you can transfer your points to another player to jointly buy an expensive vehicle.&lt;br/&gt;&lt;br/&gt;SERVICE POINT:&lt;br/&gt;To start the repair\reload\refueling vehicle necessary:&lt;br/&gt;- in the vehicle on the driver's\pilot's seat&lt;br/&gt;- it is located within 30 meters from the service station&lt;br/&gt;- mouse wheel select 'Start service'&lt;br/&gt;- wait for the repairs\reload\refueling&lt;br/&gt;</Original>
+			<German>MAIN MENU:&lt;br/&gt;called by simultaneously pressing buttons 'Ctrl' + 'N'&lt;br/&gt;&lt;img image='Pics\Briefing\MainMenuWIN.paa'/&gt;&lt;br/&gt;&lt;br/&gt;The purpose of the mission - to capture the city more than the other team.&lt;br/&gt;To capture the city must:&lt;br/&gt;1. blow up the radio  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Radiotower.paa'/&gt;&lt;br/&gt;2. to destroy all the 'independent'&lt;br/&gt;3. seize command  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Tower.paa'/&gt;.&lt;br/&gt;4. seize two bunkers&lt;br/&gt;&lt;img image='Pics\Briefing\Fort.paa'/&gt;.&lt;br/&gt;To capture a command tower or bunker go to the flag and select the action "raise  the flag". Protect captured towers and bunkers, as the other team may discourage them and raise his flag.&lt;br/&gt;IF the Red team and the Blue team more than four people, you need to keep the flags for 5 minutes.&lt;br/&gt;Capturing the city awarded to the team with the most points and capture the tower and bunker.&lt;br/&gt;When a new city scores are reset  commands.&lt;br/&gt;&lt;br/&gt;SCORING:&lt;br/&gt;destruction a bot - 1 point,&lt;br/&gt;destruction a car - 2 points,&lt;br/&gt;destruction a armored vehicle - 3 points,&lt;br/&gt;destruction a plane/heli - 5 points,&lt;br/&gt;destruction of radio towers - 10 points,&lt;br/&gt;Kill a player of the opposing team  from a distance of less than 6 meters - 10 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 6 to 50 meters - 5 points,&lt;br/&gt;Kill  a player of the opposing team from a distance of 50 to 150 meters - 4 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 150 to 300  meters - 2 points,&lt;br/&gt;Kill a player of the opposing team from a distance of more than 300 meters - 1 point.&lt;br/&gt;seizure AI control  tower - 5 points,&lt;br/&gt;seizure enemy team control  tower - 10 points&lt;br/&gt;&lt;br/&gt;TELEPORT:&lt;br/&gt;When the relevant parameter settings to run mission teleport players available from the base to the MHQ and from the MHQ to the base.&lt;br/&gt;To use the teleport, you must:&lt;br/&gt;- Go to the flag at the base or MHQ and select the mouse wheel menu 'Teleport'&lt;br/&gt;- In the window click button 'Teleport to the base', 'Teleport to MHQ1' or 'Teleport to MHQ2'&lt;br/&gt;-cliques on the minimap to indicate the endpoint to teleport. The position must be within the green zone around the MHQ.&lt;br/&gt;&lt;br/&gt;ENGINEERS:&lt;br/&gt;-can do a full repair of vehicles  (If you have a repair kit in your inventory. After using this option, repair kit is removed from the inventory.)&lt;br/&gt;-unflip vehicles (If you have a repair kit in your inventory)&lt;br/&gt;&lt;br/&gt;BUYING VEHICLE:&lt;br/&gt;-on points earned you can buy vehicles. Purchase appear in front of you. Each player at a time can own only one vehicle. UAV backpack appear on the back.&lt;br/&gt;&lt;br/&gt;TRANSFER POINTS OTHER PLAYERS:&lt;br/&gt;-you can transfer your points to another player to jointly buy an expensive vehicle.&lt;br/&gt;&lt;br/&gt;SERVICE POINT:&lt;br/&gt;To start the repair\reload\refueling vehicle necessary:&lt;br/&gt;- in the vehicle on the driver's\pilot's seat&lt;br/&gt;- it is located within 30 meters from the service station&lt;br/&gt;- mouse wheel select 'Start service'&lt;br/&gt;- wait for the repairs\reload\refueling&lt;br/&gt;</German>
+			<French>MAIN MENU:&lt;br/&gt;called by simultaneously pressing buttons 'Ctrl' + 'N'&lt;br/&gt;&lt;img image='Pics\Briefing\MainMenuWIN.paa'/&gt;&lt;br/&gt;&lt;br/&gt;The purpose of the mission - to capture the city more than the other team.&lt;br/&gt;To capture the city must:&lt;br/&gt;1. blow up the radio  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Radiotower.paa'/&gt;&lt;br/&gt;2. to destroy all the 'independent'&lt;br/&gt;3. seize command  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Tower.paa'/&gt;.&lt;br/&gt;4. seize two bunkers&lt;br/&gt;&lt;img image='Pics\Briefing\Fort.paa'/&gt;.&lt;br/&gt;To capture a command tower or bunker go to the flag and select the action "raise  the flag". Protect captured towers and bunkers, as the other team may discourage them and raise his flag.&lt;br/&gt;IF the Red team and the Blue team more than four people, you need to keep the flags for 5 minutes.&lt;br/&gt;Capturing the city awarded to the team with the most points and capture the tower and bunker.&lt;br/&gt;When a new city scores are reset  commands.&lt;br/&gt;&lt;br/&gt;SCORING:&lt;br/&gt;destruction a bot - 1 point,&lt;br/&gt;destruction a car - 2 points,&lt;br/&gt;destruction a armored vehicle - 3 points,&lt;br/&gt;destruction a plane/heli - 5 points,&lt;br/&gt;destruction of radio towers - 10 points,&lt;br/&gt;Kill a player of the opposing team  from a distance of less than 6 meters - 10 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 6 to 50 meters - 5 points,&lt;br/&gt;Kill  a player of the opposing team from a distance of 50 to 150 meters - 4 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 150 to 300  meters - 2 points,&lt;br/&gt;Kill a player of the opposing team from a distance of more than 300 meters - 1 point.&lt;br/&gt;seizure AI control  tower - 5 points,&lt;br/&gt;seizure enemy team control  tower - 10 points&lt;br/&gt;&lt;br/&gt;TELEPORT:&lt;br/&gt;When the relevant parameter settings to run mission teleport players available from the base to the MHQ and from the MHQ to the base.&lt;br/&gt;To use the teleport, you must:&lt;br/&gt;- Go to the flag at the base or MHQ and select the mouse wheel menu 'Teleport'&lt;br/&gt;- In the window click button 'Teleport to the base', 'Teleport to MHQ1' or 'Teleport to MHQ2'&lt;br/&gt;-cliques on the minimap to indicate the endpoint to teleport. The position must be within the green zone around the MHQ.&lt;br/&gt;&lt;br/&gt;ENGINEERS:&lt;br/&gt;-can do a full repair of vehicles  (If you have a repair kit in your inventory. After using this option, repair kit is removed from the inventory.)&lt;br/&gt;-unflip vehicles (If you have a repair kit in your inventory)&lt;br/&gt;&lt;br/&gt;BUYING VEHICLE:&lt;br/&gt;-on points earned you can buy vehicles. Purchase appear in front of you. Each player at a time can own only one vehicle. UAV backpack appear on the back.&lt;br/&gt;&lt;br/&gt;TRANSFER POINTS OTHER PLAYERS:&lt;br/&gt;-you can transfer your points to another player to jointly buy an expensive vehicle.&lt;br/&gt;&lt;br/&gt;SERVICE POINT:&lt;br/&gt;To start the repair\reload\refueling vehicle necessary:&lt;br/&gt;- in the vehicle on the driver's\pilot's seat&lt;br/&gt;- it is located within 30 meters from the service station&lt;br/&gt;- mouse wheel select 'Start service'&lt;br/&gt;- wait for the repairs\reload\refueling&lt;br/&gt;</French>
+			<Polish>MAIN MENU:&lt;br/&gt;called by simultaneously pressing buttons 'Ctrl' + 'N'&lt;br/&gt;&lt;img image='Pics\Briefing\MainMenuWIN.paa'/&gt;&lt;br/&gt;&lt;br/&gt;The purpose of the mission - to capture the city more than the other team.&lt;br/&gt;To capture the city must:&lt;br/&gt;1. blow up the radio  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Radiotower.paa'/&gt;&lt;br/&gt;2. to destroy all the 'independent'&lt;br/&gt;3. seize command  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Tower.paa'/&gt;.&lt;br/&gt;4. seize two bunkers&lt;br/&gt;&lt;img image='Pics\Briefing\Fort.paa'/&gt;.&lt;br/&gt;To capture a command tower or bunker go to the flag and select the action "raise  the flag". Protect captured towers and bunkers, as the other team may discourage them and raise his flag.&lt;br/&gt;IF the Red team and the Blue team more than four people, you need to keep the flags for 5 minutes.&lt;br/&gt;Capturing the city awarded to the team with the most points and capture the tower and bunker.&lt;br/&gt;When a new city scores are reset  commands.&lt;br/&gt;&lt;br/&gt;SCORING:&lt;br/&gt;destruction a bot - 1 point,&lt;br/&gt;destruction a car - 2 points,&lt;br/&gt;destruction a armored vehicle - 3 points,&lt;br/&gt;destruction a plane/heli - 5 points,&lt;br/&gt;destruction of radio towers - 10 points,&lt;br/&gt;Kill a player of the opposing team  from a distance of less than 6 meters - 10 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 6 to 50 meters - 5 points,&lt;br/&gt;Kill  a player of the opposing team from a distance of 50 to 150 meters - 4 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 150 to 300  meters - 2 points,&lt;br/&gt;Kill a player of the opposing team from a distance of more than 300 meters - 1 point.&lt;br/&gt;seizure AI control  tower - 5 points,&lt;br/&gt;seizure enemy team control  tower - 10 points&lt;br/&gt;&lt;br/&gt;TELEPORT:&lt;br/&gt;When the relevant parameter settings to run mission teleport players available from the base to the MHQ and from the MHQ to the base.&lt;br/&gt;To use the teleport, you must:&lt;br/&gt;- Go to the flag at the base or MHQ and select the mouse wheel menu 'Teleport'&lt;br/&gt;- In the window click button 'Teleport to the base', 'Teleport to MHQ1' or 'Teleport to MHQ2'&lt;br/&gt;-cliques on the minimap to indicate the endpoint to teleport. The position must be within the green zone around the MHQ.&lt;br/&gt;&lt;br/&gt;ENGINEERS:&lt;br/&gt;-can do a full repair of vehicles  (If you have a repair kit in your inventory. After using this option, repair kit is removed from the inventory.)&lt;br/&gt;-unflip vehicles (If you have a repair kit in your inventory)&lt;br/&gt;&lt;br/&gt;BUYING VEHICLE:&lt;br/&gt;-on points earned you can buy vehicles. Purchase appear in front of you. Each player at a time can own only one vehicle. UAV backpack appear on the back.&lt;br/&gt;&lt;br/&gt;TRANSFER POINTS OTHER PLAYERS:&lt;br/&gt;-you can transfer your points to another player to jointly buy an expensive vehicle.&lt;br/&gt;&lt;br/&gt;SERVICE POINT:&lt;br/&gt;To start the repair\reload\refueling vehicle necessary:&lt;br/&gt;- in the vehicle on the driver's\pilot's seat&lt;br/&gt;- it is located within 30 meters from the service station&lt;br/&gt;- mouse wheel select 'Start service'&lt;br/&gt;- wait for the repairs\reload\refueling&lt;br/&gt;</Polish>
+			<Portuguese>MAIN MENU:&lt;br/&gt;called by simultaneously pressing buttons 'Ctrl' + 'N'&lt;br/&gt;&lt;img image='Pics\Briefing\MainMenuWIN.paa'/&gt;&lt;br/&gt;&lt;br/&gt;The purpose of the mission - to capture the city more than the other team.&lt;br/&gt;To capture the city must:&lt;br/&gt;1. blow up the radio  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Radiotower.paa'/&gt;&lt;br/&gt;2. to destroy all the 'independent'&lt;br/&gt;3. seize command  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Tower.paa'/&gt;.&lt;br/&gt;4. seize two bunkers&lt;br/&gt;&lt;img image='Pics\Briefing\Fort.paa'/&gt;.&lt;br/&gt;To capture a command tower or bunker go to the flag and select the action "raise  the flag". Protect captured towers and bunkers, as the other team may discourage them and raise his flag.&lt;br/&gt;IF the Red team and the Blue team more than four people, you need to keep the flags for 5 minutes.&lt;br/&gt;Capturing the city awarded to the team with the most points and capture the tower and bunker.&lt;br/&gt;When a new city scores are reset  commands.&lt;br/&gt;&lt;br/&gt;SCORING:&lt;br/&gt;destruction a bot - 1 point,&lt;br/&gt;destruction a car - 2 points,&lt;br/&gt;destruction a armored vehicle - 3 points,&lt;br/&gt;destruction a plane/heli - 5 points,&lt;br/&gt;destruction of radio towers - 10 points,&lt;br/&gt;Kill a player of the opposing team  from a distance of less than 6 meters - 10 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 6 to 50 meters - 5 points,&lt;br/&gt;Kill  a player of the opposing team from a distance of 50 to 150 meters - 4 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 150 to 300  meters - 2 points,&lt;br/&gt;Kill a player of the opposing team from a distance of more than 300 meters - 1 point.&lt;br/&gt;seizure AI control  tower - 5 points,&lt;br/&gt;seizure enemy team control  tower - 10 points&lt;br/&gt;&lt;br/&gt;TELEPORT:&lt;br/&gt;When the relevant parameter settings to run mission teleport players available from the base to the MHQ and from the MHQ to the base.&lt;br/&gt;To use the teleport, you must:&lt;br/&gt;- Go to the flag at the base or MHQ and select the mouse wheel menu 'Teleport'&lt;br/&gt;- In the window click button 'Teleport to the base', 'Teleport to MHQ1' or 'Teleport to MHQ2'&lt;br/&gt;-cliques on the minimap to indicate the endpoint to teleport. The position must be within the green zone around the MHQ.&lt;br/&gt;&lt;br/&gt;ENGINEERS:&lt;br/&gt;-can do a full repair of vehicles  (If you have a repair kit in your inventory. After using this option, repair kit is removed from the inventory.)&lt;br/&gt;-unflip vehicles (If you have a repair kit in your inventory)&lt;br/&gt;&lt;br/&gt;BUYING VEHICLE:&lt;br/&gt;-on points earned you can buy vehicles. Purchase appear in front of you. Each player at a time can own only one vehicle. UAV backpack appear on the back.&lt;br/&gt;&lt;br/&gt;TRANSFER POINTS OTHER PLAYERS:&lt;br/&gt;-you can transfer your points to another player to jointly buy an expensive vehicle.&lt;br/&gt;&lt;br/&gt;SERVICE POINT:&lt;br/&gt;To start the repair\reload\refueling vehicle necessary:&lt;br/&gt;- in the vehicle on the driver's\pilot's seat&lt;br/&gt;- it is located within 30 meters from the service station&lt;br/&gt;- mouse wheel select 'Start service'&lt;br/&gt;- wait for the repairs\reload\refueling&lt;br/&gt;</Portuguese>
+			<Italian>MAIN MENU:&lt;br/&gt;called by simultaneously pressing buttons 'Ctrl' + 'N'&lt;br/&gt;&lt;img image='Pics\Briefing\MainMenuWIN.paa'/&gt;&lt;br/&gt;&lt;br/&gt;The purpose of the mission - to capture the city more than the other team.&lt;br/&gt;To capture the city must:&lt;br/&gt;1. blow up the radio  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Radiotower.paa'/&gt;&lt;br/&gt;2. to destroy all the 'independent'&lt;br/&gt;3. seize command  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Tower.paa'/&gt;.&lt;br/&gt;4. seize two bunkers&lt;br/&gt;&lt;img image='Pics\Briefing\Fort.paa'/&gt;.&lt;br/&gt;To capture a command tower or bunker go to the flag and select the action "raise  the flag". Protect captured towers and bunkers, as the other team may discourage them and raise his flag.&lt;br/&gt;IF the Red team and the Blue team more than four people, you need to keep the flags for 5 minutes.&lt;br/&gt;Capturing the city awarded to the team with the most points and capture the tower and bunker.&lt;br/&gt;When a new city scores are reset  commands.&lt;br/&gt;&lt;br/&gt;SCORING:&lt;br/&gt;destruction a bot - 1 point,&lt;br/&gt;destruction a car - 2 points,&lt;br/&gt;destruction a armored vehicle - 3 points,&lt;br/&gt;destruction a plane/heli - 5 points,&lt;br/&gt;destruction of radio towers - 10 points,&lt;br/&gt;Kill a player of the opposing team  from a distance of less than 6 meters - 10 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 6 to 50 meters - 5 points,&lt;br/&gt;Kill  a player of the opposing team from a distance of 50 to 150 meters - 4 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 150 to 300  meters - 2 points,&lt;br/&gt;Kill a player of the opposing team from a distance of more than 300 meters - 1 point.&lt;br/&gt;seizure AI control  tower - 5 points,&lt;br/&gt;seizure enemy team control  tower - 10 points&lt;br/&gt;&lt;br/&gt;TELEPORT:&lt;br/&gt;When the relevant parameter settings to run mission teleport players available from the base to the MHQ and from the MHQ to the base.&lt;br/&gt;To use the teleport, you must:&lt;br/&gt;- Go to the flag at the base or MHQ and select the mouse wheel menu 'Teleport'&lt;br/&gt;- In the window click button 'Teleport to the base', 'Teleport to MHQ1' or 'Teleport to MHQ2'&lt;br/&gt;-cliques on the minimap to indicate the endpoint to teleport. The position must be within the green zone around the MHQ.&lt;br/&gt;&lt;br/&gt;ENGINEERS:&lt;br/&gt;-can do a full repair of vehicles  (If you have a repair kit in your inventory. After using this option, repair kit is removed from the inventory.)&lt;br/&gt;-unflip vehicles (If you have a repair kit in your inventory)&lt;br/&gt;&lt;br/&gt;BUYING VEHICLE:&lt;br/&gt;-on points earned you can buy vehicles. Purchase appear in front of you. Each player at a time can own only one vehicle. UAV backpack appear on the back.&lt;br/&gt;&lt;br/&gt;TRANSFER POINTS OTHER PLAYERS:&lt;br/&gt;-you can transfer your points to another player to jointly buy an expensive vehicle.&lt;br/&gt;&lt;br/&gt;SERVICE POINT:&lt;br/&gt;To start the repair\reload\refueling vehicle necessary:&lt;br/&gt;- in the vehicle on the driver's\pilot's seat&lt;br/&gt;- it is located within 30 meters from the service station&lt;br/&gt;- mouse wheel select 'Start service'&lt;br/&gt;- wait for the repairs\reload\refueling&lt;br/&gt;</Italian>
+			<Czech>MAIN MENU:&lt;br/&gt;called by simultaneously pressing buttons 'Ctrl' + 'N'&lt;br/&gt;&lt;img image='Pics\Briefing\MainMenuWIN.paa'/&gt;&lt;br/&gt;&lt;br/&gt;The purpose of the mission - to capture the city more than the other team.&lt;br/&gt;To capture the city must:&lt;br/&gt;1. blow up the radio  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Radiotower.paa'/&gt;&lt;br/&gt;2. to destroy all the 'independent'&lt;br/&gt;3. seize command  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Tower.paa'/&gt;.&lt;br/&gt;4. seize two bunkers&lt;br/&gt;&lt;img image='Pics\Briefing\Fort.paa'/&gt;.&lt;br/&gt;To capture a command tower or bunker go to the flag and select the action "raise  the flag". Protect captured towers and bunkers, as the other team may discourage them and raise his flag.&lt;br/&gt;IF the Red team and the Blue team more than four people, you need to keep the flags for 5 minutes.&lt;br/&gt;Capturing the city awarded to the team with the most points and capture the tower and bunker.&lt;br/&gt;When a new city scores are reset  commands.&lt;br/&gt;&lt;br/&gt;SCORING:&lt;br/&gt;destruction a bot - 1 point,&lt;br/&gt;destruction a car - 2 points,&lt;br/&gt;destruction a armored vehicle - 3 points,&lt;br/&gt;destruction a plane/heli - 5 points,&lt;br/&gt;destruction of radio towers - 10 points,&lt;br/&gt;Kill a player of the opposing team  from a distance of less than 6 meters - 10 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 6 to 50 meters - 5 points,&lt;br/&gt;Kill  a player of the opposing team from a distance of 50 to 150 meters - 4 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 150 to 300  meters - 2 points,&lt;br/&gt;Kill a player of the opposing team from a distance of more than 300 meters - 1 point.&lt;br/&gt;seizure AI control  tower - 5 points,&lt;br/&gt;seizure enemy team control  tower - 10 points&lt;br/&gt;&lt;br/&gt;TELEPORT:&lt;br/&gt;When the relevant parameter settings to run mission teleport players available from the base to the MHQ and from the MHQ to the base.&lt;br/&gt;To use the teleport, you must:&lt;br/&gt;- Go to the flag at the base or MHQ and select the mouse wheel menu 'Teleport'&lt;br/&gt;- In the window click button 'Teleport to the base', 'Teleport to MHQ1' or 'Teleport to MHQ2'&lt;br/&gt;-cliques on the minimap to indicate the endpoint to teleport. The position must be within the green zone around the MHQ.&lt;br/&gt;&lt;br/&gt;ENGINEERS:&lt;br/&gt;-can do a full repair of vehicles  (If you have a repair kit in your inventory. After using this option, repair kit is removed from the inventory.)&lt;br/&gt;-unflip vehicles (If you have a repair kit in your inventory)&lt;br/&gt;&lt;br/&gt;BUYING VEHICLE:&lt;br/&gt;-on points earned you can buy vehicles. Purchase appear in front of you. Each player at a time can own only one vehicle. UAV backpack appear on the back.&lt;br/&gt;&lt;br/&gt;TRANSFER POINTS OTHER PLAYERS:&lt;br/&gt;-you can transfer your points to another player to jointly buy an expensive vehicle.&lt;br/&gt;&lt;br/&gt;SERVICE POINT:&lt;br/&gt;To start the repair\reload\refueling vehicle necessary:&lt;br/&gt;- in the vehicle on the driver's\pilot's seat&lt;br/&gt;- it is located within 30 meters from the service station&lt;br/&gt;- mouse wheel select 'Start service'&lt;br/&gt;- wait for the repairs\reload\refueling&lt;br/&gt;</Czech>
+			<Russian>ГЛАВНОЕ МЕНЮ:&lt;br/&gt;вызывается одновременным нажатием кнопок 'Ctrl' + 'N'&lt;br/&gt;&lt;img image='Pics\Briefing\MainMenuWIN.paa'/&gt;&lt;br/&gt;&lt;br/&gt;ЦЕЛЬ МИССИИ - захватить городов больше, чем другая команда.&lt;br/&gt;Для захвата города необходимо:&lt;br/&gt;1. взорвать радиовышку&lt;br/&gt;&lt;img image='Pics\Briefing\Radiotower.paa'/&gt;&lt;br/&gt;2. уничтожить большую часть 'независимых'&lt;br/&gt;3. захватить командную вышку &lt;br/&gt;&lt;img image='Pics\Briefing\Tower.paa'/&gt;.&lt;br/&gt;4. захватить два бункера &lt;br/&gt;&lt;img image='Pics\Briefing\Fort.paa'/&gt;.&lt;br/&gt;Для захвата командной вышки и бункеров нужно подойти к флагу и выбрать действие "Поднять флаг". Защищайте захваченные вышки и бункера, т.к. другая команда может отбить их и поднять свой флаг.&lt;br/&gt;ЕСЛИ в команде Красных и команде Синих больше, чем по четыре человека, то удерживать флаги необходимо в течение 5 минут.&lt;br/&gt;Захват города присуждается команде, набравшей больше очков и захватившей вышку и бункера.&lt;br/&gt;При появлении нового города баллы команд обнуляются.&lt;br/&gt;&lt;br/&gt;НАЧИСЛЕНИЕ БАЛЛОВ КОМАНДЕ:&lt;br/&gt;уничтожение бота - 1 балл,&lt;br/&gt;уничтожение машины - 2 балла,&lt;br/&gt;уничтожение бронетехники - 3 баллов,&lt;br/&gt;уничтожение самолета\вертолета - 5 баллов,&lt;br/&gt;уничтожение радиовышки - 10 баллов,&lt;br/&gt;убийство игрока команды противника с расстояния меньше 6 метров - 10 баллов,&lt;br/&gt;убийство игрока команды  противника с расстояния от 6 до 50 метров - 5 баллов,&lt;br/&gt;убийство игрока команды  противника с расстояния от 50 до 150 метров - 4 балла,&lt;br/&gt;убийство игрока команды противника с расстояния от 150 до 300 метров - 2  балла,&lt;br/&gt;убийство игрока команды противника с расстояния больше 300 метров - 1 балл.&lt;br/&gt;захват вышки управления или бункера у ботов - 5 баллов,&lt;br/&gt;захват вышки управления или бункера у команды противника - 10 баллов.&lt;br/&gt;каждому игроку команды, занявшей город - 10 баллов.&lt;br/&gt;&lt;br/&gt;ТЕЛЕПОРТ:&lt;br/&gt;При включении соответствующих настроек в параметрах запуска миссии игрокам доступен телепорт с базы к КШМ и от КШМ на базу.&lt;br/&gt;Для того, чтобы воспользоваться телепортом, необходимо:&lt;br/&gt;- подойти к флагу на базе или КШМ и выбрать колесом мыши пункт 'Телепорт'&lt;br/&gt;- в открывшемся окне нажать кнопку 'Телепорт на базу', 'Телепорт к КШМ1' или 'Телепорт к КШМ2'&lt;br/&gt;-кликом по миникарте указать конечную точку для телепорта. Позиция должна находится в зеленой зоне вокруг КШМ.&lt;br/&gt;&lt;br/&gt;ИНЖЕНЕРЫ:&lt;br/&gt;-могут выполнить полный ремонт техники (При наличии в инвентаре ремонтного набора. После использования данной опции ремнабор из инвентаря удаляется.)&lt;br/&gt;-поставить на колеса перевернутую технику (при наличии в инвентаре ремонтного набора).&lt;br/&gt;&lt;br/&gt;ПОКУПКА ТЕХНИКИ:&lt;br/&gt;-на заработанные очки на базе можно приобретать технику. Покупка появится прямо перед вами. Каждый игрок единовременно может владеть только одной единицей техники. Если вы покупаете рюкзак с БПЛА, то он появится у вас на спине.&lt;br/&gt;&lt;br/&gt;ПЕРЕДАЧА ОЧКОВ ДРУГОМУ ИГРОКУ:&lt;br/&gt;-вы можете передать свои очки другому игроку, чтобы совместно купить дорогостоящую технику.&lt;br/&gt;&lt;br/&gt;ТОЧКА ТЕХОБСЛУЖИВАНИЯ ТЕХНИКИ:&lt;br/&gt;Для начала ремонта\перезарядки\заправки техники необходимо:&lt;br/&gt;- находится в технике на месте водителя\пилота&lt;br/&gt;- находится не дальше 30 метров от станции техобслуживания&lt;br/&gt;- колесом мыши выбрать пункт 'Начать техобслуживание'&lt;br/&gt;- дождаться окончания ремонта\перезарядки\заправки техники&lt;br/&gt;</Russian>
+			<Spanish>MAIN MENU:&lt;br/&gt;called by simultaneously pressing buttons 'Ctrl' + 'N'&lt;br/&gt;&lt;img image='Pics\Briefing\MainMenuWIN.paa'/&gt;&lt;br/&gt;&lt;br/&gt;The purpose of the mission - to capture the city more than the other team.&lt;br/&gt;To capture the city must:&lt;br/&gt;1. blow up the radio  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Radiotower.paa'/&gt;&lt;br/&gt;2. to destroy all the 'independent'&lt;br/&gt;3. seize command  tower&lt;br/&gt;&lt;img image='Pics\Briefing\Tower.paa'/&gt;.&lt;br/&gt;4. seize two bunkers&lt;br/&gt;&lt;img image='Pics\Briefing\Fort.paa'/&gt;.&lt;br/&gt;To capture a command tower or bunker go to the flag and select the action "raise  the flag". Protect captured towers and bunkers, as the other team may discourage them and raise his flag.&lt;br/&gt;IF the Red team and the Blue team more than four people, you need to keep the flags for 5 minutes.&lt;br/&gt;Capturing the city awarded to the team with the most points and capture the tower and bunker.&lt;br/&gt;When a new city scores are reset  commands.&lt;br/&gt;&lt;br/&gt;SCORING:&lt;br/&gt;destruction a bot - 1 point,&lt;br/&gt;destruction a car - 2 points,&lt;br/&gt;destruction a armored vehicle - 3 points,&lt;br/&gt;destruction a plane/heli - 5 points,&lt;br/&gt;destruction of radio towers - 10 points,&lt;br/&gt;Kill a player of the opposing team  from a distance of less than 6 meters - 10 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 6 to 50 meters - 5 points,&lt;br/&gt;Kill  a player of the opposing team from a distance of 50 to 150 meters - 4 points,&lt;br/&gt;Kill a player of the opposing team from a distance of 150 to 300  meters - 2 points,&lt;br/&gt;Kill a player of the opposing team from a distance of more than 300 meters - 1 point.&lt;br/&gt;seizure AI control  tower - 5 points,&lt;br/&gt;seizure enemy team control  tower - 10 points&lt;br/&gt;&lt;br/&gt;TELEPORT:&lt;br/&gt;When the relevant parameter settings to run mission teleport players available from the base to the MHQ and from the MHQ to the base.&lt;br/&gt;To use the teleport, you must:&lt;br/&gt;- Go to the flag at the base or MHQ and select the mouse wheel menu 'Teleport'&lt;br/&gt;- In the window click button 'Teleport to the base', 'Teleport to MHQ1' or 'Teleport to MHQ2'&lt;br/&gt;-cliques on the minimap to indicate the endpoint to teleport. The position must be within the green zone around the MHQ.&lt;br/&gt;&lt;br/&gt;ENGINEERS:&lt;br/&gt;-can do a full repair of vehicles  (If you have a repair kit in your inventory. After using this option, repair kit is removed from the inventory.)&lt;br/&gt;-unflip vehicles (If you have a repair kit in your inventory)&lt;br/&gt;&lt;br/&gt;BUYING VEHICLE:&lt;br/&gt;-on points earned you can buy vehicles. Purchase appear in front of you. Each player at a time can own only one vehicle. UAV backpack appear on the back.&lt;br/&gt;&lt;br/&gt;TRANSFER POINTS OTHER PLAYERS:&lt;br/&gt;-you can transfer your points to another player to jointly buy an expensive vehicle.&lt;br/&gt;&lt;br/&gt;SERVICE POINT:&lt;br/&gt;To start the repair\reload\refueling vehicle necessary:&lt;br/&gt;- in the vehicle on the driver's\pilot's seat&lt;br/&gt;- it is located within 30 meters from the service station&lt;br/&gt;- mouse wheel select 'Start service'&lt;br/&gt;- wait for the repairs\reload\refueling&lt;br/&gt;</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MHQ1">
+			<Original>MHQ1</Original>
+			<German>MHQ1</German>
+			<French>MHQ1</French>
+			<Polish>MHQ1</Polish>
+			<Portuguese>MHQ1</Portuguese>
+			<Italian>MHQ1</Italian>
+			<Czech>MHQ1</Czech>
+			<Russian>КШМ1</Russian>
+			<Spanish>MHQ1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MHQ1DEPLOY">
+			<Original>MHQ1(Deployed)</Original>
+			<German>MHQ1(Deployed)</German>
+			<French>MHQ1(Deployed)</French>
+			<Polish>MHQ1(Deployed)</Polish>
+			<Portuguese>MHQ1(Deployed)</Portuguese>
+			<Italian>MHQ1(Deployed)</Italian>
+			<Czech>MHQ1(Deployed)</Czech>
+			<Russian>КШМ1(Развернута)</Russian>
+			<Spanish>MHQ1(Deployed)</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MHQ2">
+			<Original>MHQ2</Original>
+			<German>MHQ2</German>
+			<French>MHQ2</French>
+			<Polish>MHQ2</Polish>
+			<Portuguese>MHQ2</Portuguese>
+			<Italian>MHQ2</Italian>
+			<Czech>MHQ2</Czech>
+			<Russian>КШМ2</Russian>
+			<Spanish>MHQ2</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MHQ2DEPLOY">
+			<Original>MHQ2(Deployed)</Original>
+			<German>MHQ2(Deployed)</German>
+			<French>MHQ2(Deployed)</French>
+			<Polish>MHQ2(Deployed)</Polish>
+			<Portuguese>MHQ2(Deployed)</Portuguese>
+			<Italian>MHQ2(Deployed)</Italian>
+			<Czech>MHQ2(Deployed)</Czech>
+			<Russian>КШМ2(Развернута)</Russian>
+			<Spanish>MHQ2(Deployed)</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGTELEPORT">
+			<Original>TELEPORT</Original>
+			<German>TELEPORT</German>
+			<French>TELEPORT</French>
+			<Polish>TELEPORT</Polish>
+			<Portuguese>TELEPORT</Portuguese>
+			<Italian>TELEPORT</Italian>
+			<Czech>TELEPORT</Czech>
+			<Russian>ТЕЛЕПОРТ</Russian>
+			<Spanish>TELEPORT</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGTELEPORTMHQ1">
+			<Original>Teleport to MHQ1</Original>
+			<German>Teleport to MHQ1</German>
+			<French>Teleport to MHQ1</French>
+			<Polish>Teleport to MHQ1</Polish>
+			<Portuguese>Teleport to MHQ1</Portuguese>
+			<Italian>Teleport to MHQ1</Italian>
+			<Czech>Teleport to MHQ1</Czech>
+			<Russian>Телепорт на КШМ1</Russian>
+			<Spanish>Teleport to MHQ1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGTELEPORTMHQ2">
+			<Original>Teleport to MHQ2</Original>
+			<German>Teleport to MHQ2</German>
+			<French>Teleport to MHQ2</French>
+			<Polish>Teleport to MHQ2</Polish>
+			<Portuguese>Teleport to MHQ2</Portuguese>
+			<Italian>Teleport to MHQ2</Italian>
+			<Czech>Teleport to MHQ2</Czech>
+			<Russian>Телепорт на КШМ2</Russian>
+			<Spanish>Teleport to MHQ2</Spanish>
+		</Key>
+		<Key ID="RIP_STR_TELEPORTTOMHQ">
+			<Original>Teleporting to MHQ...</Original>
+			<German>Teleporting to MHQ...</German>
+			<French>Teleporting to MHQ...</French>
+			<Polish>Teleporting to MHQ...</Polish>
+			<Portuguese>Teleporting to MHQ...</Portuguese>
+			<Italian>Teleporting to MHQ...</Italian>
+			<Czech>Teleporting to MHQ...</Czech>
+			<Russian>Перемещение к КШМ...</Russian>
+			<Spanish>Teleporting to MHQ...</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGTELEPORTBASE">
+			<Original>Teleport to base</Original>
+			<German>Teleport to base</German>
+			<French>Teleport to base</French>
+			<Polish>Teleport to base</Polish>
+			<Portuguese>Teleport to base</Portuguese>
+			<Italian>Teleport to base</Italian>
+			<Czech>Teleport to base</Czech>
+			<Russian>Телепорт на базу</Russian>
+			<Spanish>Teleport to base</Spanish>
+		</Key>
+		<Key ID="RIP_STR_TELEPORTTOBASE">
+			<Original>Teleporting to base...</Original>
+			<German>Teleporting to base...</German>
+			<French>Teleporting to base...</French>
+			<Polish>Teleporting to base...</Polish>
+			<Portuguese>Teleporting to base...</Portuguese>
+			<Italian>Teleporting to base...</Italian>
+			<Czech>Teleporting to base...</Czech>
+			<Russian>Перемещение на базу...</Russian>
+			<Spanish>Teleporting to base...</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGTELEPORTTOOLTIP">
+			<Original>Specify the endpoint of the teleporter.</Original>
+			<German>Specify the endpoint of the teleporter.</German>
+			<French>Specify the endpoint of the teleporter.</French>
+			<Polish>Specify the endpoint of the teleporter.</Polish>
+			<Portuguese>Specify the endpoint of the teleporter.</Portuguese>
+			<Italian>Specify the endpoint of the teleporter.</Italian>
+			<Czech>Specify the endpoint of the teleporter.</Czech>
+			<Russian>Укажите конечную точку телепорта в зеленой зоне.</Russian>
+			<Spanish>Specify the endpoint of the teleporter.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_INTROTEXT">
+			<Original>Welcome %1&lt;br/&gt;Game menu - 'CTRL + N' button&lt;br/&gt;The right to read in the 'briefing'&lt;br/&gt;TeamSpeak server - 79.133.47.8:4019&lt;br/&gt;Viewdistance setup: F1-F2&lt;br/&gt;Sound adjustment: F3-F4</Original>
+			<German>Welcome %1&lt;br/&gt;Game menu - 'STRG + N' button&lt;br/&gt;The right to read in the 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019</German>
+			<French>Welcome %1&lt;br/&gt;Game menu - 'CTRL + N' button&lt;br/&gt;The right to read in the 'briefing'&lt;br/&gt;TeamSpeak server - 79.133.47.8:4019</French>
+			<Polish>Welcome %1&lt;br/&gt;Game menu - 'CTRL + N' button&lt;br/&gt;The right to read in the 'briefing'&lt;br/&gt;TeamSpeak server - 79.133.47.8:4019</Polish>
+			<Portuguese>Welcome %1&lt;br/&gt;Game menu - 'CTRL + N' button&lt;br/&gt;The right to read in the 'briefing'&lt;br/&gt;TeamSpeak server - 79.133.47.8:4019</Portuguese>
+			<Italian>Welcome %1&lt;br/&gt;Game menu - 'CTRL + N' button&lt;br/&gt;The right to read in the 'briefing'&lt;br/&gt;TeamSpeak server - 79.133.47.8:4019</Italian>
+			<Czech>Welcome %1&lt;br/&gt;Game menu - 'CTRL + N' button&lt;br/&gt;The right to read in the 'briefing'&lt;br/&gt;TeamSpeak server - 79.133.47.8:4019</Czech>
+			<Russian>Welcome %1&lt;br/&gt;Game menu - 'CTRL + N' button&lt;br/&gt;The right to read in the 'briefing'&lt;br/&gt;TeamSpeak server - 79.133.47.8:4019</Russian>
+			<Spanish>Welcome %1&lt;br/&gt;Game menu - 'CTRL + N' button&lt;br/&gt;The right to read in the 'briefing'&lt;br/&gt;TeamSpeak server - 79.133.47.8:4019</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_TARGET">
+			<Original>Target: %1</Original>
+			<German>Target: %1</German>
+			<French>Target: %1</French>
+			<Polish>Target: %1</Polish>
+			<Portuguese>Target: %1</Portuguese>
+			<Italian>Target: %1</Italian>
+			<Czech>Target: %1</Czech>
+			<Russian>Цель: %1</Russian>
+			<Spanish>Target: %1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_MISSIONDESC">
+			<Original>Capture %1.</Original>
+			<German>Capture %1.</German>
+			<French>Capture %1.</French>
+			<Polish>Capture %1.</Polish>
+			<Portuguese>Capture %1.</Portuguese>
+			<Italian>Capture %1.</Italian>
+			<Czech>Capture %1.</Czech>
+			<Russian>Захватить %1.</Russian>
+			<Spanish>Capture %1.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_MISSIONDEST">
+			<Original>Target here!</Original>
+			<German>Target here!</German>
+			<French>Target here!</French>
+			<Polish>Target here!</Polish>
+			<Portuguese>Target here!</Portuguese>
+			<Italian>Target here!</Italian>
+			<Czech>Target here!</Czech>
+			<Russian>Цель тут!</Russian>
+			<Spanish>Target here!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_NEWMISSION">
+			<Original>New mission received. Capture %1.</Original>
+			<German>New mission received. Capture %1.</German>
+			<French>New mission received. Capture %1.</French>
+			<Polish>New mission received. Capture %1.</Polish>
+			<Portuguese>New mission received. Capture %1.</Portuguese>
+			<Italian>New mission received. Capture %1.</Italian>
+			<Czech>New mission received. Capture %1.</Czech>
+			<Russian>Получено новое задание. Захватить %1.</Russian>
+			<Spanish>New mission received. Capture %1.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MISSIONCOUNT">
+			<Original>NUMBER OF CAPTURED CITIES FOR TEAM VICTORY</Original>
+			<German>NUMBER OF CAPTURED CITIES FOR TEAM VICTORY</German>
+			<French>NUMBER OF CAPTURED CITIES FOR TEAM VICTORY</French>
+			<Polish>NUMBER OF CAPTURED CITIES FOR TEAM VICTORY</Polish>
+			<Portuguese>NUMBER OF CAPTURED CITIES FOR TEAM VICTORY</Portuguese>
+			<Italian>NUMBER OF CAPTURED CITIES FOR TEAM VICTORY</Italian>
+			<Czech>NUMBER OF CAPTURED CITIES FOR TEAM VICTORY</Czech>
+			<Russian>КОЛИЧЕСТВО ЗАХВАЧЕННЫХ ГОРОДОВ ДЛЯ ПОБЕДЫ КОМАНДЫ</Russian>
+			<Spanish>NUMBER OF CAPTURED CITIES FOR TEAM VICTORY</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_MISSIONWIN">
+			<Original>YOUR TEAM WON!</Original>
+			<German>YOUR TEAM WON!</German>
+			<French>YOUR TEAM WON!</French>
+			<Polish>YOUR TEAM WON!</Polish>
+			<Portuguese>YOUR TEAM WON!</Portuguese>
+			<Italian>YOUR TEAM WON!</Italian>
+			<Czech>YOUR TEAM WON!</Czech>
+			<Russian>ВАША КОМАНДА ПОБЕДИЛА!</Russian>
+			<Spanish>YOUR TEAM WON!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_MISSIONLOST">
+			<Original>YOUR TEAM LOST!</Original>
+			<German>YOUR TEAM LOST!</German>
+			<French>YOUR TEAM LOST!</French>
+			<Polish>YOUR TEAM LOST!</Polish>
+			<Portuguese>YOUR TEAM LOST!</Portuguese>
+			<Italian>YOUR TEAM LOST!</Italian>
+			<Czech>YOUR TEAM LOST!</Czech>
+			<Russian>ВАША КОМАНДА ПРОИГРАЛА!</Russian>
+			<Spanish>YOUR TEAM LOST!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_MISSIONDRAW">
+			<Original>DRAW!</Original>
+			<German>DRAW!</German>
+			<French>DRAW!</French>
+			<Polish>DRAW!</Polish>
+			<Portuguese>DRAW!</Portuguese>
+			<Italian>DRAW!</Italian>
+			<Czech>DRAW!</Czech>
+			<Russian>БОЕВАЯ НИЧЬЯ!</Russian>
+			<Spanish>DRAW!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_REDTOWNCOUNT">
+			<Original>Captured town Red team: %1</Original>
+			<German>Captured town Red team: %1</German>
+			<French>Captured town Red team: %1</French>
+			<Polish>Captured town Red team: %1</Polish>
+			<Portuguese>Captured town Red team: %1</Portuguese>
+			<Italian>Captured town Red team: %1</Italian>
+			<Czech>Captured town Red team: %1</Czech>
+			<Russian>Захвачено городов Красными: %1</Russian>
+			<Spanish>Captured town Red team: %1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_BLUETOWNCOUNT">
+			<Original>Captured town Blue team: %1</Original>
+			<German>Captured town Blue team: %1</German>
+			<French>Captured town Blue team: %1</French>
+			<Polish>Captured town Blue team: %1</Polish>
+			<Portuguese>Captured town Blue team: %1</Portuguese>
+			<Italian>Captured town Blue team: %1</Italian>
+			<Czech>Captured town Blue team: %1</Czech>
+			<Russian>Захвачено городов Синими: %1</Russian>
+			<Spanish>Captured town Blue team: %1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_REDTEAMWIN">
+			<Original>RED TEAM WON!</Original>
+			<German>RED TEAM WON!</German>
+			<French>RED TEAM WON!</French>
+			<Polish>RED TEAM WON!</Polish>
+			<Portuguese>RED TEAM WON!</Portuguese>
+			<Italian>RED TEAM WON!</Italian>
+			<Czech>RED TEAM WON!</Czech>
+			<Russian>ПОБЕДИЛА КОМАНДА КРАСНЫХ!</Russian>
+			<Spanish>RED TEAM WON!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_BLUETEAMWIN">
+			<Original>BLUE TEAM WON!</Original>
+			<German>BLUE TEAM WON!</German>
+			<French>BLUE TEAM WON!</French>
+			<Polish>BLUE TEAM WON!</Polish>
+			<Portuguese>BLUE TEAM WON!</Portuguese>
+			<Italian>BLUE TEAM WON!</Italian>
+			<Czech>BLUE TEAM WON!</Czech>
+			<Russian>ПОБЕДИЛА КОМАНДА СИНИХ!</Russian>
+			<Spanish>BLUE TEAM WON!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_CONGRATULATIONS">
+			<Original>CONGRATULATIONS!</Original>
+			<German>CONGRATULATIONS!</German>
+			<French>CONGRATULATIONS!</French>
+			<Polish>CONGRATULATIONS!</Polish>
+			<Portuguese>CONGRATULATIONS!</Portuguese>
+			<Italian>CONGRATULATIONS!</Italian>
+			<Czech>CONGRATULATIONS!</Czech>
+			<Russian>ПОЗДРАВЛЯЕМ!</Russian>
+			<Spanish>CONGRATULATIONS!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_CREDITS">
+			<Original>Credits</Original>
+			<German>Credits</German>
+			<French>Credits</French>
+			<Polish>Credits</Polish>
+			<Portuguese>Credits</Portuguese>
+			<Italian>Credits</Italian>
+			<Czech>Credits</Czech>
+			<Russian>Благодарности</Russian>
+			<Spanish>Credits</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_CHECKPILOT">
+			<Original>Du bist kein Pirlot du kannst keinen Helikopter fliegen!</Original>
+			<German>Du bist kein Pirlot du kannst keinen Helikopter fliegen!</German>
+			<French>You are not a pilot and can't fly plane\helicopter!</French>
+			<Polish>You are not a pilot and can't fly plane\helicopter!</Polish>
+			<Portuguese>You are not a pilot and can't fly plane\helicopter!</Portuguese>
+			<Italian>You are not a pilot and can't fly plane\helicopter!</Italian>
+			<Czech>You are not a pilot and can't fly plane\helicopter!</Czech>
+			<Russian>Вы не пилот и не можете управлять самолетом\вертолетом!</Russian>
+			<Spanish>You are not a pilot and can't fly plane\helicopter!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_3DPERSONDISABLE">
+			<Original>3d person view available only in vehicles!</Original>
+			<German>3d person view available only in vehicles!</German>
+			<French>3d person view available only in vehicles!</French>
+			<Polish>3d person view available only in vehicles!</Polish>
+			<Portuguese>3d person view available only in vehicles!</Portuguese>
+			<Italian>3d person view available only in vehicles!</Italian>
+			<Czech>3d person view available only in vehicles!</Czech>
+			<Russian>Вид от 3го лица доступен только в технике!</Russian>
+			<Spanish>3d person view available only in vehicles!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_CANTLIFT">
+			<Original>You can't attach this vehicle!</Original>
+			<German>You can't attach this vehicle!</German>
+			<French>You can't attach this vehicle!</French>
+			<Polish>You can't attach this vehicle!</Polish>
+			<Portuguese>You can't attach this vehicle!</Portuguese>
+			<Italian>You can't attach this vehicle!</Italian>
+			<Czech>You can't attach this vehicle!</Czech>
+			<Russian>Невозможно подцепить эту технику!</Russian>
+			<Spanish>You can't attach this vehicle!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_CANTLIFTMHQDEPLOYED">
+			<Original>You can't attach deployed MHQ!</Original>
+			<German>You can't attach deployed MHQ!</German>
+			<French>You can't attach deployed MHQ!</French>
+			<Polish>You can't attach deployed MHQ!</Polish>
+			<Portuguese>You can't attach deployed MHQ!</Portuguese>
+			<Italian>You can't attach deployed MHQ!</Italian>
+			<Czech>You can't attach deployed MHQ!</Czech>
+			<Russian>Невозможно подцепить развернутую КШМ!</Russian>
+			<Spanish>You can't attach deployed MHQ!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_NOTMONEY">
+			<Original>Not enough points!</Original>
+			<German>Not enough points!</German>
+			<French>Not enough points!</French>
+			<Polish>Not enough points!</Polish>
+			<Portuguese>Not enough points!</Portuguese>
+			<Italian>Not enough points!</Italian>
+			<Czech>Not enough points!</Czech>
+			<Russian>Недостаточно очков!</Russian>
+			<Spanish>Not enough points!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_BUYVEHICLEONLYBASE">
+			<Original>Buy vehicles you can only on base</Original>
+			<German>Buy vehicles you can only on base</German>
+			<French>Buy vehicles you can only on base</French>
+			<Polish>Buy vehicles you can only on base</Polish>
+			<Portuguese>Buy vehicles you can only on base</Portuguese>
+			<Italian>Buy vehicles you can only on base</Italian>
+			<Czech>Buy vehicles you can only on base</Czech>
+			<Russian>Приобретать технику можно только на базе</Russian>
+			<Spanish>Buy vehicles you can only on base</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_BUYVEHICLEINHANGAR">
+			<Original>You can not buy vehicle at this point. Move from the hangar.</Original>
+			<German>You can not buy vehicle at this point. Move from the hangar.</German>
+			<French>You can not buy vehicle at this point. Move from the hangar.</French>
+			<Polish>You can not buy vehicle at this point. Move from the hangar.</Polish>
+			<Portuguese>You can not buy vehicle at this point. Move from the hangar.</Portuguese>
+			<Italian>You can not buy vehicle at this point. Move from the hangar.</Italian>
+			<Czech>You can not buy vehicle at this point. Move from the hangar.</Czech>
+			<Russian>На этом месте нельзя купить технику. Отойдите от ангара.</Russian>
+			<Spanish>You can not buy vehicle at this point. Move from the hangar.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_ALREADYBUY">
+			<Original>You already bought %1</Original>
+			<German>You already bought %1</German>
+			<French>You already bought %1</French>
+			<Polish>You already bought %1</Polish>
+			<Portuguese>You already bought %1</Portuguese>
+			<Italian>You already bought %1</Italian>
+			<Czech>You already bought %1</Czech>
+			<Russian>У вас уже приобретена следующая техника : %1</Russian>
+			<Spanish>You already bought %1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_TRANSFERPOINTS">
+			<Original>Transfer %1 points to player %2</Original>
+			<German>Transfer %1 points to player %2</German>
+			<French>Transfer %1 points to player %2</French>
+			<Polish>Transfer %1 points to player %2</Polish>
+			<Portuguese>Transfer %1 points to player %2</Portuguese>
+			<Italian>Transfer %1 points to player %2</Italian>
+			<Czech>Transfer %1 points to player %2</Czech>
+			<Russian>Игроку %2 переведено %1 очка(ов)</Russian>
+			<Spanish>Transfer %1 points to player %2</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_RECEIVEDPOINTS">
+			<Original>From player %1 received %2 points</Original>
+			<German>From player %1 received %2 points</German>
+			<French>From player %1 received %2 points</French>
+			<Polish>From player %1 received %2 points</Polish>
+			<Portuguese>From player %1 received %2 points</Portuguese>
+			<Italian>From player %1 received %2 points</Italian>
+			<Czech>From player %1 received %2 points</Czech>
+			<Russian>От игрока %1 получено %2 очка(ов)</Russian>
+			<Spanish>From player %1 received %2 points</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_PLAYERNOTSELECTED">
+			<Original>Not selected player!</Original>
+			<German>Not selected player!</German>
+			<French>Not selected player!</French>
+			<Polish>Not selected player!</Polish>
+			<Portuguese>Not selected player!</Portuguese>
+			<Italian>Not selected player!</Italian>
+			<Czech>Not selected player!</Czech>
+			<Russian>Не выбран игрок!</Russian>
+			<Spanish>Not selected player!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_CREDITSTEXT">
+			<Original>Bohemia Interactive - ARMA 3&lt;br/&gt;Red Hammer Studios - RHS: Escalation&lt;br/&gt;Tonic - TAW View Distance script&lt;br/&gt;Meatball - RandomWeather2 script&lt;br/&gt;code34 - Real weather script&lt;br/&gt;Rydygier - FFE script</Original>
+			<German>Bohemia Interactive - ARMA 3&lt;br/&gt;Red Hammer Studios - RHS: Escalation&lt;br/&gt;Tonic - TAW View Distance script&lt;br/&gt;Meatball - RandomWeather2 script&lt;br/&gt;code34 - Real weather script&lt;br/&gt;Rydygier - FFE script</German>
+			<French>Bohemia Interactive - ARMA 3&lt;br/&gt;Red Hammer Studios - RHS: Escalation&lt;br/&gt;Tonic - TAW View Distance script&lt;br/&gt;Meatball - RandomWeather2 script&lt;br/&gt;code34 - Real weather script&lt;br/&gt;Rydygier - FFE script</French>
+			<Polish>Bohemia Interactive - ARMA 3&lt;br/&gt;Red Hammer Studios - RHS: Escalation&lt;br/&gt;Tonic - TAW View Distance script&lt;br/&gt;Meatball - RandomWeather2 script&lt;br/&gt;code34 - Real weather script&lt;br/&gt;Rydygier - FFE script</Polish>
+			<Portuguese>Bohemia Interactive - ARMA 3&lt;br/&gt;Red Hammer Studios - RHS: Escalation&lt;br/&gt;Tonic - TAW View Distance script&lt;br/&gt;Meatball - RandomWeather2 script&lt;br/&gt;code34 - Real weather script&lt;br/&gt;Rydygier - FFE script</Portuguese>
+			<Italian>Bohemia Interactive - ARMA 3&lt;br/&gt;Red Hammer Studios - RHS: Escalation&lt;br/&gt;Tonic - TAW View Distance script&lt;br/&gt;Meatball - RandomWeather2 script&lt;br/&gt;code34 - Real weather script&lt;br/&gt;Rydygier - FFE script</Italian>
+			<Czech>Bohemia Interactive - ARMA 3&lt;br/&gt;Red Hammer Studios - RHS: Escalation&lt;br/&gt;Tonic - TAW View Distance script&lt;br/&gt;Meatball - RandomWeather2 script&lt;br/&gt;code34 - Real weather script&lt;br/&gt;Rydygier - FFE script</Czech>
+			<Russian>Bohemia Interactive - ARMA 3&lt;br/&gt;Red Hammer Studios - RHS: Escalation&lt;br/&gt;Tonic - TAW View Distance script&lt;br/&gt;Meatball - RandomWeather2 script&lt;br/&gt;code34 - Real weather script&lt;br/&gt;Rydygier - FFE script</Russian>
+			<Spanish>Bohemia Interactive - ARMA 3&lt;br/&gt;Red Hammer Studios - RHS: Escalation&lt;br/&gt;Tonic - TAW View Distance script&lt;br/&gt;Meatball - RandomWeather2 script&lt;br/&gt;code34 - Real weather script&lt;br/&gt;Rydygier - FFE script</Spanish>
+		</Key>
+		<Key ID="STR_RIP_AUTHOR">
+			<Original>Author</Original>
+			<German>Author</German>
+			<French>Author</French>
+			<Polish>Author</Polish>
+			<Portuguese>Author</Portuguese>
+			<Italian>Author</Italian>
+			<Czech>Author</Czech>
+			<Russian>Автор</Russian>
+			<Spanish>Author</Spanish>
+		</Key>
+		<Key ID="STR_RIP_AUTHORTEXT">
+			<Original>Created by RIP&lt;br/&gt;Proposals and suggestions - 6rus-arma.de&lt;br/&gt;</Original>
+			<German>Created by RIP&lt;br/&gt;Proposals and suggestions - 6rus-arma.de&lt;br/&gt;</German>
+			<French>Created by RIP&lt;br/&gt;Proposals and suggestions - 6rus-arma.de&lt;br/&gt;</French>
+			<Polish>Created by RIP&lt;br/&gt;Proposals and suggestions - 6rus-arma.de&lt;br/&gt;</Polish>
+			<Portuguese>Created by RIP&lt;br/&gt;Proposals and suggestions - 6rus-arma.de&lt;br/&gt;</Portuguese>
+			<Italian>Created by RIP&lt;br/&gt;Proposals and suggestions - 6rus-arma.de&lt;br/&gt;</Italian>
+			<Czech>Created by RIP&lt;br/&gt;Proposals and suggestions - 6rus-arma.de&lt;br/&gt;</Czech>
+			<Russian>Created by RIP&lt;br/&gt;Предложения и пожелания - 6rus-arma.de&lt;br/&gt;</Russian>
+			<Spanish>Created by RIP&lt;br/&gt;Proposals and suggestions - 6rus-arma.de&lt;br/&gt;</Spanish>
+		</Key>
+		<Key ID="STR_RIP_SERVICE">
+			<Original>Start service</Original>
+			<German>Start service</German>
+			<French>Start service</French>
+			<Polish>Start service</Polish>
+			<Portuguese>Start service</Portuguese>
+			<Italian>Start service</Italian>
+			<Czech>Start service</Czech>
+			<Russian>Начать техобслуживание</Russian>
+			<Spanish>Start service</Spanish>
+		</Key>
+		<Key ID="STR_RIP_LOCKUNLOCK">
+			<Original>Aufperren/Absperren</Original>
+			<German>Aufperren/Absperren</German>
+			<French>Lock\Unlock vehicle</French>
+			<Polish>Lock\Unlock vehicle</Polish>
+			<Portuguese>Lock\Unlock vehicle</Portuguese>
+			<Italian>Lock\Unlock vehicle</Italian>
+			<Czech>Lock\Unlock vehicle</Czech>
+			<Russian>Открыть\Закрыть технику</Russian>
+			<Spanish>Lock\Unlock vehicle</Spanish>
+		</Key>
+		<Key ID="STR_RIP_TELEPORT">
+			<Original>Teleport</Original>
+			<German>Teleport</German>
+			<French>Teleport</French>
+			<Polish>Teleport</Polish>
+			<Portuguese>Teleport</Portuguese>
+			<Italian>Teleport</Italian>
+			<Czech>Teleport</Czech>
+			<Russian>Телепорт</Russian>
+			<Spanish>Teleport</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DEPLOYMHQ">
+			<Original>MHQ aufstellen</Original>
+			<German>MHQ aufstellen</German>
+			<French>Deploy MHQ</French>
+			<Polish>Deploy MHQ</Polish>
+			<Portuguese>Deploy MHQ</Portuguese>
+			<Italian>Deploy MHQ</Italian>
+			<Czech>Deploy MHQ</Czech>
+			<Russian>Развернуть КШМ</Russian>
+			<Spanish>Deploy MHQ</Spanish>
+		</Key>
+		<Key ID="STR_RIP_UNDEPLOYMHQ">
+			<Original>MHQ abbauen</Original>
+			<German>MHQ abbauen</German>
+			<French>Undeploy MHQ</French>
+			<Polish>Undeploy MHQ</Polish>
+			<Portuguese>Undeploy MHQ</Portuguese>
+			<Italian>Undeploy MHQ</Italian>
+			<Czech>Undeploy MHQ</Czech>
+			<Russian>Свернуть КШМ</Russian>
+			<Spanish>Undeploy MHQ</Spanish>
+		</Key>
+		<Key ID="STR_RIP_FULLREPAIR">
+			<Original>Full repair %1</Original>
+			<German>Full repair %1</German>
+			<French>Full repair %1</French>
+			<Polish>Full repair %1</Polish>
+			<Portuguese>Full repair %1</Portuguese>
+			<Italian>Full repair %1</Italian>
+			<Czech>Full repair %1</Czech>
+			<Russian>Полный ремонт %1</Russian>
+			<Spanish>Full repair %1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_UNFLIP">
+			<Original>Unflip %1</Original>
+			<German>Unflip %1</German>
+			<French>Unflip %1</French>
+			<Polish>Unflip %1</Polish>
+			<Portuguese>Unflip %1</Portuguese>
+			<Italian>Unflip %1</Italian>
+			<Czech>Unflip %1</Czech>
+			<Russian>Перевернуть %1</Russian>
+			<Spanish>Unflip %1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_LIFTATTACH">
+			<Original>Ankoppeln %1</Original>
+			<German>Ankoppeln %1</German>
+			<French>Attach %1</French>
+			<Polish>Attach %1</Polish>
+			<Portuguese>Attach %1</Portuguese>
+			<Italian>Attach %1</Italian>
+			<Czech>Attach %1</Czech>
+			<Russian>Подцепить %1</Russian>
+			<Spanish>Attach %1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_LIFTDROP">
+			<Original>Abkoppeln %1</Original>
+			<German>Abkoppeln %1</German>
+			<French>Detach %1</French>
+			<Polish>Detach %1</Polish>
+			<Portuguese>Detach %1</Portuguese>
+			<Italian>Detach %1</Italian>
+			<Czech>Detach %1</Czech>
+			<Russian>Отцепить %1</Russian>
+			<Spanish>Detach %1</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HEALONMHQ">
+			<Original>Heilen\Ausruhen</Original>
+			<German>Heilen\Ausruhen</German>
+			<French>Heal\Rest</French>
+			<Polish>Heal\Rest</Polish>
+			<Portuguese>Heal\Rest</Portuguese>
+			<Italian>Heal\Rest</Italian>
+			<Czech>Heal\Rest</Czech>
+			<Russian>Вылечиться\Отдохнуть</Russian>
+			<Spanish>Heal\Rest</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGMHQ1DESTROY">
+			<Original>MHQ1 zerstört</Original>
+			<German>MHQ1 zerstört</German>
+			<French>MHQ1 destroyed</French>
+			<Polish>MHQ1 destroyed</Polish>
+			<Portuguese>MHQ1 destroyed</Portuguese>
+			<Italian>MHQ1 destroyed</Italian>
+			<Czech>MHQ1 destroyed</Czech>
+			<Russian>КШМ1 уничтожена</Russian>
+			<Spanish>MHQ1 destroyed</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGMHQ1UNDEPLOY">
+			<Original>MHQ1 nicht aufgestellt</Original>
+			<German>MHQ1 nicht aufgestellt</German>
+			<French>MHQ1 not deployed</French>
+			<Polish>MHQ1 not deployed</Polish>
+			<Portuguese>MHQ1 not deployed</Portuguese>
+			<Italian>MHQ1 not deployed</Italian>
+			<Czech>MHQ1 not deployed</Czech>
+			<Russian>КШМ1 не развернута</Russian>
+			<Spanish>MHQ1 not deployed</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGMHQ2DESTROY">
+			<Original>MHQ2 zerstört</Original>
+			<German>MHQ2 zerstört</German>
+			<French>MHQ2 destroyed</French>
+			<Polish>MHQ2 destroyed</Polish>
+			<Portuguese>MHQ2 destroyed</Portuguese>
+			<Italian>MHQ2 destroyed</Italian>
+			<Czech>MHQ2 destroyed</Czech>
+			<Russian>КШМ2 уничтожена</Russian>
+			<Spanish>MHQ2 destroyed</Spanish>
+		</Key>
+		<Key ID="STR_RIP_DLGMHQ2UNDEPLOY">
+			<Original>MHQ2 nicht aufgestellt</Original>
+			<German>MHQ2 nicht aufgestellt</German>
+			<French>MHQ2 not deployed</French>
+			<Polish>MHQ2 not deployed</Polish>
+			<Portuguese>MHQ2 not deployed</Portuguese>
+			<Italian>MHQ2 not deployed</Italian>
+			<Czech>MHQ2 not deployed</Czech>
+			<Russian>КШМ2 не развернута</Russian>
+			<Spanish>MHQ2 not deployed</Spanish>
+		</Key>
+		<Key ID="STR_RIP_PILOTCHECK">
+			<Original>NUR PILOTEN KÖNNEN HELIKOPTER FLIEGEN</Original>
+			<German>NUR PILOTEN KÖNNEN HELIKOPTER FLIEGEN</German>
+			<French>ONLY PILOTS CAN FLY PLANE\HELICOPTER</French>
+			<Polish>ONLY PILOTS CAN FLY PLANE\HELICOPTER</Polish>
+			<Portuguese>ONLY PILOTS CAN FLY PLANE\HELICOPTER</Portuguese>
+			<Italian>ONLY PILOTS CAN FLY PLANE\HELICOPTER</Italian>
+			<Czech>ONLY PILOTS CAN FLY PLANE\HELICOPTER</Czech>
+			<Russian>ТОЛЬКО ПИЛОТЫ МОГУТ УПРАВЛЯТЬ САМОЛЕТОМ\ВЕРТОЛЕТОМ</Russian>
+			<Spanish>ONLY PILOTS CAN FLY PLANE\HELICOPTER</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_STARTSERVICING">
+			<Original>Repair, refueling and recharging %1 in %2 minutes. Please stand by...</Original>
+			<German>Repair, refueling and recharging %1 in %2 minutes. Please stand by...</German>
+			<French>Repair, refueling and recharging %1 in %2 minutes. Please stand by...</French>
+			<Polish>Repair, refueling and recharging %1 in %2 minutes. Please stand by...</Polish>
+			<Portuguese>Repair, refueling and recharging %1 in %2 minutes. Please stand by...</Portuguese>
+			<Italian>Repair, refueling and recharging %1 in %2 minutes. Please stand by...</Italian>
+			<Czech>Repair, refueling and recharging %1 in %2 minutes. Please stand by...</Czech>
+			<Russian>Ремонт, заправка и перезарядка %1 займет %2 минут. Ждите...</Russian>
+			<Spanish>Repair, refueling and recharging %1 in %2 minutes. Please stand by...</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_ENDSERVICING">
+			<Original>%1 ist bereit...</Original>
+			<German>%1 ist bereit...</German>
+			<French>%1 is ready...</French>
+			<Polish>%1 is ready...</Polish>
+			<Portuguese>%1 is ready...</Portuguese>
+			<Italian>%1 is ready...</Italian>
+			<Czech>%1 is ready...</Czech>
+			<Russian>Обслуживание %1 завершено</Russian>
+			<Spanish>%1 is ready...</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_VEHICLEUNLOCK">
+			<Original>Zentralverriegelung auf</Original>
+			<German>Zentralverriegelung auf</German>
+			<French>Vehicle unlock</French>
+			<Polish>Vehicle unlock</Polish>
+			<Portuguese>Vehicle unlock</Portuguese>
+			<Italian>Vehicle unlock</Italian>
+			<Czech>Vehicle unlock</Czech>
+			<Russian>Техника разблокирована</Russian>
+			<Spanish>Vehicle unlock</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_VEHICLELOCK">
+			<Original>Zentralverriegelung zu</Original>
+			<German>Zentralverriegelung zu</German>
+			<French>Vehicle lock</French>
+			<Polish>Vehicle lock</Polish>
+			<Portuguese>Vehicle lock.</Portuguese>
+			<Italian>Vehicle lock</Italian>
+			<Czech>Vehicle lock</Czech>
+			<Russian>Техника заблокирована</Russian>
+			<Spanish>Vehicle lock</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_HEALMHQ">
+			<Original>Du wurdest geheilt und bist ausgeruht.</Original>
+			<German>Du wurdest geheilt und bist ausgeruht.</German>
+			<French>You have recovered and rested.</French>
+			<Polish>You have recovered and rested.</Polish>
+			<Portuguese>You have recovered and rested.</Portuguese>
+			<Italian>You have recovered and rested.</Italian>
+			<Czech>You have recovered and rested.</Czech>
+			<Russian>Вы вылечились и отдохнули.</Russian>
+			<Spanish>You have recovered and rested.</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MARKER_SERVICEPOINT">
+			<Original>Servicestation</Original>
+			<German>Servicestation</German>
+			<French>Service point</French>
+			<Polish>Service point</Polish>
+			<Portuguese>Service point</Portuguese>
+			<Italian>Service point</Italian>
+			<Czech>Service point</Czech>
+			<Russian>Техобслуживание</Russian>
+			<Spanish>Service point</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MARKER_TELEPORT">
+			<Original>Teleport</Original>
+			<German>Teleport</German>
+			<French>Teleport</French>
+			<Polish>Teleport</Polish>
+			<Portuguese>Teleport</Portuguese>
+			<Italian>Teleport</Italian>
+			<Czech>Teleport</Czech>
+			<Russian>Телепорт</Russian>
+			<Spanish>Teleport</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MARKER_FORUM">
+			<Original>Forum - 6rus-arma.de</Original>
+			<German>Forum - 6rus-arma.de</German>
+			<French>Forum - 6rus-arma.de</French>
+			<Polish>Forum - 6rus-arma.de</Polish>
+			<Portuguese>Forum - 6rus-arma.de</Portuguese>
+			<Italian>Forum - 6rus-arma.de</Italian>
+			<Czech>Forum - 6rus-arma.de</Czech>
+			<Russian>Адрес форума - 6rus-arma.de</Russian>
+			<Spanish>Forum - 6rus-arma.de</Spanish>
+		</Key>
+		<Key ID="STR_RIP_MARKER_TS">
+			<Original>TeamSpeak3 - 79.133.47.8:4019</Original>
+			<German>TeamSpeak3 - 79.133.47.8:4019</German>
+			<French>TeamSpeak3 - 79.133.47.8:4019</French>
+			<Polish>TeamSpeak3 - 79.133.47.8:4019</Polish>
+			<Portuguese>TeamSpeak3 - 79.133.47.8:4019</Portuguese>
+			<Italian>TeamSpeak3 - 79.133.47.8:4019</Italian>
+			<Czech>TeamSpeak3 - 79.133.47.8:4019</Czech>
+			<Russian>TeamSpeak3 сервер - 79.133.47.8:4019</Russian>
+			<Spanish>TeamSpeak3 - 79.133.47.8:4019</Spanish>
+		</Key>
+		<Key ID="STR_RIP_CAPTUREFLAG">
+			<Original>Flagge hissen</Original>
+			<German>Flagge hissen</German>
+			<French>Raise the flag</French>
+			<Polish>Raise the flag</Polish>
+			<Portuguese>Raise the flag</Portuguese>
+			<Italian>Raise the flag</Italian>
+			<Czech>Raise the flag</Czech>
+			<Russian>Поднять флаг</Russian>
+			<Spanish>Raise the flag</Spanish>
+		</Key>
+		<Key ID="STR_RIP_ENEMYDESTROYNEARBASEBLUE">
+			<Original>%1 destroyed near Blue base!</Original>
+			<German>%1 destroyed near Blue base!</German>
+			<French>%1 destroyed near Blue base!</French>
+			<Polish>%1 destroyed near Blue base!</Polish>
+			<Portuguese>%1 destroyed near Blue base!</Portuguese>
+			<Italian>%1 destroyed near Blue base!</Italian>
+			<Czech>%1 destroyed near Blue base!</Czech>
+			<Russian>%1 уничтожен рядом с базой Синих!</Russian>
+			<Spanish>%1 destroyed near Blue base!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_ENEMYDESTROYNEARBASERED">
+			<Original>%1 destroyed near Red base!</Original>
+			<German>%1 destroyed near Red base!</German>
+			<French>%1 destroyed near Red base!</French>
+			<Polish>%1 destroyed near Red base!</Polish>
+			<Portuguese>%1 destroyed near Red base!</Portuguese>
+			<Italian>%1 destroyed near Red base!</Italian>
+			<Czech>%1 destroyed near Red base!</Czech>
+			<Russian>%1 уничтожен рядом с базой Красных!</Russian>
+			<Spanish>%1 destroyed near Red base!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_ENEMYNEARBASEBLUE">
+			<Original>You near Blue base! Change the direction or you will be destroyed!</Original>
+			<German>You near Blue base! Change the direction or you will be destroyed!</German>
+			<French>You near Blue base! Change the direction or you will be destroyed!</French>
+			<Polish>You near Blue base! Change the direction or you will be destroyed!</Polish>
+			<Portuguese>You near Blue base! Change the direction or you will be destroyed!</Portuguese>
+			<Italian>You near Blue base! Change the direction or you will be destroyed!</Italian>
+			<Czech>You near Blue base! Change the direction or you will be destroyed!</Czech>
+			<Russian>Вы рядом с базой Синих! Измените направление или будете уничтожены!</Russian>
+			<Spanish>You near Blue base! Change the direction or you will be destroyed!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_ENEMYNEARBASERED">
+			<Original>You near Red base! Change the direction or you will be destroyed!</Original>
+			<German>You near Red base! Change the direction or you will be destroyed!</German>
+			<French>You near Red base! Change the direction or you will be destroyed!</French>
+			<Polish>You near Red base! Change the direction or you will be destroyed!</Polish>
+			<Portuguese>You near Red base! Change the direction or you will be destroyed!</Portuguese>
+			<Italian>You near Red base! Change the direction or you will be destroyed!</Italian>
+			<Czech>You near Red base! Change the direction or you will be destroyed!</Czech>
+			<Russian>Вы рядом с базой Красных! Измените направление или будете уничтожены!</Russian>
+			<Spanish>You near Red base! Change the direction or you will be destroyed!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_KICKPLAYER">
+			<Original>YOU WERE KICKED!</Original>
+			<German>YOU WERE KICKED!</German>
+			<French>YOU WERE KICKED!</French>
+			<Polish>YOU WERE KICKED!</Polish>
+			<Portuguese>YOU WERE KICKED!</Portuguese>
+			<Italian>YOU WERE KICKED!</Italian>
+			<Czech>YOU WERE KICKED!</Czech>
+			<Russian>ВАС ИЗГНАЛИ ИЗ ИГРЫ!</Russian>
+			<Spanish>YOU WERE KICKED!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_CHANGESIDEPROTECT">
+			<Original>Teams change banned!</Original>
+			<German>Teams change banned!</German>
+			<French>Teams change banned!</French>
+			<Polish>Teams change banned!</Polish>
+			<Portuguese>Teams change banned!</Portuguese>
+			<Italian>Teams change banned!</Italian>
+			<Czech>Teams change banned!</Czech>
+			<Russian>Смена команды запрещена!</Russian>
+			<Spanish>Teams change banned!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_KICKAFK">
+			<Original>Too long without moving!</Original>
+			<German>Too long without moving!</German>
+			<French>Too long without moving!</French>
+			<Polish>Too long without moving!</Polish>
+			<Portuguese>Too long without moving!</Portuguese>
+			<Italian>Too long without moving!</Italian>
+			<Czech>Too long without moving!</Czech>
+			<Russian>Вы долго находились без движения!</Russian>
+			<Spanish>Too long without moving!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_RULES">
+			<Original>Serverregeln</Original>
+			<German>Server rules</German>
+			<French>Server rules</French>
+			<Polish>Server rules</Polish>
+			<Portuguese>Server rules</Portuguese>
+			<Italian>Server rules</Italian>
+			<Czech>Server rules</Czech>
+			<Russian>Правила игры на сервере</Russian>
+			<Spanish>Server rules</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_RULES_STR1">
+			<Original>Serverregelm befindetn sich im Log</Original>
+			<German>Read 'Server rules' in log</German>
+			<French>Read 'Server rules' in log</French>
+			<Polish>Read 'Server rules' in log</Polish>
+			<Portuguese>Read 'Server rules' in log</Portuguese>
+			<Italian>Read 'Server rules' in log</Italian>
+			<Czech>Read 'Server rules' in log</Czech>
+			<Russian>Читай раздел 'Правила игры на сервере' в заметках</Russian>
+			<Spanish>Read 'Server rules' in log</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_TEAMKILLPUNISH">
+			<Original>You were killed by %1. Maybe it was an accident. Punish him?</Original>
+			<German>You were killed by %1. Maybe it was an accident. Punish him?</German>
+			<French>You were killed by %1. Maybe it was an accident. Punish him?</French>
+			<Polish>You were killed by %1. Maybe it was an accident. Punish him?</Polish>
+			<Portuguese>You were killed by %1. Maybe it was an accident. Punish him?</Portuguese>
+			<Italian>You were killed by %1. Maybe it was an accident. Punish him?</Italian>
+			<Czech>You were killed by %1. Maybe it was an accident. Punish him?</Czech>
+			<Russian>Вы были убиты игроком %1. Возможно это произошло случайно. Оштрафовать %1 на 30 очков?</Russian>
+			<Spanish>You were killed by %1. Maybe it was an accident. Punish him?</Spanish>
+		</Key>
+		<Key ID="STR_RIP_HINT_RULES_STR">
+			<Original>1.1. Einhaltung der Regeln:&lt;br/&gt;1.1.1. Die Einhaltung dieser Regeln ist verpflichtend. Den Vorschriften der Administration über die Regeleinhaltung ist immer Folge zu leisten.&lt;br/&gt;1.1.2. Die Unkenntnis der Regeln befreit nicht von der Verantwortung.&lt;br/&gt;1.1.3. In jeder spezifischen Situation, für die es keine Regeln gibt, ist reifes und verantwortliches Verhalten verpflichtend.&lt;br/&gt;1.1.4. Auf dem Spielserver ist jede Diskussion über die Administratoren verboten, jede Beleidigung von Spielern und der Administratoren, jegliches Fluchen auf den Servern im Text-Chat, Voice-Chat, Teamspeak, usw., gegen bestimmte Spieler, Teams oder alle Spieler als Ganzes. Rassismus, demonstrative Missachtung der Hinweise der Administratoren, jeder Versuch, andere Spieler zu demütigen ist verboten.&lt;br/&gt;1.1.5. Die Strafe für einen bestimmten Verstoß wird durch die anwesenden Administratoren selbstständig gefällt, abhängig von der spezifischen Situation.&lt;br/&gt;1.1.6. Kritik an den Handlungen der Administration gehört in den entsprechenden Abschnitt des Forums. &lt;br/&gt;1.1.7. Beschwerden über die Verletzung der Regeln werden berücksichtigt, wenn genügend Informationen über die Situation geschildert werden (Datum, Uhrzeit, Servername Spielername, Art der Regelverletzung), sowie Nachweise (Screenshots, Videos, etc.) &lt;br/&gt;1.1.8. Als Strafe für Regelverletzung dient das Verbannen vom Spielserver.&lt;br/&gt;1.1.9. Diese Regeln werden ergänzt und gegebenenfalls angepasst. Die Administration behält sich das Recht vor, diese Verhaltensregeln zu ändern. Fragen und Anregungen gehören ins Forums.&lt;br/&gt;&lt;br/&gt;1.2. Auf den Servern ist Folgendes verboten:&lt;br/&gt;1.2.1. Respektlosigkeit, Beleidigungen oder Ausdrücke die die Würde anderer Spieler verletzten oder darauf gerichtet sind, ethnische oder religiöse Konflikte zu provozieren. Missbrauch von Obszönitäten in Text und Voice-Chat (Strafe: Kick, Bann bis zu 3 Tagen). &lt;br/&gt;1.2.2. Nutzen des Voice-Chats oder Text-Chats für Gespräche, die mit dem Spiel nichts zu tun haben (Strafe: Kick, Bann bis zu 3 Tagen).&lt;br/&gt;1.2.3. Die Verwendung von Spielernamen mit folgenden Eigenschaften ist untersagt: kürzer als 3 Zeichen, nicht flüssig lesbar, Ähnlichkeit mit Wörtern wie Admin oder Administrator, übertriebenes Benutzen von nicht lesbaren Sonderzeichen (Punkt, Klammer, Minus u.s.w.), Verwendung der ersten vorgeschlagenen Namen beim ersten Start des Spiels (John Doe, unnamed u.s.w.), Benutzen von Spielernamen, die mit denen der Administratoren, bereits registriertem Spielerm oder Clans ähnlich sind – also Spielernamen die Schwierigkeiten bei der Identifizierung der Spieler verursachen.&lt;br/&gt;1.2.4. Benutzen von zusätzlichen Programmen (Cheats), sowie aller Anpassungen, Modifikationen und Besonderheiten des Spiels, die einen unfairen Vorteil gegenüber anderen Spielern geben (Strafe: Permanenter Bann). &lt;br/&gt;1.2.5. Benutzung von Bugs der Mission (Bann von 3 bis 30 Tagen).&lt;br/&gt;1.2.6. Absichtliches Zufügen von Schaden an den Basen (eigene oder die des Gegners), Angreifen der menschlichen Gegner in einem Radius von 2 km vom Basis-Zentrum, die Massentötung von Spielern des eigenen Teams.&lt;br/&gt;1.2.7. Angreifen des Spielers, der den Bruch der Regel mit Nr. 1.2.6. begeht.&lt;br/&gt;1.2.8. Vorsätzliches Behindern von Spielen des eigenen Teams und des Spielverlaufs als Ganzes-&lt;br/&gt;1.2.9. Mehrmaliges Wechseln des Teams.&lt;br/&gt;1.2.10. Entführung jeglicher Fahrzeuge jenseits der Karte &lt;br/&gt;1.2.11. Absichtliches Verwenden einer nicht vollständigen Version des Spiels (z.B. absichtliches Löschen von Dateien z.B. Texturen von Häusern, Bäumen, Gras u.s.w.)&lt;br/&gt;1.2.12. Ändern der Startparameter der Mission ohne die Zustimmung der Spieler, einen guten Grund und Mitteilung darüber im Foren.&lt;br/&gt;</Original>
+			<German>1.1. Einhaltung der Regeln:&lt;br/&gt;1.1.1. Die Einhaltung dieser Regeln ist verpflichtend. Den Vorschriften der Administration über die Regeleinhaltung ist immer Folge zu leisten.&lt;br/&gt;1.1.2. Die Unkenntnis der Regeln befreit nicht von der Verantwortung.&lt;br/&gt;1.1.3. In jeder spezifischen Situation, für die es keine Regeln gibt, ist reifes und verantwortliches Verhalten verpflichtend.&lt;br/&gt;1.1.4. Auf dem Spielserver ist jede Diskussion über die Administratoren verboten, jede Beleidigung von Spielern und der Administratoren, jegliches Fluchen auf den Servern im Text-Chat, Voice-Chat, Teamspeak, usw., gegen bestimmte Spieler, Teams oder alle Spieler als Ganzes. Rassismus, demonstrative Missachtung der Hinweise der Administratoren, jeder Versuch, andere Spieler zu demütigen ist verboten.&lt;br/&gt;1.1.5. Die Strafe für einen bestimmten Verstoß wird durch die anwesenden Administratoren selbstständig gefällt, abhängig von der spezifischen Situation.&lt;br/&gt;1.1.6. Kritik an den Handlungen der Administration gehört in den entsprechenden Abschnitt des Forums. &lt;br/&gt;1.1.7. Beschwerden über die Verletzung der Regeln werden berücksichtigt, wenn genügend Informationen über die Situation geschildert werden (Datum, Uhrzeit, Servername Spielername, Art der Regelverletzung), sowie Nachweise (Screenshots, Videos, etc.) &lt;br/&gt;1.1.8. Als Strafe für Regelverletzung dient das Verbannen vom Spielserver.&lt;br/&gt;1.1.9. Diese Regeln werden ergänzt und gegebenenfalls angepasst. Die Administration behält sich das Recht vor, diese Verhaltensregeln zu ändern. Fragen und Anregungen gehören ins Forums.&lt;br/&gt;&lt;br/&gt;1.2. Auf den Servern ist Folgendes verboten:&lt;br/&gt;1.2.1. Respektlosigkeit, Beleidigungen oder Ausdrücke die die Würde anderer Spieler verletzten oder darauf gerichtet sind, ethnische oder religiöse Konflikte zu provozieren. Missbrauch von Obszönitäten in Text und Voice-Chat (Strafe: Kick, Bann bis zu 3 Tagen). &lt;br/&gt;1.2.2. Nutzen des Voice-Chats oder Text-Chats für Gespräche, die mit dem Spiel nichts zu tun haben (Strafe: Kick, Bann bis zu 3 Tagen).&lt;br/&gt;1.2.3. Die Verwendung von Spielernamen mit folgenden Eigenschaften ist untersagt: kürzer als 3 Zeichen, nicht flüssig lesbar, Ähnlichkeit mit Wörtern wie Admin oder Administrator, übertriebenes Benutzen von nicht lesbaren Sonderzeichen (Punkt, Klammer, Minus u.s.w.), Verwendung der ersten vorgeschlagenen Namen beim ersten Start des Spiels (John Doe, unnamed u.s.w.), Benutzen von Spielernamen, die mit denen der Administratoren, bereits registriertem Spielerm oder Clans ähnlich sind – also Spielernamen die Schwierigkeiten bei der Identifizierung der Spieler verursachen.&lt;br/&gt;1.2.4. Benutzen von zusätzlichen Programmen (Cheats), sowie aller Anpassungen, Modifikationen und Besonderheiten des Spiels, die einen unfairen Vorteil gegenüber anderen Spielern geben (Strafe: Permanenter Bann). &lt;br/&gt;1.2.5. Benutzung von Bugs der Mission (Bann von 3 bis 30 Tagen).&lt;br/&gt;1.2.6. Absichtliches Zufügen von Schaden an den Basen (eigene oder die des Gegners), Angreifen der menschlichen Gegner in einem Radius von 2 km vom Basis-Zentrum, die Massentötung von Spielern des eigenen Teams.&lt;br/&gt;1.2.7. Angreifen des Spielers, der den Bruch der Regel mit Nr. 1.2.6. begeht.&lt;br/&gt;1.2.8. Vorsätzliches Behindern von Spielen des eigenen Teams und des Spielverlaufs als Ganzes-&lt;br/&gt;1.2.9. Mehrmaliges Wechseln des Teams.&lt;br/&gt;1.2.10. Entführung jeglicher Fahrzeuge jenseits der Karte &lt;br/&gt;1.2.11. Absichtliches Verwenden einer nicht vollständigen Version des Spiels (z.B. absichtliches Löschen von Dateien z.B. Texturen von Häusern, Bäumen, Gras u.s.w.)&lt;br/&gt;1.2.12. Ändern der Startparameter der Mission ohne die Zustimmung der Spieler, einen guten Grund und Mitteilung darüber im Foren.&lt;br/&gt;</German>
+			<French>1.1. Einhaltung der Regeln:&lt;br/&gt;1.1.1. Die Einhaltung dieser Regeln ist verpflichtend. Den Vorschriften der Administration über die Regeleinhaltung ist immer Folge zu leisten.&lt;br/&gt;1.1.2. Die Unkenntnis der Regeln befreit nicht von der Verantwortung.&lt;br/&gt;1.1.3. In jeder spezifischen Situation, für die es keine Regeln gibt, ist reifes und verantwortliches Verhalten verpflichtend.&lt;br/&gt;1.1.4. Auf dem Spielserver ist jede Diskussion über die Administratoren verboten, jede Beleidigung von Spielern und der Administratoren, jegliches Fluchen auf den Servern im Text-Chat, Voice-Chat, Teamspeak, usw., gegen bestimmte Spieler, Teams oder alle Spieler als Ganzes. Rassismus, demonstrative Missachtung der Hinweise der Administratoren, jeder Versuch, andere Spieler zu demütigen ist verboten.&lt;br/&gt;1.1.5. Die Strafe für einen bestimmten Verstoß wird durch die anwesenden Administratoren selbstständig gefällt, abhängig von der spezifischen Situation.&lt;br/&gt;1.1.6. Kritik an den Handlungen der Administration gehört in den entsprechenden Abschnitt des Forums. &lt;br/&gt;1.1.7. Beschwerden über die Verletzung der Regeln werden berücksichtigt, wenn genügend Informationen über die Situation geschildert werden (Datum, Uhrzeit, Servername Spielername, Art der Regelverletzung), sowie Nachweise (Screenshots, Videos, etc.) &lt;br/&gt;1.1.8. Als Strafe für Regelverletzung dient das Verbannen vom Spielserver.&lt;br/&gt;1.1.9. Diese Regeln werden ergänzt und gegebenenfalls angepasst. Die Administration behält sich das Recht vor, diese Verhaltensregeln zu ändern. Fragen und Anregungen gehören ins Forums.&lt;br/&gt;&lt;br/&gt;1.2. Auf den Servern ist Folgendes verboten:&lt;br/&gt;1.2.1. Respektlosigkeit, Beleidigungen oder Ausdrücke die die Würde anderer Spieler verletzten oder darauf gerichtet sind, ethnische oder religiöse Konflikte zu provozieren. Missbrauch von Obszönitäten in Text und Voice-Chat (Strafe: Kick, Bann bis zu 3 Tagen). &lt;br/&gt;1.2.2. Nutzen des Voice-Chats oder Text-Chats für Gespräche, die mit dem Spiel nichts zu tun haben (Strafe: Kick, Bann bis zu 3 Tagen).&lt;br/&gt;1.2.3. Die Verwendung von Spielernamen mit folgenden Eigenschaften ist untersagt: kürzer als 3 Zeichen, nicht flüssig lesbar, Ähnlichkeit mit Wörtern wie Admin oder Administrator, übertriebenes Benutzen von nicht lesbaren Sonderzeichen (Punkt, Klammer, Minus u.s.w.), Verwendung der ersten vorgeschlagenen Namen beim ersten Start des Spiels (John Doe, unnamed u.s.w.), Benutzen von Spielernamen, die mit denen der Administratoren, bereits registriertem Spielerm oder Clans ähnlich sind – also Spielernamen die Schwierigkeiten bei der Identifizierung der Spieler verursachen.&lt;br/&gt;1.2.4. Benutzen von zusätzlichen Programmen (Cheats), sowie aller Anpassungen, Modifikationen und Besonderheiten des Spiels, die einen unfairen Vorteil gegenüber anderen Spielern geben (Strafe: Permanenter Bann). &lt;br/&gt;1.2.5. Benutzung von Bugs der Mission (Bann von 3 bis 30 Tagen).&lt;br/&gt;1.2.6. Absichtliches Zufügen von Schaden an den Basen (eigene oder die des Gegners), Angreifen der menschlichen Gegner in einem Radius von 2 km vom Basis-Zentrum, die Massentötung von Spielern des eigenen Teams.&lt;br/&gt;1.2.7. Angreifen des Spielers, der den Bruch der Regel mit Nr. 1.2.6. begeht.&lt;br/&gt;1.2.8. Vorsätzliches Behindern von Spielen des eigenen Teams und des Spielverlaufs als Ganzes-&lt;br/&gt;1.2.9. Mehrmaliges Wechseln des Teams.&lt;br/&gt;1.2.10. Entführung jeglicher Fahrzeuge jenseits der Karte &lt;br/&gt;1.2.11. Absichtliches Verwenden einer nicht vollständigen Version des Spiels (z.B. absichtliches Löschen von Dateien z.B. Texturen von Häusern, Bäumen, Gras u.s.w.)&lt;br/&gt;1.2.12. Ändern der Startparameter der Mission ohne die Zustimmung der Spieler, einen guten Grund und Mitteilung darüber im Foren.&lt;br/&gt;</French>
+			<Polish>1.1. Einhaltung der Regeln:&lt;br/&gt;1.1.1. Die Einhaltung dieser Regeln ist verpflichtend. Den Vorschriften der Administration über die Regeleinhaltung ist immer Folge zu leisten.&lt;br/&gt;1.1.2. Die Unkenntnis der Regeln befreit nicht von der Verantwortung.&lt;br/&gt;1.1.3. In jeder spezifischen Situation, für die es keine Regeln gibt, ist reifes und verantwortliches Verhalten verpflichtend.&lt;br/&gt;1.1.4. Auf dem Spielserver ist jede Diskussion über die Administratoren verboten, jede Beleidigung von Spielern und der Administratoren, jegliches Fluchen auf den Servern im Text-Chat, Voice-Chat, Teamspeak, usw., gegen bestimmte Spieler, Teams oder alle Spieler als Ganzes. Rassismus, demonstrative Missachtung der Hinweise der Administratoren, jeder Versuch, andere Spieler zu demütigen ist verboten.&lt;br/&gt;1.1.5. Die Strafe für einen bestimmten Verstoß wird durch die anwesenden Administratoren selbstständig gefällt, abhängig von der spezifischen Situation.&lt;br/&gt;1.1.6. Kritik an den Handlungen der Administration gehört in den entsprechenden Abschnitt des Forums. &lt;br/&gt;1.1.7. Beschwerden über die Verletzung der Regeln werden berücksichtigt, wenn genügend Informationen über die Situation geschildert werden (Datum, Uhrzeit, Servername Spielername, Art der Regelverletzung), sowie Nachweise (Screenshots, Videos, etc.) &lt;br/&gt;1.1.8. Als Strafe für Regelverletzung dient das Verbannen vom Spielserver.&lt;br/&gt;1.1.9. Diese Regeln werden ergänzt und gegebenenfalls angepasst. Die Administration behält sich das Recht vor, diese Verhaltensregeln zu ändern. Fragen und Anregungen gehören ins Forums.&lt;br/&gt;&lt;br/&gt;1.2. Auf den Servern ist Folgendes verboten:&lt;br/&gt;1.2.1. Respektlosigkeit, Beleidigungen oder Ausdrücke die die Würde anderer Spieler verletzten oder darauf gerichtet sind, ethnische oder religiöse Konflikte zu provozieren. Missbrauch von Obszönitäten in Text und Voice-Chat (Strafe: Kick, Bann bis zu 3 Tagen). &lt;br/&gt;1.2.2. Nutzen des Voice-Chats oder Text-Chats für Gespräche, die mit dem Spiel nichts zu tun haben (Strafe: Kick, Bann bis zu 3 Tagen).&lt;br/&gt;1.2.3. Die Verwendung von Spielernamen mit folgenden Eigenschaften ist untersagt: kürzer als 3 Zeichen, nicht flüssig lesbar, Ähnlichkeit mit Wörtern wie Admin oder Administrator, übertriebenes Benutzen von nicht lesbaren Sonderzeichen (Punkt, Klammer, Minus u.s.w.), Verwendung der ersten vorgeschlagenen Namen beim ersten Start des Spiels (John Doe, unnamed u.s.w.), Benutzen von Spielernamen, die mit denen der Administratoren, bereits registriertem Spielerm oder Clans ähnlich sind – also Spielernamen die Schwierigkeiten bei der Identifizierung der Spieler verursachen.&lt;br/&gt;1.2.4. Benutzen von zusätzlichen Programmen (Cheats), sowie aller Anpassungen, Modifikationen und Besonderheiten des Spiels, die einen unfairen Vorteil gegenüber anderen Spielern geben (Strafe: Permanenter Bann). &lt;br/&gt;1.2.5. Benutzung von Bugs der Mission (Bann von 3 bis 30 Tagen).&lt;br/&gt;1.2.6. Absichtliches Zufügen von Schaden an den Basen (eigene oder die des Gegners), Angreifen der menschlichen Gegner in einem Radius von 2 km vom Basis-Zentrum, die Massentötung von Spielern des eigenen Teams.&lt;br/&gt;1.2.7. Angreifen des Spielers, der den Bruch der Regel mit Nr. 1.2.6. begeht.&lt;br/&gt;1.2.8. Vorsätzliches Behindern von Spielen des eigenen Teams und des Spielverlaufs als Ganzes-&lt;br/&gt;1.2.9. Mehrmaliges Wechseln des Teams.&lt;br/&gt;1.2.10. Entführung jeglicher Fahrzeuge jenseits der Karte &lt;br/&gt;1.2.11. Absichtliches Verwenden einer nicht vollständigen Version des Spiels (z.B. absichtliches Löschen von Dateien z.B. Texturen von Häusern, Bäumen, Gras u.s.w.)&lt;br/&gt;1.2.12. Ändern der Startparameter der Mission ohne die Zustimmung der Spieler, einen guten Grund und Mitteilung darüber im Foren.&lt;br/&gt;</Polish>
+			<Portuguese>1.1. Einhaltung der Regeln:&lt;br/&gt;1.1.1. Die Einhaltung dieser Regeln ist verpflichtend. Den Vorschriften der Administration über die Regeleinhaltung ist immer Folge zu leisten.&lt;br/&gt;1.1.2. Die Unkenntnis der Regeln befreit nicht von der Verantwortung.&lt;br/&gt;1.1.3. In jeder spezifischen Situation, für die es keine Regeln gibt, ist reifes und verantwortliches Verhalten verpflichtend.&lt;br/&gt;1.1.4. Auf dem Spielserver ist jede Diskussion über die Administratoren verboten, jede Beleidigung von Spielern und der Administratoren, jegliches Fluchen auf den Servern im Text-Chat, Voice-Chat, Teamspeak, usw., gegen bestimmte Spieler, Teams oder alle Spieler als Ganzes. Rassismus, demonstrative Missachtung der Hinweise der Administratoren, jeder Versuch, andere Spieler zu demütigen ist verboten.&lt;br/&gt;1.1.5. Die Strafe für einen bestimmten Verstoß wird durch die anwesenden Administratoren selbstständig gefällt, abhängig von der spezifischen Situation.&lt;br/&gt;1.1.6. Kritik an den Handlungen der Administration gehört in den entsprechenden Abschnitt des Forums. &lt;br/&gt;1.1.7. Beschwerden über die Verletzung der Regeln werden berücksichtigt, wenn genügend Informationen über die Situation geschildert werden (Datum, Uhrzeit, Servername Spielername, Art der Regelverletzung), sowie Nachweise (Screenshots, Videos, etc.) &lt;br/&gt;1.1.8. Als Strafe für Regelverletzung dient das Verbannen vom Spielserver.&lt;br/&gt;1.1.9. Diese Regeln werden ergänzt und gegebenenfalls angepasst. Die Administration behält sich das Recht vor, diese Verhaltensregeln zu ändern. Fragen und Anregungen gehören ins Forums.&lt;br/&gt;&lt;br/&gt;1.2. Auf den Servern ist Folgendes verboten:&lt;br/&gt;1.2.1. Respektlosigkeit, Beleidigungen oder Ausdrücke die die Würde anderer Spieler verletzten oder darauf gerichtet sind, ethnische oder religiöse Konflikte zu provozieren. Missbrauch von Obszönitäten in Text und Voice-Chat (Strafe: Kick, Bann bis zu 3 Tagen). &lt;br/&gt;1.2.2. Nutzen des Voice-Chats oder Text-Chats für Gespräche, die mit dem Spiel nichts zu tun haben (Strafe: Kick, Bann bis zu 3 Tagen).&lt;br/&gt;1.2.3. Die Verwendung von Spielernamen mit folgenden Eigenschaften ist untersagt: kürzer als 3 Zeichen, nicht flüssig lesbar, Ähnlichkeit mit Wörtern wie Admin oder Administrator, übertriebenes Benutzen von nicht lesbaren Sonderzeichen (Punkt, Klammer, Minus u.s.w.), Verwendung der ersten vorgeschlagenen Namen beim ersten Start des Spiels (John Doe, unnamed u.s.w.), Benutzen von Spielernamen, die mit denen der Administratoren, bereits registriertem Spielerm oder Clans ähnlich sind – also Spielernamen die Schwierigkeiten bei der Identifizierung der Spieler verursachen.&lt;br/&gt;1.2.4. Benutzen von zusätzlichen Programmen (Cheats), sowie aller Anpassungen, Modifikationen und Besonderheiten des Spiels, die einen unfairen Vorteil gegenüber anderen Spielern geben (Strafe: Permanenter Bann). &lt;br/&gt;1.2.5. Benutzung von Bugs der Mission (Bann von 3 bis 30 Tagen).&lt;br/&gt;1.2.6. Absichtliches Zufügen von Schaden an den Basen (eigene oder die des Gegners), Angreifen der menschlichen Gegner in einem Radius von 2 km vom Basis-Zentrum, die Massentötung von Spielern des eigenen Teams.&lt;br/&gt;1.2.7. Angreifen des Spielers, der den Bruch der Regel mit Nr. 1.2.6. begeht.&lt;br/&gt;1.2.8. Vorsätzliches Behindern von Spielen des eigenen Teams und des Spielverlaufs als Ganzes-&lt;br/&gt;1.2.9. Mehrmaliges Wechseln des Teams.&lt;br/&gt;1.2.10. Entführung jeglicher Fahrzeuge jenseits der Karte &lt;br/&gt;1.2.11. Absichtliches Verwenden einer nicht vollständigen Version des Spiels (z.B. absichtliches Löschen von Dateien z.B. Texturen von Häusern, Bäumen, Gras u.s.w.)&lt;br/&gt;1.2.12. Ändern der Startparameter der Mission ohne die Zustimmung der Spieler, einen guten Grund und Mitteilung darüber im Foren.&lt;br/&gt;</Portuguese>
+			<Italian>1.1. Einhaltung der Regeln:&lt;br/&gt;1.1.1. Die Einhaltung dieser Regeln ist verpflichtend. Den Vorschriften der Administration über die Regeleinhaltung ist immer Folge zu leisten.&lt;br/&gt;1.1.2. Die Unkenntnis der Regeln befreit nicht von der Verantwortung.&lt;br/&gt;1.1.3. In jeder spezifischen Situation, für die es keine Regeln gibt, ist reifes und verantwortliches Verhalten verpflichtend.&lt;br/&gt;1.1.4. Auf dem Spielserver ist jede Diskussion über die Administratoren verboten, jede Beleidigung von Spielern und der Administratoren, jegliches Fluchen auf den Servern im Text-Chat, Voice-Chat, Teamspeak, usw., gegen bestimmte Spieler, Teams oder alle Spieler als Ganzes. Rassismus, demonstrative Missachtung der Hinweise der Administratoren, jeder Versuch, andere Spieler zu demütigen ist verboten.&lt;br/&gt;1.1.5. Die Strafe für einen bestimmten Verstoß wird durch die anwesenden Administratoren selbstständig gefällt, abhängig von der spezifischen Situation.&lt;br/&gt;1.1.6. Kritik an den Handlungen der Administration gehört in den entsprechenden Abschnitt des Forums. &lt;br/&gt;1.1.7. Beschwerden über die Verletzung der Regeln werden berücksichtigt, wenn genügend Informationen über die Situation geschildert werden (Datum, Uhrzeit, Servername Spielername, Art der Regelverletzung), sowie Nachweise (Screenshots, Videos, etc.) &lt;br/&gt;1.1.8. Als Strafe für Regelverletzung dient das Verbannen vom Spielserver.&lt;br/&gt;1.1.9. Diese Regeln werden ergänzt und gegebenenfalls angepasst. Die Administration behält sich das Recht vor, diese Verhaltensregeln zu ändern. Fragen und Anregungen gehören ins Forums.&lt;br/&gt;&lt;br/&gt;1.2. Auf den Servern ist Folgendes verboten:&lt;br/&gt;1.2.1. Respektlosigkeit, Beleidigungen oder Ausdrücke die die Würde anderer Spieler verletzten oder darauf gerichtet sind, ethnische oder religiöse Konflikte zu provozieren. Missbrauch von Obszönitäten in Text und Voice-Chat (Strafe: Kick, Bann bis zu 3 Tagen). &lt;br/&gt;1.2.2. Nutzen des Voice-Chats oder Text-Chats für Gespräche, die mit dem Spiel nichts zu tun haben (Strafe: Kick, Bann bis zu 3 Tagen).&lt;br/&gt;1.2.3. Die Verwendung von Spielernamen mit folgenden Eigenschaften ist untersagt: kürzer als 3 Zeichen, nicht flüssig lesbar, Ähnlichkeit mit Wörtern wie Admin oder Administrator, übertriebenes Benutzen von nicht lesbaren Sonderzeichen (Punkt, Klammer, Minus u.s.w.), Verwendung der ersten vorgeschlagenen Namen beim ersten Start des Spiels (John Doe, unnamed u.s.w.), Benutzen von Spielernamen, die mit denen der Administratoren, bereits registriertem Spielerm oder Clans ähnlich sind – also Spielernamen die Schwierigkeiten bei der Identifizierung der Spieler verursachen.&lt;br/&gt;1.2.4. Benutzen von zusätzlichen Programmen (Cheats), sowie aller Anpassungen, Modifikationen und Besonderheiten des Spiels, die einen unfairen Vorteil gegenüber anderen Spielern geben (Strafe: Permanenter Bann). &lt;br/&gt;1.2.5. Benutzung von Bugs der Mission (Bann von 3 bis 30 Tagen).&lt;br/&gt;1.2.6. Absichtliches Zufügen von Schaden an den Basen (eigene oder die des Gegners), Angreifen der menschlichen Gegner in einem Radius von 2 km vom Basis-Zentrum, die Massentötung von Spielern des eigenen Teams.&lt;br/&gt;1.2.7. Angreifen des Spielers, der den Bruch der Regel mit Nr. 1.2.6. begeht.&lt;br/&gt;1.2.8. Vorsätzliches Behindern von Spielen des eigenen Teams und des Spielverlaufs als Ganzes-&lt;br/&gt;1.2.9. Mehrmaliges Wechseln des Teams.&lt;br/&gt;1.2.10. Entführung jeglicher Fahrzeuge jenseits der Karte &lt;br/&gt;1.2.11. Absichtliches Verwenden einer nicht vollständigen Version des Spiels (z.B. absichtliches Löschen von Dateien z.B. Texturen von Häusern, Bäumen, Gras u.s.w.)&lt;br/&gt;1.2.12. Ändern der Startparameter der Mission ohne die Zustimmung der Spieler, einen guten Grund und Mitteilung darüber im Foren.&lt;br/&gt;</Italian>
+			<Czech>1.1. Einhaltung der Regeln:&lt;br/&gt;1.1.1. Die Einhaltung dieser Regeln ist verpflichtend. Den Vorschriften der Administration über die Regeleinhaltung ist immer Folge zu leisten.&lt;br/&gt;1.1.2. Die Unkenntnis der Regeln befreit nicht von der Verantwortung.&lt;br/&gt;1.1.3. In jeder spezifischen Situation, für die es keine Regeln gibt, ist reifes und verantwortliches Verhalten verpflichtend.&lt;br/&gt;1.1.4. Auf dem Spielserver ist jede Diskussion über die Administratoren verboten, jede Beleidigung von Spielern und der Administratoren, jegliches Fluchen auf den Servern im Text-Chat, Voice-Chat, Teamspeak, usw., gegen bestimmte Spieler, Teams oder alle Spieler als Ganzes. Rassismus, demonstrative Missachtung der Hinweise der Administratoren, jeder Versuch, andere Spieler zu demütigen ist verboten.&lt;br/&gt;1.1.5. Die Strafe für einen bestimmten Verstoß wird durch die anwesenden Administratoren selbstständig gefällt, abhängig von der spezifischen Situation.&lt;br/&gt;1.1.6. Kritik an den Handlungen der Administration gehört in den entsprechenden Abschnitt des Forums. &lt;br/&gt;1.1.7. Beschwerden über die Verletzung der Regeln werden berücksichtigt, wenn genügend Informationen über die Situation geschildert werden (Datum, Uhrzeit, Servername Spielername, Art der Regelverletzung), sowie Nachweise (Screenshots, Videos, etc.) &lt;br/&gt;1.1.8. Als Strafe für Regelverletzung dient das Verbannen vom Spielserver.&lt;br/&gt;1.1.9. Diese Regeln werden ergänzt und gegebenenfalls angepasst. Die Administration behält sich das Recht vor, diese Verhaltensregeln zu ändern. Fragen und Anregungen gehören ins Forums.&lt;br/&gt;&lt;br/&gt;1.2. Auf den Servern ist Folgendes verboten:&lt;br/&gt;1.2.1. Respektlosigkeit, Beleidigungen oder Ausdrücke die die Würde anderer Spieler verletzten oder darauf gerichtet sind, ethnische oder religiöse Konflikte zu provozieren. Missbrauch von Obszönitäten in Text und Voice-Chat (Strafe: Kick, Bann bis zu 3 Tagen). &lt;br/&gt;1.2.2. Nutzen des Voice-Chats oder Text-Chats für Gespräche, die mit dem Spiel nichts zu tun haben (Strafe: Kick, Bann bis zu 3 Tagen).&lt;br/&gt;1.2.3. Die Verwendung von Spielernamen mit folgenden Eigenschaften ist untersagt: kürzer als 3 Zeichen, nicht flüssig lesbar, Ähnlichkeit mit Wörtern wie Admin oder Administrator, übertriebenes Benutzen von nicht lesbaren Sonderzeichen (Punkt, Klammer, Minus u.s.w.), Verwendung der ersten vorgeschlagenen Namen beim ersten Start des Spiels (John Doe, unnamed u.s.w.), Benutzen von Spielernamen, die mit denen der Administratoren, bereits registriertem Spielerm oder Clans ähnlich sind – also Spielernamen die Schwierigkeiten bei der Identifizierung der Spieler verursachen.&lt;br/&gt;1.2.4. Benutzen von zusätzlichen Programmen (Cheats), sowie aller Anpassungen, Modifikationen und Besonderheiten des Spiels, die einen unfairen Vorteil gegenüber anderen Spielern geben (Strafe: Permanenter Bann). &lt;br/&gt;1.2.5. Benutzung von Bugs der Mission (Bann von 3 bis 30 Tagen).&lt;br/&gt;1.2.6. Absichtliches Zufügen von Schaden an den Basen (eigene oder die des Gegners), Angreifen der menschlichen Gegner in einem Radius von 2 km vom Basis-Zentrum, die Massentötung von Spielern des eigenen Teams.&lt;br/&gt;1.2.7. Angreifen des Spielers, der den Bruch der Regel mit Nr. 1.2.6. begeht.&lt;br/&gt;1.2.8. Vorsätzliches Behindern von Spielen des eigenen Teams und des Spielverlaufs als Ganzes-&lt;br/&gt;1.2.9. Mehrmaliges Wechseln des Teams.&lt;br/&gt;1.2.10. Entführung jeglicher Fahrzeuge jenseits der Karte &lt;br/&gt;1.2.11. Absichtliches Verwenden einer nicht vollständigen Version des Spiels (z.B. absichtliches Löschen von Dateien z.B. Texturen von Häusern, Bäumen, Gras u.s.w.)&lt;br/&gt;1.2.12. Ändern der Startparameter der Mission ohne die Zustimmung der Spieler, einen guten Grund und Mitteilung darüber im Foren.&lt;br/&gt;</Czech>
+			<Russian>1.1. Выполнение данных правил:&lt;br/&gt;1.1.1. Данные правила обязательны для соблюдения. Требования представителя администрации по соблюдению настоящих правил обязательны к исполнению.&lt;br/&gt;1.1.2. Незнание правил не освобождает Вас от ответственности.&lt;br/&gt;1.1.3. Отсутствие определенных правил не означает вседозволенность.&lt;br/&gt;1.1.4. На игровом сервере запрещено любое обсуждение действий представителя администрации, любые оскорбления игроков и администраторов, ругань на сервере (в текстовом чате, по голосовой связи, TeamSpeak, ACRE, Task Force Radio и прочие) направленная в адрес конкретных игроков, команды или всех игроков в целом. Проявление расизма. Демонстративное неуважение к замечаниям администратора, любые попытки унизить других игроков.&lt;br/&gt;1.1.5. Наказание за конкретное нарушение определяется присутствующим представителем администрации самостоятельно в зависимости от конкретной ситуации&lt;br/&gt;1.1.6. Претензии по действиям представителя администрации принимаются в соответствующем разделе форума.&lt;br/&gt;1.1.7. Жалобы на нарушения правил другими игроками принимаются к рассмотрению при предъявлении достаточно подробной информации о нарушении (дата, время, сервер, имя (ник) игрока, суть нарушения), а так же доказательств, подтверждающих нарушение (скриншоты, видео и т.д.)&lt;br/&gt;1.1.8. Наказание за нарушение данных правил налагается на игрока путем блокировки его доступа к серверу.&lt;br/&gt;1.1.9. Данные правила дополняются и изменяются по мере необходимости. Администрация оставляет себе право изменять настоящие правила поведения. Вопросы и предложения по данным правилам принимаются на форуме.&lt;br/&gt;&lt;br/&gt;1.2. На серверах запрещено:&lt;br/&gt;1.2.1. Хамство, оскорбления и выражения, унижающие достоинство других игроков, в том числе направленные на разжигание межнациональной или межконфессиональной розни. Злоупотребление нецензурными выражениями в текстовом и в голосовом чате.(наказание: кик, бан до 3 суток)&lt;br/&gt;1.2.2. Злоупотребление переговорами во время игрового процесса, не относящимися к игре.(наказание: кик, бан до 3 суток)&lt;br/&gt;1.2.3. Не рекомендуется использование имен короче трех символов, не читаемых имен, имен, содержащих выражения типа admin, administrator, а так же прямые и очевидные производные от них, избыточное использование в имени не читаемых символов (точка, скобка, тире и пр.), использование имени, предлагаемого по умолчанию при первом запуске игры (John Doe, unnamed и т.д.), использование ника в игре внешне схожим, или в точности совпадающим с никами Администрации, зарегистрированных игроков или кланов - ники вносящие путаницу в идентификацию игроков.(наказание: кик, бан)&lt;br/&gt;1.2.4. Использование дополнительных программ (читов), а так же любых настроек, модификаций и особенностей игры, которые дают нечестное преимущество перед остальными игроками.(наказание: пожизненный бан)&lt;br/&gt;1.2.5. Использование багов миссии.(наказание: бан от 3 до 30 суток).&lt;br/&gt;1.2.6. Преднамеренное нанесение повреждений на базах (своей и(или) чужой стороны), атака вражеской стороны в радиусе 2км от центра их базы, убийство игроков своей команды (массовый teamkill).(наказание: кик, бан (срок зависит от масштабов нарушения).&lt;br/&gt;1.2.7. Ответная атака на нарушителя п.1.2.6 правил.(наказание: кик, бан (срок зависит от масштабов нарушения).&lt;br/&gt;1.2.8. Преднамеренное создание помех игрокам своей команды и игровому процессу в целом.(наказание: зависит от масштабов нарушения)&lt;br/&gt;1.2.9. Неоднократный переход из одной команды в другую.(наказание: кик, бан до 7 суток)&lt;br/&gt;1.2.10. Угон какой-либо техники за пределы карты.(наказание: кик, бан до 7 суток)&lt;br/&gt;1.2.11. Использовать неполную версию игры (умышленно удалять файлы. Напр., текстуры домов, деревьев).(наказание: вечный бан)&lt;br/&gt;1.2.12. Изменение параметров запуска миссии, без согласия игроков, веской причины и уведомления об этом на форуме.(наказание: на усмотрение администрации)&lt;br/&gt;</Russian>
+			<Spanish>1.1. Einhaltung der Regeln:&lt;br/&gt;1.1.1. Die Einhaltung dieser Regeln ist verpflichtend. Den Vorschriften der Administration über die Regeleinhaltung ist immer Folge zu leisten.&lt;br/&gt;1.1.2. Die Unkenntnis der Regeln befreit nicht von der Verantwortung.&lt;br/&gt;1.1.3. In jeder spezifischen Situation, für die es keine Regeln gibt, ist reifes und verantwortliches Verhalten verpflichtend.&lt;br/&gt;1.1.4. Auf dem Spielserver ist jede Diskussion über die Administratoren verboten, jede Beleidigung von Spielern und der Administratoren, jegliches Fluchen auf den Servern im Text-Chat, Voice-Chat, Teamspeak, usw., gegen bestimmte Spieler, Teams oder alle Spieler als Ganzes. Rassismus, demonstrative Missachtung der Hinweise der Administratoren, jeder Versuch, andere Spieler zu demütigen ist verboten.&lt;br/&gt;1.1.5. Die Strafe für einen bestimmten Verstoß wird durch die anwesenden Administratoren selbstständig gefällt, abhängig von der spezifischen Situation.&lt;br/&gt;1.1.6. Kritik an den Handlungen der Administration gehört in den entsprechenden Abschnitt des Forums. &lt;br/&gt;1.1.7. Beschwerden über die Verletzung der Regeln werden berücksichtigt, wenn genügend Informationen über die Situation geschildert werden (Datum, Uhrzeit, Servername Spielername, Art der Regelverletzung), sowie Nachweise (Screenshots, Videos, etc.) &lt;br/&gt;1.1.8. Als Strafe für Regelverletzung dient das Verbannen vom Spielserver.&lt;br/&gt;1.1.9. Diese Regeln werden ergänzt und gegebenenfalls angepasst. Die Administration behält sich das Recht vor, diese Verhaltensregeln zu ändern. Fragen und Anregungen gehören ins Forums.&lt;br/&gt;&lt;br/&gt;1.2. Auf den Servern ist Folgendes verboten:&lt;br/&gt;1.2.1. Respektlosigkeit, Beleidigungen oder Ausdrücke die die Würde anderer Spieler verletzten oder darauf gerichtet sind, ethnische oder religiöse Konflikte zu provozieren. Missbrauch von Obszönitäten in Text und Voice-Chat (Strafe: Kick, Bann bis zu 3 Tagen). &lt;br/&gt;1.2.2. Nutzen des Voice-Chats oder Text-Chats für Gespräche, die mit dem Spiel nichts zu tun haben (Strafe: Kick, Bann bis zu 3 Tagen).&lt;br/&gt;1.2.3. Die Verwendung von Spielernamen mit folgenden Eigenschaften ist untersagt: kürzer als 3 Zeichen, nicht flüssig lesbar, Ähnlichkeit mit Wörtern wie Admin oder Administrator, übertriebenes Benutzen von nicht lesbaren Sonderzeichen (Punkt, Klammer, Minus u.s.w.), Verwendung der ersten vorgeschlagenen Namen beim ersten Start des Spiels (John Doe, unnamed u.s.w.), Benutzen von Spielernamen, die mit denen der Administratoren, bereits registriertem Spielerm oder Clans ähnlich sind – also Spielernamen die Schwierigkeiten bei der Identifizierung der Spieler verursachen.&lt;br/&gt;1.2.4. Benutzen von zusätzlichen Programmen (Cheats), sowie aller Anpassungen, Modifikationen und Besonderheiten des Spiels, die einen unfairen Vorteil gegenüber anderen Spielern geben (Strafe: Permanenter Bann). &lt;br/&gt;1.2.5. Benutzung von Bugs der Mission (Bann von 3 bis 30 Tagen).&lt;br/&gt;1.2.6. Absichtliches Zufügen von Schaden an den Basen (eigene oder die des Gegners), Angreifen der menschlichen Gegner in einem Radius von 2 km vom Basis-Zentrum, die Massentötung von Spielern des eigenen Teams.&lt;br/&gt;1.2.7. Angreifen des Spielers, der den Bruch der Regel mit Nr. 1.2.6. begeht.&lt;br/&gt;1.2.8. Vorsätzliches Behindern von Spielen des eigenen Teams und des Spielverlaufs als Ganzes-&lt;br/&gt;1.2.9. Mehrmaliges Wechseln des Teams.&lt;br/&gt;1.2.10. Entführung jeglicher Fahrzeuge jenseits der Karte &lt;br/&gt;1.2.11. Absichtliches Verwenden einer nicht vollständigen Version des Spiels (z.B. absichtliches Löschen von Dateien z.B. Texturen von Häusern, Bäumen, Gras u.s.w.)&lt;br/&gt;1.2.12. Ändern der Startparameter der Mission ohne die Zustimmung der Spieler, einen guten Grund und Mitteilung darüber im Foren.&lt;br/&gt;</Spanish>
+		</Key>
+		<Key ID="STR_RIP_NOTIF_MISSIONCOMPLETE">
+			<Original>Mission erfolgreich</Original>
+			<German>Mission erfolgreich</German>
+			<French>Mission complite</French>
+			<Polish>Mission complite</Polish>
+			<Portuguese>Mission complite</Portuguese>
+			<Italian>Mission complite</Italian>
+			<Czech>Mission complite</Czech>
+			<Russian>Задание выполнено</Russian>
+			<Spanish>Mission complite</Spanish>
+		</Key>
+		<Key ID="STR_RIP_NOTIF_MISSIONFAILED">
+			<Original>Mission gescheitert</Original>
+			<German>Mission gescheitert</German>
+			<French>Mission failed</French>
+			<Polish>Mission failed</Polish>
+			<Portuguese>Mission failed</Portuguese>
+			<Italian>Mission failed</Italian>
+			<Czech>Mission failed</Czech>
+			<Russian>Задание провалено</Russian>
+			<Spanish>Mission failed</Spanish>
+		</Key>
+		<Key ID="STR_RIP_NOTIF_WARNING_TITLE">
+			<Original>Warnung!</Original>
+			<German>Warnung!</German>
+			<French>Warning!</French>
+			<Polish>Warning!</Polish>
+			<Portuguese>Warning!</Portuguese>
+			<Italian>Warning!</Italian>
+			<Czech>Warning!</Czech>
+			<Russian>Предупреждение!</Russian>
+			<Spanish>Warning!</Spanish>
+		</Key>
+		<Key ID="STR_RIP_NOTIF_INFO_TITLE">
+			<Original>Information</Original>
+			<German>Information</German>
+			<French>Information</French>
+			<Polish>Information</Polish>
+			<Portuguese>Information</Portuguese>
+			<Italian>Information</Italian>
+			<Czech>Information</Czech>
+			<Russian>Информация</Russian>
+			<Spanish>Information</Spanish>
+		</Key>
+	</Package>
+</Project>
