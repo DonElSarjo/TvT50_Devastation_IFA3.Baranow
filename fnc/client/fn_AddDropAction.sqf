@@ -16,7 +16,7 @@ if (_veh != player) then {
 				{
 					_attached = (attachedObjects _veh) select 0;
 					_attachedname = getText (configFile >> "cfgvehicles" >> typeOf _attached >> "displayname");
-					if (_attached in [EMHQ1,WMHQ1]) then {_attachedname = localize "STR_RIP_MHQ1"};
+					if (_attached in [EMHQ1,WMHQ1]) then {_attachedname = localize "STR_RIP_MHQ1";};
 					player setUserActionText [RIP_DROPACTID, "<t color='#FF0000'>"+format[localize "STR_RIP_LIFTDROP",_attachedname]+"</t>"];
 					_return = true;
 				};

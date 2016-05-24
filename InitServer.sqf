@@ -1,4 +1,4 @@
-if !(isServer) exitWith {};
+if (!isServer) exitWith {};
 
 #include "defines\Define.sqf"
 #include "defines\ServerDefine.sqf"
@@ -28,7 +28,7 @@ fps_counter = true;
     while {fps_counter} do {
         "fpsMarkerHC" setMarkerText format ["Server FPS: %1", floor diag_fps];
         sleep 2;
-    }
+    };
 };
 
 RHSDecalsOff = true;
@@ -105,17 +105,17 @@ RIPAIDEFAULTSKILL = RIPAISKILL/10;
     	}
     ];
 } forEach RIPMHQARRAY;
-
+/*
 {
     _x addMPEventHandler [
         "mpkilled", {
             if (isServer) then {
                 [(_this select 0)] spawn RIP_fnc_DetachVehicle
             }
-        }
+        };
     ]
 } forEach RIPHELIARAY;
-
+*/
 if (RIPDESERTEDVEHICLEDELAY > 0) then {
 	{
         _x addEventHandler [

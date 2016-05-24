@@ -18,10 +18,11 @@ Server setVariable ["RIPCITYCAPTURINGINPROGRESSMIN",-1,true];
 RIPMISSIONROADPOS = [];
 _roads = RIP_TargetPosition nearRoads 1500;
 _i = 0;
-while {_i < (count _roads)} do
-{
+while {_i < (count _roads)} do {
 	_road = _roads select _i;
-	if ((_road distance RIP_TargetPosition) > 1000) then {RIPMISSIONROADPOS pushBack (getPos _road);};
+	if ((_road distance RIP_TargetPosition) > 1000) then {
+		RIPMISSIONROADPOS pushBack (getPos _road);
+	};
 	_i = _i + 1;
 };
 
@@ -29,33 +30,61 @@ while {_i < (count _roads)} do
 	_outpostpos = [RIP_TargetPosition, 300] call RIP_fnc_GetRandomPos;
 	_i = 0;
 	_radius = 200;
-	while {((count (nearestObjects [_outpostpos, ["Land_Cargo_Tower_V1_No1_F", "Land_BagBunker_Large_F"], _radius])) > 0) && (_i < 249)} do
-	{
+	while {((count (nearestObjects [_outpostpos, ["Land_Cargo_Tower_V1_No1_F", "land_lib_kostel_1"], _radius])) > 0) && (_i < 249)} do {
 		_outpostpos = [RIP_TargetPosition, 300] call RIP_fnc_GetRandomPos;
 		_i = _i + 1;
 		if (_i > 249) then {_i = 0;_radius = _radius - 50;};
 	};
+
 	_outpost = createVehicle [_x, _outpostpos, [], 0, "NONE"];
 	_outpost addEventHandler ["HandleDamage",{0}];
-	switch (_forEachIndex) do
-	{
-		case 0: { _outpost setPosASL [(getPosASL _outpost select 0), (getPosASL _outpost select 1), (getPosASL _outpost select 2) - 1];RIP_OutpostFlag1 setPosASL [(getPosASL _outpost select 0) - 3, (getPosASL _outpost select 1), (getPosASL _outpost select 2) + 18]; };
-		case 1: { RIP_OutpostFlag2 setPosASL [(getPosASL _outpost select 0), (getPosASL _outpost select 1), (getPosASL _outpost select 2)]; };
-		case 2: { RIP_OutpostFlag3 setPosASL [(getPosASL _outpost select 0), (getPosASL _outpost select 1), (getPosASL _outpost select 2)]; };
+	if (_x isEqualTo "land_lib_kostel_1") then {
+		_outpost setVectorUp [0,0,1];
+	};
+	switch (_forEachIndex) do {
+		case 0: {
+			_outpost setPosASL [
+				(getPosASL _outpost select 0),
+				(getPosASL _outpost select 1),
+				(getPosASL _outpost select 2)-1
+			];
+			RIP_OutpostFlag1 setPosASL [
+				(getPosASL _outpost select 0) + 6.2,
+				(getPosASL _outpost select 1) - 17.3,
+				(getPosASL _outpost select 2) + 18.6
+			];
+			RIP_OutpostFlag1 setVectorUp [0,0,1];
+		};
+		case 1: {
+			RIP_OutpostFlag2 setPosASL [
+				(getPosASL _outpost select 0),
+				(getPosASL _outpost select 1),
+				(getPosASL _outpost select 2)
+			];
+		};
+		case 2: {
+			RIP_OutpostFlag3 setPosASL [
+				(getPosASL _outpost select 0),
+				(getPosASL _outpost select 1),
+				(getPosASL _outpost select 2)
+			];
+		};
 	};
 	RIPMISSIONOBJ pushBack _outpost;
 	sleep 1;
-} forEach ["Land_Cargo_Tower_V1_No1_F","Land_BagBunker_Large_F","Land_BagBunker_Large_F"];
+} forEach ["land_lib_kostel_1","Land_BagBunker_Large_F","Land_BagBunker_Large_F"]; // change buildings to more fitting ones
 
 sleep 1;
 
-{_x setFlagTexture "\rhsafrf\addons\rhs_c_cti_indep\flag_chdkz_co.paa";} forEach [RIP_OutpostFlag1,RIP_OutpostFlag2,RIP_OutpostFlag3];
+{
+	_x setFlagTexture "";
+} forEach [RIP_OutpostFlag1,RIP_OutpostFlag2,RIP_OutpostFlag3]; //set right texture
 
 sleep 1;
 
 _radiotowerpos = [RIP_TargetPosition, 200] call RIP_fnc_GetRandomPos;
-_radiotower = createVehicle ["TK_GUE_WarfareBAntiAirRadar_Base_EP1", _radiotowerpos, [], 0, "NONE"];
-/*
+_radiotower = createVehicle ["LIB_Static_zis6_radar", _radiotowerpos, [], 0, "NONE"]; // create right building
+/* check eh again
 _radiotower addEventHandler
 [
 	"HandleDamage",
@@ -85,36 +114,42 @@ sleep 1;
 
 sleep 1;
 
-if (RIPAILIGHTVEHCOUNT > 0) then
-{
-	if (RIPAILIGHTVEHCOUNT == 1) then
-	{
+if (RIPAILIGHTVEHCOUNT > 0) then {
+	if (RIPAILIGHTVEHCOUNT == 1) then {
 		_count = 1 + round(random 2);
-		for [{_i=0},{_i < _count},{_i=_i+1}] do { [] call RIP_fnc_CreateLightArmorGroup; };
+		for [{_i=0},{_i < _count},{_i=_i+1}] do {
+			[] call RIP_fnc_CreateLightArmorGroup;
+		};
 	};
-	if (RIPAILIGHTVEHCOUNT == 2) then
-	{
+	if (RIPAILIGHTVEHCOUNT == 2) then {
 		_count = 2 + round(random 2);
-		for [{_i=0},{_i < _count},{_i=_i+1}] do { [] call RIP_fnc_CreateLightArmorGroup; };
+		for [{_i=0},{_i < _count},{_i=_i+1}] do {
+			[] call RIP_fnc_CreateLightArmorGroup;
+		};
 	};
 };
+
 sleep 1;
-if (RIPAIHEAVYVEHCOUNT > 0) then
-{
-	if (RIPAIHEAVYVEHCOUNT == 1) then
-	{
+
+if (RIPAIHEAVYVEHCOUNT > 0) then {
+	if (RIPAIHEAVYVEHCOUNT == 1) then {
 		_count = 1 + round(random 2);
-		for [{_i=0},{_i < _count},{_i=_i+1}] do { [] call RIP_fnc_CreateHardArmorGroup; };
+		for [{_i=0},{_i < _count},{_i=_i+1}] do {
+			[] call RIP_fnc_CreateHardArmorGroup;
+		};
 	};
-	if (RIPAIHEAVYVEHCOUNT == 2) then
-	{
+	if (RIPAIHEAVYVEHCOUNT == 2) then {
 		_count = 2 + round(random 2);
-		for [{_i=0},{_i < _count},{_i=_i+1}] do { [] call RIP_fnc_CreateHardArmorGroup; };
+		for [{_i=0},{_i < _count},{_i=_i+1}] do {
+			[] call RIP_fnc_CreateHardArmorGroup;
+		};
 	};
 };
 sleep 1;
 
-for [{_i=0},{_i < RIPAICOUNT},{_i=_i+1}] do { [] call RIP_fnc_CreateInfGroup; };
+for [{_i=0},{_i < RIPAICOUNT},{_i=_i+1}] do {
+	[] call RIP_fnc_CreateInfGroup;
+};
 
 sleep 1;
 
@@ -126,5 +161,7 @@ sleep 1;
 
 Server setVariable ["RIPMISSIONCOMPLETED",false,true];
 Server setVariable ["RIPMISSIONCREATED",true,true];
-if (RIPRANDOMTIME == 1) then {[] call RIP_fnc_RandomTime};
+if (RIPRANDOMTIME == 1) then {
+	[] call RIP_fnc_RandomTime
+};
 if (true) exitWith {};

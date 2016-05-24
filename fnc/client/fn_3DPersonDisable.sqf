@@ -1,5 +1,5 @@
 //by RIP
-if !(difficultyEnabled "3rdPersonView") exitWith {};
+if (!difficultyEnabled "3rdPersonView") exitWith {};
 while {true} do
 {
 	if (cameraOn == player && cameraView == "External") then

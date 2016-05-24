@@ -79,31 +79,66 @@ RIPDESERTEDVEHICLEARRAY = [
 ];
 
 RIPPATROLMENS = [
-	// add units
+	"LIB_US_AT_soldier",
+	"LIB_US_captain",
+	"LIB_US_engineer",
+	"LIB_US_medic",
+	"LIB_US_first_lieutenant",
+	"LIB_US_radioman",
+	"LIB_US_rifleman",
+	"LIB_US_second_lieutenant",
+	"LIB_US_grenadier",
+	"LIB_US_sniper",
+	"LIB_US_mgunner",
+	"LIB_US_FC_rifleman",
+	"LIB_US_corporal",
+	"LIB_US_smgunner"
 ];
 
 RIPPATROLLIGHTVEHICLES = [
-	// add vehicles
+	"LIB_US_GMC_Tent",
+	"LIB_US_GMC_Open",
+	"LIB_US_Scout_m3",
+	"LIB_US_Willys_MB",
+	"LIB_US_M3_Halftrack"
 ];
 
 RIPPATROLHARDVEHICLES = [
-	//add vehicles
+	"LIB_M4A3_75"
 ];
 
 RIPBONUSEAST = [
-	//add bonus vehicles
+	"LIB_JS2_43",
+	"LIB_M4A2_SOV",
+	"LIB_SU85",
+	"LIB_t34_76",
+	"LIB_t34_85",
+	"Lib_SdKfz251_captured",
+	"LIB_SOV_M3_Halftrack",
+	"LIB_P39",
+	"LIB_Pe2"
 ];
 
 RIPBONUSWEST = [
-	//add bonus vehicles
+	"LIB_PzKpfwIV_H",
+	"LIB_StuG_III_G_WS",
+	"LIB_PzKpfwV",
+	"LIB_PzKpfwVI_B",
+	"LIB_PzKpfwVI_B_camo",
+	"LIB_PzKpfwVI_E",
+	"LIB_PzKpfwVI_E",
+	"LIB_StuG_III_G",
+	"Lib_sdkfz251",
+	"LIB_FW190F8",
+	"LIB_Ju87"
 ];
 
 RIPMINESTYPE = [
-	"LIB_MINE_SMi35_obj",
-	"LIB_MINE_SMi35_1_obj",
-	"LIB_Mine_PMD6_obj",
-	"LIB_MINE_M3_obj",
-	"LIB_MINE_US_M3_obj"
+//	"LIB_MINE_SMi35_obj",
+	"LIB_MINE_SMi35_1_obj"
+//	"LIB_Mine_PMD6_obj",
+//	"LIB_MINE_M3_obj",
+//	"LIB_MINE_US_M3_obj"
 ];
 
 RIPSTATICTYPE = [

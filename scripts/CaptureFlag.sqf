@@ -13,8 +13,8 @@ _sideflag = switch (_flagname) do
 
 switch (RIPPLAYERSIDE) do
 {
-    case 0: { _flagtexture = "\rhsafrf\addons\rhs_main\data\Flag_rus_CO.paa"; };
-    case 1: { _flagtexture = "\A3\Data_F\Flags\Flag_us_CO.paa"; };
+    case 0: { _flagtexture = "LIB\LIB_Decals\ussr\flag_SU_co.paa"; };
+    case 1: { _flagtexture = "LIB\LIB_Decals\german\flag_GER_co.paa"; };
 };
 
 if (_sideflag == RIPPLAYERSIDE) exitWith {};

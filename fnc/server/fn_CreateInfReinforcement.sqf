@@ -8,13 +8,14 @@ RIPINFREINFORCEMENTCREATED = true;
 
 _i = 0;
 _create = false;
-while {!_create && (_i < 299)} do
-{
+while {!_create && (_i < 299)} do {
 	_pos = [RIP_TargetPosition, 500, (random 360)] call BIS_fnc_relPos;
 	if !([_pos,200] call RIP_fnc_PlayersNearBy) then {_create = true};
 	_i = _i + 1;
 };
-if !(_create) exitWith {RIPINFREINFORCEMENTCREATED = false;};
+if !(_create) exitWith {
+	RIPINFREINFORCEMENTCREATED = false;
+};
 
 _group = createGroup Resistance;
 _grpskill = RIPAIDEFAULTSKILL + (random 0.4);
@@ -26,8 +27,7 @@ _unit addEventHandler ["Killed", {_this spawn RIP_fnc_MPKilledEH}];
 RIPMISSIONGUARDMENS pushBack _unit;
 _unit setRank "LIEUTENANT";
 
-for "_x" from 1 to _strength do
-{
+for "_x" from 1 to _strength do {
 	_unit = _group createunit [RIPPATROLMENS select floor(random count RIPPATROLMENS),_pos,[],2,"None"];
 	_unit addEventHandler ["Killed", {_this spawn RIP_fnc_MPKilledEH}];
 	[_unit] JoinSilent _group;

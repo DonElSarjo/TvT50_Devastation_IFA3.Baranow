@@ -22,7 +22,7 @@ class rip_devastation {
 
         file = "fnc\client";
 
-		//class initViewDistanceControl {postInit = 1;};
+		class initViewDistanceControl {postInit = 1;};
 		//class initVolumeControl {postInit = 1;};
         class MarkersPlayer {};
         class MarkersVehicles {};
