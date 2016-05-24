@@ -24,6 +24,7 @@ class rip_devastation {
 
 		class initViewDistanceControl {postInit = 1;};
 		//class initVolumeControl {postInit = 1;};
+		class ppEffect {};
         class MarkersPlayer {};
         class MarkersVehicles {};
         class PlayerTags {};

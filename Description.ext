@@ -235,6 +235,13 @@ class Params
 		texts[] = {$STR_RIP_NO, $STR_RIP_LITTLE, $STR_RIP_NORMALLY};
 		default = 1;
 	};
+	class RIP_ppEffect
+	{
+		title = "Enable random pp effects"
+		values[] = {0,1};
+		texts[] = {"ON", "OFF"};
+		default = 1;
+	}
 };
 
 class CfgDebriefing

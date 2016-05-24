@@ -1,4 +1,8 @@
 if (!isServer) exitWith {};
+if (paramsArray select 28 == 1) then {
+    des_ppEffect = (floor random 5) + 1;
+    publicVariable "des_ppEffect";
+};
 
 #include "defines\Define.sqf"
 #include "defines\ServerDefine.sqf"

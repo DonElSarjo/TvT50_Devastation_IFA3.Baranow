@@ -45,3 +45,7 @@ player setCustomAimCoef 0.4;
 21 cutRsc ["RIP_SCOREDISPLAY","PLAIN"];
 10 cutText ["","BLACK IN",0];
 [format[localize "STR_RIP_INTROTEXT",(name player)],0,0.5,25,0] spawn BIS_fnc_dynamicText;
+waitUntil {! isNil "des_ppEffect"};
+if (paramsArray select 28 == 1) then {
+	[des_ppEffect] call RIP_fnc_ppEffect; //too lazy to change the tag :P
+}

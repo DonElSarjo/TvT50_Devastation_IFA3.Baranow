@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1014;
+		nextID=1028;
 	};
 	class LayerIndexProvider
 	{
-		nextID=28;
+		nextID=36;
 	};
 	class Camera
 	{
-		pos[]={4986.7041,182.86464,953.0321};
-		dir[]={-0.88931578,-0.23235148,0.39397967};
-		up[]={-0.21246278,0.97263092,0.094124965};
-		aside[]={0.40506914,-4.9354276e-007,0.91434222};
+		pos[]={6784.2192,142.16884,7156.9644};
+		dir[]={-0.20449862,-0.49998134,0.84157485};
+		up[]={-0.11805966,0.86603552,0.48584992};
+		aside[]={0.97175831,5.8033038e-008,0.236132};
 	};
 };
 binarizationWanted=0;
@@ -48,7 +48,8 @@ addons[]=
 	"CAMisc3",
 	"LIB_weapons",
 	"lib_misc1",
-	"Ind_Tank"
+	"Ind_Tank",
+	"lib_fnc"
 };
 randomSeed=6242763;
 class ScenarioData
@@ -79,7 +80,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=176;
+		items=178;
 		class Item0
 		{
 			dataType="Marker";
@@ -398,7 +399,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6738.2241,8.5559225,7339.3267};
-			angle=0.11591675;
+			angle=0.11591672;
 			class Attributes
 			{
 				name="SAFEZONETRIGE";
@@ -416,7 +417,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6738.0957,8.5552635,7339.4902};
-			angle=0.11591675;
+			angle=0.11591672;
 			class Attributes
 			{
 				name="NEARSAFEZONETRIGE";
@@ -6185,6 +6186,28 @@ class Mission
 			};
 			id=799;
 			type="FlagCarrierGER";
+		};
+		class Item176
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6758.9556,8.1890182,7396.7002};
+			};
+			id=1026;
+			type="LIB_advanced_ai_module";
+			atlOffset=-6.2942505e-005;
+		};
+		class Item177
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6784.771,8.3438244,7385.8359};
+			};
+			name="asdfrg";
+			id=1027;
+			type="lib_Effect_03";
 		};
 	};
 };
