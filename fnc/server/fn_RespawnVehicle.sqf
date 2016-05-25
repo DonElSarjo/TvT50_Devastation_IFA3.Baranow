@@ -29,14 +29,11 @@ uisleep 1;
 _newveh addItemCargoGlobal ["Medikit", 1];
 _newveh addItemCargoGlobal ["ToolKit", 1];
 _newveh addItemCargoGlobal ["FirstAidKit", 5];
-if (_varname in ["EMHQ1","EMHQ2","WMHQ1","WMHQ2"]) then
-{
+if (_varname in ["EMHQ1","EMHQ2","WMHQ1","WMHQ2"]) then {
 	_newveh setVariable ["RIP_MHQDEPLOY",0,true];
 	_newveh enableRopeAttach false;
-	_newveh addEventHandler
-	[
-		"GetIn",
-		{
+	_newveh addEventHandler [
+		"GetIn", {
 			private ["_veh", "_unit", "_vehside","_plside"];
 			_veh = _this select 0;
 			_unit = _this select 2;
@@ -45,21 +42,20 @@ if (_varname in ["EMHQ1","EMHQ2","WMHQ1","WMHQ2"]) then
 			if (_plside != _vehside) then {_unit setDamage 1};
 		}
 	];
-	if (RIPANTIATGMSYSTEM == 1) then
-		{ [_newveh] remoteExec ["RIP_fnc_AddEHIncomingMissile", 0, true]; };
+	if (RIPANTIATGMSYSTEM == 1) then {
+		[_newveh] remoteExec ["RIP_fnc_AddEHIncomingMissile", 0, true];
+	};
 };
 
 if (_varname == "WMHQ2") then {_newveh  lockTurret [[0],true]};
 if (_varname == "EMHQ2") then {_newveh  lockTurret [[0],true]};
 
-if (_varname in ["WTHELI1","WTHELI2","WTHELI3"]) then
-{
+if (_varname in ["WTHELI1","WTHELI2","WTHELI3"]) then {
 	_newveh setObjectTextureGlobal [0, "rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_fuselage_co.paa"];
 	_newveh setObjectTextureGlobal [1, "rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_engine_co.paa"];
 };
 
-if (_varname in ["ETHELI1","ETHELI2","ETHELI3","WTHELI1","WTHELI2","WTHELI3"]) then
-{
+if (_varname in ["ETHELI1","ETHELI2","ETHELI3","WTHELI1","WTHELI2","WTHELI3"]) then {
 	_newveh addMPEventHandler ["mpkilled", {if (isServer) then {[(_this select 0)] spawn RIP_fnc_DetachVehicle}}];
 	_newveh addEventHandler ["GetOut",{if (isServer) then {[(_this select 0)] spawn RIP_fnc_DesertedVehicle}}];
 };

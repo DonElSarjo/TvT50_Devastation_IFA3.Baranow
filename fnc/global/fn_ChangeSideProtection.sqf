@@ -7,8 +7,7 @@ _uid = getPlayerUID _pl;
 
 _arr = ServerPlayerDB getVariable _uid;
 
-if (isNil "_arr") then
-{
+if (isNil "_arr") then {
 	_arr = [getNumber (configFile >> "CfgVehicles" >> (typeOf _pl) >> "side"),(serverTime + RIPCHANGESIDE)];
 	ServerPlayerDB setVariable [_uid,_arr,false];
 };

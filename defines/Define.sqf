@@ -16,16 +16,16 @@ RIP_ENGINEERSLOTS =
 	"west19",
 	"west20"
 ];
-
+// ToDo what about choppers
 RIP_LIFTHELY =
 [];
-
+// ToDo set right prices
 RIP_PILOTTYPE =
 [
 	"LIB_SOV_pilot",
 	"LIB_GER_pilot"
 ];
-
+// ToDo set right prices
 RIP_ATLAUNCHERS =
 [
 	"Weapon_LIB_RPzB",
@@ -39,7 +39,7 @@ RIP_ATGMMISSILE =
 	"1Rnd_LIB_PzFaust_30m",
 	"LIB_1Rnd_60mm_M6"
 ];
-
+// ToDo set right prices
 AVAILABLEVEHICLEE =
 [
 	//Tank
@@ -61,7 +61,7 @@ AVAILABLEVEHICLEE =
 	["lib_maxim_m30_base", 30],
 	["lib_maxim_m30_trench", 30]
 ];
-
+// ToDo set right prices
 AVAILABLEVEHICLEW =
 [
 	//Tanks blufor
@@ -92,4 +92,6 @@ AVAILABLEVEHICLEW =
 ];
 
 AVAILABLEBACKPACK =
-[];
+[
+	// are there backpacks to add?
+];

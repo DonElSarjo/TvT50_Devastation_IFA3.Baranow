@@ -7,15 +7,12 @@ _teleporttobase = true;
 _canteleport = false;
 if (typename _dest != "SCALAR") then {_teleporttobase = false};
 
-if (_teleporttobase) then
-{
+if (_teleporttobase) then {
 	_teleportmessage = localize "RIP_STR_TELEPORTTOBASE";
 	if (RIPPLAYERSIDE == 0) then {_pos = getPos ERIPBASESPAWN;_dir = getDir ERIPBASESPAWN;} else {_pos = getPos WRIPBASESPAWN;_dir = getDir WRIPBASESPAWN;};
 	player setDamage 0;
 	_canteleport = true;
-}
-else
-{
+} else {
 	_teleportmessage = localize "RIP_STR_TELEPORTTOMHQ";
 	_pos = (_dest select 0) ctrlMapScreenToWorld [_dest select 2,_dest select 3];
 	_dir = [_pos,RIPTARGETPOS] call BIS_fnc_dirTo;

@@ -6,8 +6,7 @@ _cn = 0;
 _alpha = random 90;
 _dir = _alpha;
 _dist = 350 + ceil(random 50);
-for "_x" from 0 to 39 do
-{
+for "_x" from 0 to 39 do {
 	_random_point = [RIP_TargetPosition, _dist, _dir] call BIS_fnc_relPos;
 	_typemine = RIPMINESTYPE call BIS_fnc_selectRandom;
 	_mine = createMine [_typemine, _random_point, [], 0];
@@ -22,8 +21,7 @@ for "_x" from 0 to 39 do
 
 _cn = 0;
 _dir = _alpha + 42;
-for "_x" from 0 to 23 do
-{
+for "_x" from 0 to 23 do {
 	_random_point = [RIP_TargetPosition, _dist, _dir] call BIS_fnc_relPos;
 	_typemine = RIPMINESTYPE call BIS_fnc_selectRandom;
 	_mine = createMine [_typemine, _random_point, [], 0];

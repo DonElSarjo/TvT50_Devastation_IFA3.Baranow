@@ -12,12 +12,10 @@ if !(_ammotype in RIP_ATGMMISSILE) exitWith {};
 _ammo = nearestObject [_shooter,_ammotype];
 _dist = _shooter distance _target;
 
-if (_dist > _mindist) then
-{
+if (_dist > _mindist) then {
 	_misschance = (_mindist/_dist)*0.6;
 	_hitchance = random 1;
-	if (_hitchance >= _misschance) then
-	{	
+	if (_hitchance >= _misschance) then {	
 		waitUntil{((_ammo distance _target) <= 100) || (isNull _ammo)};
 		"SmallSecondary" createVehicle getPosASL _ammo;
 		deleteVehicle _ammo;

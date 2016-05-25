@@ -1,17 +1,13 @@
 //by RIP
 private ["_object", "_type", "_typename", "_time", "_weapon", "_findRecurse", "_i", "_delay"];
 
-_findRecurse =
-{
-	private ["_root", "_class", "_path", "_currentPath","_result"];
+_findRecurse = { private ["_root", "_class", "_path", "_currentPath","_result"];
 	_root = (_this select 0);
 	_path = +(_this select 1);
 	_result = [];
-	for "_i" from 0 to count _root -1 do
-	{
+	for "_i" from 0 to count _root -1 do {
 		_class = _root select _i;
-		if (isClass _class) then
-		{
+		if (isClass _class) then {
 			_currentPath = _path + [_i];
 			{ _result pushBack _x; } foreach getArray (_class >> "weapons");
 			_class = _class >> "turrets";
@@ -44,14 +40,12 @@ _class = (configFile >> "CfgVehicles" >> _type >> "turrets");
 _weapon = [_class, []] call _findRecurse;
 
 _object setVehicleAmmo 1;
-if(count _weapon > 1) then
-{
-		for[{_i = 0},{_i < count _weapon},{_i = _i+1}] do
-		{
-			sleep 0.1;
-			_object setAmmo [_weapon select _i, 10000];
-		};
+if(count _weapon > 1) then {
+	for [{_i = 0},{_i < count _weapon},{_i = _i+1}] do {
 		sleep 0.1;
+		_object setAmmo [_weapon select _i, 10000];
+	};
+	sleep 0.1;
 };
 
 if (!alive _object) exitWith {};

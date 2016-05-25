@@ -16,16 +16,20 @@ if !(isServer) exitWith {};
 
 } forEach RIPRESPAWNVEHICLEARRAY;
 
-while {true} do
-{
+while {true} do {
 	{
 		if (underwater _x) then {_x setDamage 1};
-		if (_x in [EMHQ1,EMHQ2]) then
-			{ if (_x distance2D RIP_BASEFLAGW < 1000) then {_x setDamage 1}; };
-		if (_x in [WMHQ1,WMHQ2]) then
-			{ if (_x distance2D RIP_BASEFLAGE < 1000) then {_x setDamage 1}; };
-		if !(alive _x) then
-		{
+		if (_x in [EMHQ1,EMHQ2]) then {
+			if (_x distance2D RIP_BASEFLAGW < 1000) then {
+				_x setDamage 1
+			}; 
+		};
+		if (_x in [WMHQ1,WMHQ2]) then {
+			if (_x distance2D RIP_BASEFLAGE < 1000) then {
+				_x setDamage 1
+			};
+		};
+		if !(alive _x) then {
 			RIPRESPAWNVEHICLEARRAY = RIPRESPAWNVEHICLEARRAY - [_x];
 			[_x] spawn RIP_fnc_RespawnVehicle;
 		};

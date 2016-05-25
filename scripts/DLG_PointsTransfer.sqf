@@ -18,12 +18,9 @@ sliderSetPosition [6901, 0];
 
 lbClear 6921;
 {
-	if (!isNull _x) then
-	{
-		if ((isPlayer _x) && (RIPPLAYERSIDE == getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "side"))) then
-		{
-			if (alive _x) then
-			{
+	if (!isNull _x) then {
+		if ((isPlayer _x) && (RIPPLAYERSIDE == getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "side"))) then {
+			if (alive _x) then {
 				_idx = lbAdd[6921,(name _x)];
 				lbSetData [6921, _idx, (vehicleVarName _x)];
 			};
@@ -32,8 +29,7 @@ lbClear 6921;
 } count (allPlayers - [player]);
 lbSetCurSel [6921, 0];
 
-While {dialog} do
-{
+While {dialog} do {
 	ctrlSetText[6902,format["%1",round(sliderPosition 6901)]];
 	sleep 0.1;
 };

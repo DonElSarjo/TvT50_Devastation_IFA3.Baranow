@@ -42,26 +42,22 @@ if(_goggles != "") then { player addGoggles _goggles; };
 
 {player addItemToUniform _x} count _uniformitems;
 {player addItemToVest _x} count _vestitems;
-if(_backpack != "") then
-{
+if(_backpack != "") then {
 	player addbackpack _backpack;
 	clearAllItemsFromBackpack player;
 	{player addItemToBackpack _x} count _backpackItems;
 };
-if (_primaryWeapon != "") then
-{
+if (_primaryWeapon != "") then {
 	{player addMagazine _x} count _primaryweaponmagazine;
 	player addweapon _primaryWeapon;
 	{player addPrimaryWeaponItem _x} count _primaryWeaponItems;
 };
-if (_secondaryWeapon != "") then
-{
+if (_secondaryWeapon != "") then {
 	{player addMagazine _x} count _secondaryWeaponMagazine;
 	player addweapon _secondaryWeapon;
 	{player addSecondaryWeaponItem _x} count _secondaryWeaponItems;
 };
-if (_handgunWeapon != "") then
-{
+if (_handgunWeapon != "") then {
 	{player addMagazine _x} count _handgunMagazine;
 	player addweapon _handgunWeapon;
 	{player addHandgunItem _x} count _handgunItems;

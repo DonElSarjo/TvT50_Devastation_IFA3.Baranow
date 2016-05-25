@@ -22,8 +22,7 @@ _line3 = parseText format["<t size='1.1' color='#FF973D'>" + localize "STR_RIP_H
 playMusic "BackgroundTrack02_F";
 sleep 10;
 
-switch (_winner) do
-{
+switch (_winner) do {
 	case 0: { ["RedTeamWin",true,true] call BIS_fnc_endMission };
 	case 1: { ["BlueTeamWin",true,true] call BIS_fnc_endMission };
 	case 3: { ["Draw",true,true] call BIS_fnc_endMission };

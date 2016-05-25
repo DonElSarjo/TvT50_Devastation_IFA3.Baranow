@@ -25,115 +25,127 @@ ctrlEnable [4920, false];
 ctrlEnable [4921, false];
 ctrlEnable [4922, false];
 
-While {dialog} do
-{
-	if (RIPTELEPORTTOBASE == 1) then
-		{ if !(_mhq in [RIP_BASEFLAGE,RIP_BASEFLAGW]) then {ctrlEnable [4920, true]} else {ctrlEnable [4920, false]}; };
+While {dialog} do {
+	if (RIPTELEPORTTOBASE == 1) then {
+		if !(_mhq in [RIP_BASEFLAGE,RIP_BASEFLAGW]) then {
+			ctrlEnable [4920, true]
+		} else {
+			ctrlEnable [4920, false]};
+		};
 
-	if (RIPTELEPORTTOMHQ == 1) then
-	{
-		if (RIPPLAYERSIDE == 0) then
-		{
-			if !(_mhq == EMHQ1) then
-			{
+	if (RIPTELEPORTTOMHQ == 1) then {
+		if (RIPPLAYERSIDE == 0) then {
+			if !(_mhq == EMHQ1) then {
 				ctrlEnable [4921, false];
-				if (alive EMHQ1) then
-				{
-					if (EMHQ1 getVariable "RIP_MHQDEPLOY" == 1) then
-					{
-						if (isNull attachedTo EMHQ1) then
-						{
+				if (alive EMHQ1) then {
+					if (EMHQ1 getVariable "RIP_MHQDEPLOY" == 1) then {
+						if (isNull attachedTo EMHQ1) then {
 							ctrlEnable [4921, true];
 							(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGTELEPORTMHQ1";
 						};
 					};
 				};
-				if (!(ctrlEnabled 4921)) then
-				{
+				if (!(ctrlEnabled 4921)) then {
 					"RIP_TeleportMarkerMHQ1" setMarkerPosLocal [0,0,0];
 					"RIP_TeleportMarkerMHQ1" setMarkerSizeLocal [0,0];
-					if (EMHQ1 getVariable "RIP_MHQDEPLOY" == 0) then {(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"};
-					if !(isNull attachedTo EMHQ1) then {(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"};
-					if (locked EMHQ1 != 2) then {(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"};
-					if !(alive EMHQ1) then {(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1DESTROY"};
+					if (EMHQ1 getVariable "RIP_MHQDEPLOY" == 0) then {
+						(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"
+					};
+					if !(isNull attachedTo EMHQ1) then {
+						(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"
+					};
+					if (locked EMHQ1 != 2) then {
+						(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"
+					};
+					if !(alive EMHQ1) then {
+						(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1DESTROY"
+					};
 				};
 			};
 
-			if !(_mhq == EMHQ2) then
-			{
+			if !(_mhq == EMHQ2) then {
 				ctrlEnable [4922, false];
-				if (alive EMHQ2) then
-				{
-					if (EMHQ2 getVariable "RIP_MHQDEPLOY" == 1) then
-					{
-						if (isNull attachedTo EMHQ2) then
-						{
+				if (alive EMHQ2) then {
+					if (EMHQ2 getVariable "RIP_MHQDEPLOY" == 1) then {
+						if (isNull attachedTo EMHQ2) then {
 							ctrlEnable [4922, true];
 							(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGTELEPORTMHQ2";
 						};
 					};
 				};
-				if (!(ctrlEnabled 4922)) then
-				{
+				if (!(ctrlEnabled 4922)) then {
 					"RIP_TeleportMarkerMHQ2" setMarkerPosLocal [0,0,0];
 					"RIP_TeleportMarkerMHQ2" setMarkerSizeLocal [0,0];
-					if (EMHQ2 getVariable "RIP_MHQDEPLOY" == 0) then {(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"};
-					if !(isNull attachedTo EMHQ2) then {(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"};
-					if (locked EMHQ2 != 2) then {(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"};
-					if !(alive EMHQ2) then {(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2DESTROY"};
+					if (EMHQ2 getVariable "RIP_MHQDEPLOY" == 0) then {
+						(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"
+					};
+					if !(isNull attachedTo EMHQ2) then {
+						(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"
+					};
+					if (locked EMHQ2 != 2) then {
+						(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"
+					};
+					if !(alive EMHQ2) then {
+						(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2DESTROY"
+					};
 				};
 			};
 		};
 
-		if (RIPPLAYERSIDE == 1) then
-		{
-			if !(_mhq == WMHQ1) then
-			{
+		if (RIPPLAYERSIDE == 1) then {
+			if !(_mhq == WMHQ1) then {
 				ctrlEnable [4921, false];
-				if (alive WMHQ1) then
-				{
-					if (WMHQ1 getVariable "RIP_MHQDEPLOY" == 1) then
-					{
-						if (isNull attachedTo WMHQ1) then
-						{
+				if (alive WMHQ1) then {
+					if (WMHQ1 getVariable "RIP_MHQDEPLOY" == 1) then {
+						if (isNull attachedTo WMHQ1) then {
 							ctrlEnable [4921, true];
 							(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGTELEPORTMHQ1";
 						};
 					};
 				};
-				if (!(ctrlEnabled 4921)) then
-				{
+				if (!(ctrlEnabled 4921)) then {
 					"RIP_TeleportMarkerMHQ1" setMarkerPosLocal [0,0,0];
 					"RIP_TeleportMarkerMHQ1" setMarkerSizeLocal [0,0];
-					if (WMHQ1 getVariable "RIP_MHQDEPLOY" == 0) then {(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"};
-					if !(isNull attachedTo WMHQ1) then {(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"};
-					if (locked WMHQ1 != 2) then {(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"};
-					if !(alive WMHQ1) then {(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1DESTROY"};
+					if (WMHQ1 getVariable "RIP_MHQDEPLOY" == 0) then {
+						(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"
+					};
+					if !(isNull attachedTo WMHQ1) then {
+						(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"
+					};
+					if (locked WMHQ1 != 2) then {
+						(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1UNDEPLOY"
+					};
+					if !(alive WMHQ1) then {
+						(_rdialog displayCtrl 4921) ctrlSetText localize "STR_RIP_DLGMHQ1DESTROY"
+					};
 				};
 			};
 
-			if !(_mhq == WMHQ2) then
-			{
+			if !(_mhq == WMHQ2) then {
 				ctrlEnable [4922, false];
-				if (alive WMHQ2) then
-				{
-					if (WMHQ2 getVariable "RIP_MHQDEPLOY" == 1) then
-					{
-						if (isNull attachedTo WMHQ2) then
-						{
+				if (alive WMHQ2) then {
+					if (WMHQ2 getVariable "RIP_MHQDEPLOY" == 1) then {
+						if (isNull attachedTo WMHQ2) then {
 							ctrlEnable [4922, true];
 							(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGTELEPORTMHQ2";
 						};
 					};
 				};
-				if (!(ctrlEnabled 4922)) then
-				{
+				if (!(ctrlEnabled 4922)) then {
 					"RIP_TeleportMarkerMHQ2" setMarkerPosLocal [0,0,0];
 					"RIP_TeleportMarkerMHQ2" setMarkerSizeLocal [0,0];
-					if (WMHQ2 getVariable "RIP_MHQDEPLOY" == 0) then {(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"};
-					if !(isNull attachedTo WMHQ2) then {(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"};
-					if (locked WMHQ2 != 2) then {(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"};
-					if !(alive WMHQ2) then {(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2DESTROY"};
+					if (WMHQ2 getVariable "RIP_MHQDEPLOY" == 0) then {
+						(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"
+					};
+					if !(isNull attachedTo WMHQ2) then {
+						(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"
+					};
+					if (locked WMHQ2 != 2) then {
+						(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2UNDEPLOY"
+					};
+					if !(alive WMHQ2) then {
+						(_rdialog displayCtrl 4922) ctrlSetText localize "STR_RIP_DLGMHQ2DESTROY"
+					};
 				};
 			};
 		};

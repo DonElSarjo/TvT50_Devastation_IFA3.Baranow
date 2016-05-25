@@ -9,11 +9,10 @@ _teleport_marker_name = _this select 1;
 
 _teleport_marker_size = 10;
 _mapzoom = 0.003;
-if (_mhq distance RIPTARGETPOS > 350) then
-{
+if (_mhq distance RIPTARGETPOS > 350) then {
 	_teleport_marker_size = 50;
 	_mapzoom = 0.015;
-	if (_mhq distance RIPTARGETPOS > 400) then {_teleport_marker_size = 100;_mapzoom = 0.03;};		
+	if (_mhq distance RIPTARGETPOS > 400) then {_teleport_marker_size = 100;_mapzoom = 0.03;};
 };
 
 _teleport_marker_name setMarkerPosLocal getPos _mhq;

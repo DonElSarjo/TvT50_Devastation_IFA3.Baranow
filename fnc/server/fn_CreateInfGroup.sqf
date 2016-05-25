@@ -13,8 +13,7 @@ _unit addEventHandler ["Killed", {_this spawn RIP_fnc_MPKilledEH}];
 RIPMISSIONGUARDMENS pushBack _unit;
 _unit setRank "LIEUTENANT";
 
-for "_x" from 1 to _strength do
-{
+for "_x" from 1 to _strength do {
 	_unit = _group createunit [RIPPATROLMENS select floor(random count RIPPATROLMENS),_pos,[],2,"None"];
 	_unit addEventHandler ["Killed", {_this spawn RIP_fnc_MPKilledEH}];
 	[_unit] JoinSilent _group;

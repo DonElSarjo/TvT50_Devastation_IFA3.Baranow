@@ -4,8 +4,7 @@ private ["_params", "_action"];
 _params = _this select 3;
 _action = _params select 0;
 
-switch (_action) do
-{
+switch (_action) do {
     case "action_teleport":     { [cursorTarget] execVM "Scripts\DLG_Teleport.sqf"; };
     case "action_healonmhq":    { [] execVM "Scripts\Heal.sqf"; };
     case "action_lift":         { [] execVM "Scripts\Lift.sqf"; };

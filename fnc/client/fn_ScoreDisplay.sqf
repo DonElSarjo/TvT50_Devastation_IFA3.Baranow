@@ -14,35 +14,30 @@ waitUntil {!isNil "RIPSIDEFLAG3"};
 waitUntil {!isNil {Server getVariable "RIPCITYCAPTURINGINPROGRESS"}};
 waitUntil {!isNil {Server getVariable "RIPCITYCAPTURINGINPROGRESSMIN"}};
 
-while {true} do
-{
+while {true} do {
 	_text = "";
 	_townscoreeast = (Server getVariable "RIPTOWNSCOREEAST");
 	_townscorewest = (Server getVariable "RIPTOWNSCOREWEST");
 
-	_flag1 = switch (RIPSIDEFLAG1) do
-	{
+	_flag1 = switch (RIPSIDEFLAG1) do {
 		case 0: { "Pics\HUD\Flag_red.paa" };
 		case 1: { "Pics\HUD\Flag_blue.paa" };
 		case 2: { "Pics\HUD\Flag_green.paa" };
 		default { "Pics\HUD\Flag_green.paa" };
 	};
-	_flag2 = switch (RIPSIDEFLAG2) do
-	{
+	_flag2 = switch (RIPSIDEFLAG2) do {
 		case 0: { "Pics\HUD\Flag_red.paa" };
 		case 1: { "Pics\HUD\Flag_blue.paa" };
 		case 2: { "Pics\HUD\Flag_green.paa" };
 		default { "Pics\HUD\Flag_green.paa" };
 	};
-	_flag3 = switch (RIPSIDEFLAG3) do
-	{
+	_flag3 = switch (RIPSIDEFLAG3) do {
 		case 0: { "Pics\HUD\Flag_red.paa" };
 		case 1: { "Pics\HUD\Flag_blue.paa" };
 		case 2: { "Pics\HUD\Flag_green.paa" };
 		default { "Pics\HUD\Flag_green.paa" };
 	};
-	_radio = switch (Server getVariable "RIPRADIOTOWERDOWN") do
-	{
+	_radio = switch (Server getVariable "RIPRADIOTOWERDOWN") do {
 		case true: 	{ "Pics\HUD\Radio_dest.paa" };
 		case false: { "Pics\HUD\Radio.paa" };
 		default 	{ "Pics\HUD\Radio.paa" };
@@ -52,10 +47,8 @@ while {true} do
 	_side = Server getVariable "RIPCITYCAPTURINGINPROGRESS";
 	_min = Server getVariable "RIPCITYCAPTURINGINPROGRESSMIN";
 
-	if (_side == 0) then
-	{
-		_progressbar = switch (_min) do
-		{
+	if (_side == 0) then {
+		_progressbar = switch (_min) do {
 			case 0: { "Pics\ProgressBar\ProgressBar0.paa" };
 			case 1: { "Pics\ProgressBar\ProgressBar01.paa" };
 			case 2: { "Pics\ProgressBar\ProgressBar02.paa" };
@@ -64,10 +57,8 @@ while {true} do
 			case 5: { "Pics\ProgressBar\ProgressBar05.paa" };
 		};
 	};
-	if (_side == 1) then
-	{
-		_progressbar = switch (_min) do
-		{
+	if (_side == 1) then {
+		_progressbar = switch (_min) do {
 			case 0: { "Pics\ProgressBar\ProgressBar0.paa" };
 			case 1: { "Pics\ProgressBar\ProgressBar11.paa" };
 			case 2: { "Pics\ProgressBar\ProgressBar12.paa" };

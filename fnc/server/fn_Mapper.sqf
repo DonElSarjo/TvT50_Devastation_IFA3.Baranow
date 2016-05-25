@@ -32,14 +32,12 @@ _posY = _pos select 1;
 
 //Function to multiply a [2, 2] matrix by a [2, 1] matrix.
 private ["_multiplyMatrixFunc"];
-_multiplyMatrixFunc =
-{
+_multiplyMatrixFunc = {
 	private ["_array1", "_array2", "_result"];
 	_array1 = _this select 0;
 	_array2 = _this select 1;
 
-	_result =
-	[
+	_result = [
 		(((_array1 select 0) select 0) * (_array2 select 0)) + (((_array1 select 0) select 1) * (_array2 select 1)),
 		(((_array1 select 1) select 0) * (_array2 select 0)) + (((_array1 select 1) select 1) * (_array2 select 1))
 	];
@@ -47,8 +45,7 @@ _multiplyMatrixFunc =
 	_result
 };
 
-for "_i" from 0 to ((count _objs) - 1) do
-{
+for "_i" from 0 to ((count _objs) - 1) do {
 
 		private ["_obj", "_type", "_relPos", "_azimuth", "_fuel", "_damage", "_newObj"];
 		_obj = _objs select _i;
@@ -62,8 +59,7 @@ for "_i" from 0 to ((count _objs) - 1) do
 
 		//Rotate the relative position using a rotation matrix.
 		private ["_rotMatrix", "_newRelPos", "_newPos"];
-		_rotMatrix =
-		[
+		_rotMatrix = [
 			[cos _azi, sin _azi],
 			[-(sin _azi), cos _azi]
 		];

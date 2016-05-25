@@ -134,11 +134,14 @@ RIPBONUSWEST = [
 ];
 
 RIPMINESTYPE = [
-//	"LIB_MINE_SMi35_obj",
-//	"LIB_MINE_SMi35_1_obj",
-//	"LIB_Mine_PMD6_obj",
-//	"LIB_MINE_M3_obj",
-//	"LIB_MINE_US_M3_obj"
+	"APERSBoundingMine",
+	"APERSTripMine"
+	//	Errors in config
+	//	"LIB_MINE_SMi35_obj",
+	//	"LIB_MINE_SMi35_1_obj",
+	//	"LIB_Mine_PMD6_obj",
+	//	"LIB_MINE_M3_obj",
+	//	"LIB_MINE_US_M3_obj"
 ];
 
 RIPSTATICTYPE = [

@@ -16,37 +16,31 @@ kbn_viewDistanceLast = 0; //для приглушения 50% дальности
 kbn_max_viewDistance = "ViewDistance" call BIS_fnc_getParamValue;
 
 //из настроек ACE
-if(!isNil 'ACE_viewDistance_limitViewDistance')then
-{
+if(!isNil 'ACE_viewDistance_limitViewDistance') then {
 	kbn_max_viewDistance = ACE_viewDistance_limitViewDistance;
 };
 
 //из Атриума
-if(!isNil 'A3A_fnc_Modules_GetSettings')then
-{
+if(!isNil 'A3A_fnc_Modules_GetSettings')then {
 	private ["_a3a_vd"];
 	_a3a_vd = "VIEWDISTANCE" call A3A_fnc_Modules_GetSettings;
-	if(_a3a_vd != 0)then
-	{
+	if(_a3a_vd != 0)then {
 		kbn_max_viewDistance = _a3a_vd;
 	};
 };
 
 //из Серпа
-if(!isNil 'SerP_viewDistance')then
-{
+if(!isNil 'SerP_viewDistance')then {
 	kbn_max_viewDistance = SerP_viewDistance;
 };
 
 //по-умолчанию 12000
-if(kbn_max_viewDistance == 0)then
-{
+if(kbn_max_viewDistance == 0)then {
 	kbn_max_viewDistance = 12000;
 };
 
 //функция изменения дальности прорисовки
-fnc_kbn_changeViewDistance =
-{
+fnc_kbn_changeViewDistance = {
 	params ["_delta"];
 	private["_vd", "_ind"];
 	//_vd = getObjectViewDistance select 0;
@@ -58,12 +52,9 @@ fnc_kbn_changeViewDistance =
 	_ind set [_vd / 500, 124]; //"|" = 124
 	kbn_timeToHideHint = diag_tickTime + 2;
 	hintSilent parseText format ["Sichtweite: %1<br /><t color='#ffff00' size='2'>%2</t>", _vd, toString _ind];
-	if(isNil 'kbn_handler_hintHider' || {scriptDone kbn_handler_hintHider})then
-	{
-		kbn_handler_hintHider = [] spawn
-		{
-			waitUntil
-			{
+	if(isNil 'kbn_handler_hintHider' || {scriptDone kbn_handler_hintHider})then {
+		kbn_handler_hintHider = [] spawn {
+			waitUntil {
 				sleep 0.3;
 				diag_tickTime > kbn_timeToHideHint
 			};
@@ -72,25 +63,17 @@ fnc_kbn_changeViewDistance =
 	};
 
 	//добавим совместимость с Атриумовской системой настройки дальности: "пешком", "в транспорте", "в воздухе"
-	if(!isNil 'a3a_var_viewDistance_infantry')then
-	{
+	if(!isNil 'a3a_var_viewDistance_infantry')then {
 		_veh = vehicle player;
-		if (_veh != player) then
-		{
-			if (_veh isKindOf "Air") then
-			{
+		if (_veh != player) then {
+			if (_veh isKindOf "Air") then {
 				a3a_var_viewDistance_air = _vd;
-			}
-			else
-			{
-				if (_veh isKindOf "LandVehicle") then
-				{
+			} else {
+				if (_veh isKindOf "LandVehicle") then {
 					a3a_var_viewDistance_vehicle = _vd;
 				};
 			};
-		}
-		else
-		{
+		} else {
 			a3a_var_viewDistance_infantry = _vd;
 		};
 	};
@@ -99,17 +82,13 @@ fnc_kbn_changeViewDistance =
 };
 
 //фцнкция приглушения 50% дальности
-fnc_kbn_muteViewDistance =
-{
+fnc_kbn_muteViewDistance = {
 	private["_vd", "_ind"];
 	_vd = getObjectViewDistance select 0;
-	if(kbn_viewDistanceLast == 0)then
-	{
+	if(kbn_viewDistanceLast == 0)then {
 		kbn_viewDistanceLast = _vd;
 		_vd = kbn_max_viewDistance min (500 max (round (_vd / 2 / 500) * 500));
-	}
-	else
-	{
+	} else {
 		_vd = kbn_max_viewDistance min (500 max kbn_viewDistanceLast);
 		kbn_viewDistanceLast = 0;
 	};
@@ -120,12 +99,9 @@ fnc_kbn_muteViewDistance =
 	_ind set [_vd / 500, 124]; //"|" = 124
 	kbn_timeToHideHint = diag_tickTime + 2;
 	hintSilent parseText format ["Sichtweite: %1<br /><t color='#ffff00' size='2'>%2</t>", _vd, toString _ind];
-	if(isNil 'kbn_handler_hintHider' || {scriptDone kbn_handler_hintHider})then
-	{
-		kbn_handler_hintHider = [] spawn
-		{
-			waitUntil
-			{
+	if(isNil 'kbn_handler_hintHider' || {scriptDone kbn_handler_hintHider})then {
+		kbn_handler_hintHider = [] spawn {
+			waitUntil {
 				sleep 0.3;
 				diag_tickTime > kbn_timeToHideHint
 			};
@@ -134,25 +110,17 @@ fnc_kbn_muteViewDistance =
 	};
 
 	//добавим совместимость с Атриумовской системой настройки дальности: "пешком", "в транспорте", "в воздухе"
-	if(!isNil 'a3a_var_viewDistance_infantry')then
-	{
+	if(!isNil 'a3a_var_viewDistance_infantry')then {
 		_veh = vehicle player;
-		if (_veh != player) then
-		{
-			if (_veh isKindOf "Air") then
-			{
+		if (_veh != player) then {
+			if (_veh isKindOf "Air") then {
 				a3a_var_viewDistance_air = _vd;
-			}
-			else
-			{
-				if (_veh isKindOf "LandVehicle") then
-				{
+			} else {
+				if (_veh isKindOf "LandVehicle") then {
 					a3a_var_viewDistance_vehicle = _vd;
 				};
 			};
-		}
-		else
-		{
+		} else {
 			a3a_var_viewDistance_infantry = _vd;
 		};
 	};

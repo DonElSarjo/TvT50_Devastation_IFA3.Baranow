@@ -12,8 +12,7 @@ class CfgFunctions {
 	#include "fnc\functions.hpp"
 }
 
-class Header
-{
+class Header {
 	gameType = CTI;
 	minPlayers = 1;
 	maxPlayers = 50;
@@ -37,206 +36,176 @@ wreckManagerMode = 0;
 
 showHUD[] = {true,true,false,false,true,true,true,true};
 
-class Params
-{
-	class RIPMISSIONCOUNTFORWIN
-	{
+class Params {
+	class RIPMISSIONCOUNTFORWIN {
 		title = $STR_RIP_MISSIONCOUNT;
 		values[] = {1,2,3,4,5};
 		texts[] = {"1","2","3","4","5"};
 		default = 4;
 	};
-	class RIPDAY
-	{
+	class RIPDAY {
 		title = $STR_RIP_TIME;
 		values[]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
 		default=5;
 		texts[]={"00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"};
 	};
-	class RIPRANDOMTIME
-	{
+	class RIPRANDOMTIME {
 		title = $STR_RIP_RANDOMTIME;
 		values[] = {1, 2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 2;
 	};
-	class RIPMAXDISTANCE
-	{
+	class RIPMAXDISTANCE {
 		title = $STR_RIP_DISTANCE;
 		values[]={2500,3000,3500,4000,5000,7500,10000};
 		texts[]={"2500","3000","3500","4000","5000","7500","10000"};
 		default=5000;
 	};
-	class RIPCHANGESIDE
-	{
+	class RIPCHANGESIDE {
 		title = $STR_RIP_CHANGESIDE;
 		values[] = {0,600,1200,1800,2400,3000,3600};
 		texts[] = {$STR_RIP_DISABLE,"10","20","30","40","50","60"};
 		default = 0;
 	};
-	class RIPFASTTIME
-	{
+	class RIPFASTTIME {
 		title = "$STR_RIP_FASTTIME";
 		values[] = {0,2,3,4,5,6};
 		texts[] = {$STR_RIP_DISABLE,"x2","x3","x4","x5","x6"};
 		default = 0;
 	};
-	class RIPWEATHER
-	{
+	class RIPWEATHER {
 		title = "$STR_RIP_WEATHER";
 		values[] = {0,1,2,3,4};
 		texts[] = {$STR_RIP_WEATHERCLEAR,$STR_RIP_WEATHEROVERCAST,$STR_RIP_WEATHERRAIN,$STR_RIP_WEATHERFOG,$STR_RIP_WEATHERDYNAMIC};
 		default = 4;
 	};
-	class RIPPLAYERMARKER
-	{
+	class RIPPLAYERMARKER {
 		title = $STR_RIP_PLAYERMARKERS;
 		values[] = {1, 2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 1;
 	};
-	class RIP3DPLAYERMARKER
-	{
+	class RIP3DPLAYERMARKER {
 		title = $STR_RIP_3DPLAYERMARKERS;
 		values[] = {1, 2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 1;
 	};
-	class RIPVEHICLEMARKER
-	{
+	class RIPVEHICLEMARKER {
 		title = $STR_RIP_VEHICLEMARKERS;
 		values[] = {1, 2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 1;
 	};
-	class RIPDEFAULTGRASSLAYER
-	{
+	class RIPDEFAULTGRASSLAYER {
 		title = $STR_RIP_GRASSLAYER;
 		values[] = {0,1,2,3};
 		texts[] = {$STR_RIP_DISABLE, $STR_RIP_LOW, $STR_RIP_NORMAL, $STR_RIP_HIGHT};
 		default = 2;
 	};
-	class RIPDISABLEGRASSPLAYER
-	{
+	class RIPDISABLEGRASSPLAYER {
 		title = $STR_RIP_DISABLEGRASS;
 		values[] = {1,0};
 		texts[] = {$STR_RIP_YES, $STR_RIP_NO};
 		default = 0;
 	};
-	class RIP3DPERSONDISABLE
-	{
+	class RIP3DPERSONDISABLE {
 		title = $STR_RIP_3DPERSONDISABLE;
 		values[] = {1,2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 1;
 	};
-	class RIPTELEPORTTOMHQ
-	{
+	class RIPTELEPORTTOMHQ {
 		title = $STR_RIP_TELEPORTTOMHQ;
 		values[] = {1,2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 1;
 	};
-	class RIPTELEPORTTOBASE
-	{
+	class RIPTELEPORTTOBASE {
 		title = $STR_RIP_TELEPORTTOBASE;
 		values[] = {1,2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 1;
 	};
-	class RIPDESERTEDVEHICLEDELAY
-	{
+	class RIPDESERTEDVEHICLEDELAY {
 		title = $STR_RIP_DESERTEDVEHICLEDELAY;
 		values[] = {0,60,120,180,240,300,600,900,1200,1500,1800};
 		texts[] = {$STR_RIP_DISABLE,"1","2","3","4","5","10","15","20","25","30"};
 		default = 1800;
 	};
-	class RIPMHQRESPAWNDELAY
-	{
+	class RIPMHQRESPAWNDELAY {
 		title = $STR_RIP_MHQRESPAWNTIME;
 		values[] = {60,120,180,240,300,600,900,1200,1500,1800};
 		texts[] = {"1","2","3","4","5","10","15","20","25","30"};
 		default = 600;
 	};
-	class RIPVEHICLEREMOVEDELAY
-	{
+	class RIPVEHICLEREMOVEDELAY {
 		title = $STR_RIP_VEHICLEREMOVETIME;
 		values[] = {60,120,180,240,300,600,900,1200,1500,1800};
 		texts[] = {"1","2","3","4","5","10","15","20","25","30"};
 		default = 600;
 	};
-	class RIPAIRRELOADTIME
-	{
+	class RIPAIRRELOADTIME {
 		title = $STR_RIP_AIRRELOADTIME;
 		values[] = {60,120,180,240,300,600,900,1200,1500,1800};
 		texts[] = {"1","2","3","4","5","10","15","20","25","30"};
 		default = 600;
 	};
-	class RIPLANDRELOADTIME
-	{
+	class RIPLANDRELOADTIME {
 		title = $STR_RIP_LANDRELOADTIME;
 		values[] = {60,120,180,240,300,600,900,1200,1500,1800};
 		texts[] = {"1","2","3","4","5","10","15","20","25","30"};
 		default = 60;
 	};
-	class RIPANTIATGMSYSTEM
-	{
+	class RIPANTIATGMSYSTEM {
 		title = $STR_RIP_ANTIATGMSYSTEM;
 		values[] = {1,2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 2;
 	};
-	class RIPPILOTCHECK
-	{
+	class RIPPILOTCHECK {
 		title = $STR_RIP_PILOTCHECK;
 		values[] = {1,2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 1;
 	};
-	class RIPDISABLETI
-	{
+	class RIPDISABLETI {
 		title = $STR_RIP_DISABLETI;
 		values[] = {0,100,200,300,400,500,600,700,800,900,1000};
 		texts[] = {$STR_RIP_DISABLE, "100","200","300","400","500","600","700","800","900","1000"};
 		default = 100;
 	};
-	class RIPVEHICLEBUY
-	{
+	class RIPVEHICLEBUY {
 		title = $STR_RIP_VEHICLEBUY;
 		values[] = {1,2};
 		texts[] = {$STR_RIP_ENABLE, $STR_RIP_DISABLE};
 		default = 1;
 	};
-	class RIPAISKILL
-	{
+	class RIPAISKILL {
 		title = $STR_RIP_AISKILL;
 		values[] = {2,3,4};
 		texts[] = {$STR_RIP_LOW, $STR_RIP_NORMAL, $STR_RIP_HIGHT};
 		default = 3;
 	};
-	class RIPAICOUNT
-	{
+	class RIPAICOUNT {
 		title = $STR_RIP_AICOUNT;
 		values[] = {12,16,22};
 		texts[] = {$STR_RIP_LITTLE, $STR_RIP_NORMALLY, $STR_RIP_MANY};
 		default = 12;
 	};
-	class RIPAILIGHTVEHCOUNT
-	{
+	class RIPAILIGHTVEHCOUNT {
 		title = $STR_RIP_AILIGHTVEHCOUNT;
 		values[] = {0,1,2};
 		texts[] = {$STR_RIP_NO, $STR_RIP_LITTLE, $STR_RIP_NORMALLY};
 		default = 1;
 	};
-	class RIPAIHEAVYVEHCOUNT
-	{
+	class RIPAIHEAVYVEHCOUNT {
 		title = $STR_RIP_AIHEAVYVEHCOUNT;
 		values[] = {0,1,2};
 		texts[] = {$STR_RIP_NO, $STR_RIP_LITTLE, $STR_RIP_NORMALLY};
 		default = 1;
 	};
-	class RIP_ppEffect
-	{
+	class RIP_ppEffect {
 		title = "Enable random pp effects"
 		values[] = {0,1};
 		texts[] = {"ON", "OFF"};
@@ -244,63 +213,52 @@ class Params
 	}
 };
 
-class CfgDebriefing
-{
-	class RedTeamWin
-	{
+class CfgDebriefing {
+	class RedTeamWin {
 		title = $STR_RIP_CONGRATULATIONS;
 		subtitle = $STR_RIP_REDTEAMWIN;
 	};
-	class BlueTeamWin
-	{
+	class BlueTeamWin {
 		title = $STR_RIP_CONGRATULATIONS;
 		subtitle = $STR_RIP_BLUETEAMWIN;
 	};
-	class Draw
-	{
+	class Draw {
 		title = $STR_RIP_CONGRATULATIONS;
 		subtitle = $STR_RIP_HINT_MISSIONDRAW;
 	};
-	class ChangeSide
-	{
+	class ChangeSide {
 		title = $STR_RIP_KICKPLAYER;
 		subtitle = $STR_RIP_CHANGESIDEPROTECT;
 	};
-	class AFK
-	{
+	class AFK {
 		title = $STR_RIP_KICKPLAYER;
 		subtitle = $STR_RIP_KICKAFK;
 	};
 };
 
-class CfgNotifications
-{
-	class RIP_Notif_MissionComplete
-	{
+class CfgNotifications {
+	class RIP_Notif_MissionComplete {
 		title = $STR_RIP_NOTIF_MISSIONCOMPLETE;
 		iconPicture = "\A3\ui_f\data\map\MapControl\taskicondone_ca.paa";
 		description = "<t size='1.15' color='#07A0FF' align='left'>%1</t><t><img size='2.0' align='center' shadow='0' image='Pics\HUD\ScoreBoard.paa'></t><t size='1.15' color='#ff0000' align='right'>%2</t>";
 		priority = 0;
 		duration = 5;
 	};
-	class RIP_Notif_MissionFailed
-	{
+	class RIP_Notif_MissionFailed {
 		title = $STR_RIP_NOTIF_MISSIONFAILED;
 		iconPicture = "\A3\ui_f\data\map\MapControl\taskiconfailed_ca.paa";
 		description = "<t size='1.15' color='#07A0FF' align='left'>%1</t><t><img size='2.0' align='center' shadow='0' image='Pics\HUD\ScoreBoard.paa'></t><t size='1.15' color='#ff0000' align='right'>%2</t>";
 		priority = 0;
 		duration = 5;
 	};
-	class RIP_Notif_Warning
-	{
+	class RIP_Notif_Warning {
 		title = $STR_RIP_NOTIF_WARNING_TITLE;
 		iconPicture = "Pics\Attention.paa";
 		description = "<t size='0.7' color='#FF4A3D' align='center'>%1</t>";
 		priority = 0;
 		duration = 5;
 	};
-	class RIP_Notif_Info
-	{
+	class RIP_Notif_Info {
 		title = $STR_RIP_NOTIF_INFO_TITLE;
 		iconPicture = "Pics\Information.paa";
 		description = "<t size='0.7' color='#FF973D' align='center'>%1</t>";
@@ -309,10 +267,8 @@ class CfgNotifications
 	};
 };
 
-class CfgRemoteExec
-{
-    class Commands
-    {
+class CfgRemoteExec {
+    class Commands {
             mode = 1;
 
             class addScore {allowedTargets = 2;};
@@ -323,8 +279,7 @@ class CfgRemoteExec
             class setVelocity {allowedTargets = 0;};
             class setFlagTexture {allowedTargets = 2;};
     };
-    class Functions
-    {
+    class Functions {
             mode = 1;
 
             class RIP_func_PunishTeamKiller {allowedTargets = 0;};

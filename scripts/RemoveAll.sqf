@@ -6,13 +6,10 @@ removeUniform player;
 removeAllAssignedItems player;
 clearAllItemsFromBackpack player;
 removeBackpack player;
-if (RIPPLAYERSIDE == 0) then
-{
+if (RIPPLAYERSIDE == 0) then {
 	player forceAddUniform "U_LIB_SOV_Strelok";
 	player addHeadgear "H_LIB_SOV_RA_PrivateCap";
-}
-else
-{
+} else {
 	player forceAddUniform "U_LIB_GER_Soldier_camo";
 	player addHeadgear "H_LIB_GER_HelmetCamo";
 };

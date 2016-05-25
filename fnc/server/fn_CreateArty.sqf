@@ -7,14 +7,12 @@ _pos = [];
 _count = 1 + ceil(random 3);
 _i = 0;
 
-while {_i < _count} do
-{
+while {_i < _count} do {
 	_typarty = RIPARTYTYPE call BIS_fnc_selectRandom;
 	_arty = objNull;
 	_pos = [RIP_TargetPosition, 150] call RIP_fnc_GetRandomPos;
 	_co = 0;
-	while {((count (nearestObjects [_pos, ["StaticWeapon"], 100])) > 0) && (_co < 149)} do
-	{
+	while {((count (nearestObjects [_pos, ["StaticWeapon"], 100])) > 0) && (_co < 149)} do {
 		_pos = [RIP_TargetPosition, 150] call RIP_fnc_GetRandomPos;
 		_co = _co + 1;
 	};

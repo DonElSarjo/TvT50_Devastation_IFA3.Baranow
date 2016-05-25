@@ -13,8 +13,7 @@ _ctrlExit ctrlEnable false;
 if ((player distance RIP_BASEFLAGE < 1000) || (player distance RIP_BASEFLAGW < 1000)) exitWith {_ctrlRespawn ctrlEnable true;_ctrlExit ctrlEnable true;};
 
 _i = 60;
-while {!(isNull (findDisplay 49)) && _i > 0} do
-{
+while {!(isNull (findDisplay 49)) && _i > 0} do {
 	_NewRespawntext = _Respawntext + format ["(%1)",_i];
 	_ctrlRespawn ctrlSetText _NewRespawntext;
 	_NewExittext = _Exittext + format ["(%1)",_i];
@@ -25,8 +24,7 @@ while {!(isNull (findDisplay 49)) && _i > 0} do
 
 _ctrlRespawn ctrlSetText _Respawntext;
 _ctrlExit ctrlSetText _Exittext;
-if (!(isNull (findDisplay 49))) then
-{
+if (!(isNull (findDisplay 49))) then {
 	_ctrlRespawn ctrlEnable true;
 	_ctrlExit ctrlEnable true;
 	waitUntil {isNull (findDisplay 49)};

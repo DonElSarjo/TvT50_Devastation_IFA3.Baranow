@@ -9,15 +9,13 @@ _pos = [];
 _count = 3 + ceil(random 5);
 _i = 0;
 
-while {_i < _count} do
-{
+while {_i < _count} do {
 	_typemg = RIPSTATICTYPE call BIS_fnc_selectRandom;
 	_mg = objNull;
 	_mg = createVehicle [_typemg, [0,0,0], [], 300, "FLY"];
 	_pos = [RIP_TargetPosition, 200] call RIP_fnc_GetRandomPos;
 	_co = 0;
-	while {((count (nearestObjects [_pos, ["StaticWeapon"], 100])) > 0) && (_co < 149)} do
-	{
+	while {((count (nearestObjects [_pos, ["StaticWeapon"], 100])) > 0) && (_co < 149)} do {
 		_pos = [RIP_TargetPosition, 200] call RIP_fnc_GetRandomPos;
 		_co = _co + 1;
 	};

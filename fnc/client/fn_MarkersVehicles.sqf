@@ -17,48 +17,40 @@ _CreateVehMarker = {
 	_markername setMarkerColorLocal _markercolor;
 	_markertext = getText (configFile >> "CfgVehicles" >> (typeOf _veh) >> "DisplayName");
 
-	if (_veh in [EMHQ1,WMHQ1]) then
-	{
-		if (_veh getVariable "RIP_MHQDEPLOY" == 1) then
-			{_markertext = localize "STR_RIP_MHQ1DEPLOY"}
-		else
-			{_markertext = localize "STR_RIP_MHQ1"};
+	if (_veh in [EMHQ1,WMHQ1]) then {
+		if (_veh getVariable "RIP_MHQDEPLOY" == 1) then {
+			_markertext = localize "STR_RIP_MHQ1DEPLOY"
+		} else {
+			_markertext = localize "STR_RIP_MHQ1"
+		};
 	};
-	if (_veh in [EMHQ2,WMHQ2]) then
-	{
-		if (_veh getVariable "RIP_MHQDEPLOY" == 1) then
-			{_markertext = localize "STR_RIP_MHQ2DEPLOY"}
-		else
-			{_markertext = localize "STR_RIP_MHQ2"};
+	if (_veh in [EMHQ2,WMHQ2]) then {
+		if (_veh getVariable "RIP_MHQDEPLOY" == 1) then {
+			_markertext = localize "STR_RIP_MHQ2DEPLOY"
+		} else {
+			_markertext = localize "STR_RIP_MHQ2"
+		};
 	};
 	_markername setMarkerTextLocal _markertext;
-
 	_markername
 };
 
 RIP_VEHICLESMARKERSON = true;
 
-while {RIP_VEHICLESMARKERSON} do
-{
+while {RIP_VEHICLESMARKERSON} do {
 	_markers = [];
 	{
-		if (getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "side") == RIPPLAYERSIDE) then
-		{
-			if (alive _x) then
-			{
-				if !(_x iskindof "ParachuteBase") then
-				{
-					if ((_x isKindOf "Tank") || (_x isKindOf "Car") || (_x isKindOf "Air")) then
-					{
+		if (getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "side") == RIPPLAYERSIDE) then {
+			if (alive _x) then {
+				if !(_x iskindof "ParachuteBase") then {
+					if ((_x isKindOf "Tank") || (_x isKindOf "Car") || (_x isKindOf "Air")) then {
 						if (RIPPLAYERMARKER == 1) then {
-							if (!(isPlayer (driver _x)) && !(isPlayer (gunner _x)) && !(isPlayer (commander _x))) then
-							{
+							if (!(isPlayer (driver _x)) && !(isPlayer (gunner _x)) && !(isPlayer (commander _x))) then {
 								_markerveh = [_x] call _CreateVehMarker;
 								_markers = _markers + [_markerveh];
 							};
 						};
-						if (RIPPLAYERMARKER == 2) then
-						{
+						if (RIPPLAYERMARKER == 2) then {
 							_markerveh = [_x] call _CreateVehMarker;
 							_markers = _markers + [_markerveh];
 						};

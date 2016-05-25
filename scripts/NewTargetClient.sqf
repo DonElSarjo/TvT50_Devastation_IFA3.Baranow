@@ -13,8 +13,7 @@ _alltargets = Server getVariable "RIPALLMISSIONTARGETS";
 	RIPNEWTARGETNAME = text (_townlist select 0);
 
 	RIPTARGETMARKERNAME = format ["%1Marker",_x];
-	if (getMarkerColor RIPTARGETMARKERNAME == "") then
-	{
+	if (getMarkerColor RIPTARGETMARKERNAME == "") then {
 		_targetmarker = createMarkerLocal [RIPTARGETMARKERNAME, _newtargetpos];
 		_targetmarker setMarkerShapeLocal "ELLIPSE";
 		RIPTARGETMARKERNAME setMarkerSizeLocal [300, 300];
@@ -25,12 +24,31 @@ _alltargets = Server getVariable "RIPALLMISSIONTARGETS";
 		RIPTARGETTASK setTaskState "Created";
 
 		_state = _x getVariable "RIPTARGETSTATE";
-		switch (_state) do
-		{
-			case 0: { RIPTARGETMARKERNAME setMarkerColorLocal "ColorRed"; if (side player == EAST) then {RIPTARGETTASK setTaskState "Succeeded";} else {RIPTARGETTASK setTaskState "Failed";}; };
-			case 1: { RIPTARGETMARKERNAME setMarkerColorLocal "ColorBlue"; if (side player == EAST) then {RIPTARGETTASK setTaskState "Failed";} else {RIPTARGETTASK setTaskState "Succeeded";}; };
-			case 3: { RIPTARGETMARKERNAME setMarkerColorLocal "ColorWhite"; RIPTARGETTASK setTaskState "Failed"; };
-			case 4: { RIPTARGETMARKERNAME setMarkerColorLocal "ColorYellow"; RIPTARGETTASK setTaskState "Assigned"; };
+		switch (_state) do {
+			case 0: {
+				RIPTARGETMARKERNAME setMarkerColorLocal "ColorRed";
+				if (side player == EAST) then {
+					RIPTARGETTASK setTaskState "Succeeded";
+				} else {
+					RIPTARGETTASK setTaskState "Failed";
+				};
+			};
+			case 1: {
+				RIPTARGETMARKERNAME setMarkerColorLocal "ColorBlue";
+				if (side player == EAST) then {
+					RIPTARGETTASK setTaskState "Failed";
+				} else {
+					RIPTARGETTASK setTaskState "Succeeded";
+				};
+			};
+			case 3: {
+				RIPTARGETMARKERNAME setMarkerColorLocal "ColorWhite";
+				RIPTARGETTASK setTaskState "Failed";
+			};
+			case 4: {
+				RIPTARGETMARKERNAME setMarkerColorLocal "ColorYellow";
+				RIPTARGETTASK setTaskState "Assigned";
+			};
 		};
 		RIPTARGETPOS = _newtargetpos;
 	};

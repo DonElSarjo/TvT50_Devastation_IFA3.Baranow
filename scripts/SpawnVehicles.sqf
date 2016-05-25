@@ -17,8 +17,7 @@ _subScore = 0 - _vehprice;
 [player,_subScore] remoteExec ["addScore", 2];
 waitUntil { _money > ((getPlayerScores player) select 5) };
 
-if !(_vehtype in AVAILABLEBACKPACK) then
-{
+if !(_vehtype in AVAILABLEBACKPACK) then {
 	_dist = (sizeOf _vehtype) + 4;
 	_pos = [(getPos player select 0) + _dist*sin (getDir player), (getPos player select 1) + _dist*cos (getDir player)];
 	_vehicle = createVehicle [_vehtype, _pos, [], 0, "NONE"];
@@ -34,14 +33,12 @@ if !(_vehtype in AVAILABLEBACKPACK) then
 	_vehicle setVariable ["RIP_VehicleName", (getPlayerUID player), true];
 	if (RIPANTIATGMSYSTEM == 1) then { if (_vehicle isKindOf "Tank_F") then { [_vehicle] remoteExec ["RIP_fnc_AddEHIncomingMissile", 0, true]; }; };
 };
-if (_vehtype in AVAILABLEBACKPACK) then
-{
+if (_vehtype in AVAILABLEBACKPACK) then {
 	if (backpack player != "") then {removeBackpack player};
 	uisleep 0.2;
 	player addBackpack _vehtype;
 };
-if (_vehtype in RIP_ATLAUNCHERS) then
-{
+if (_vehtype in RIP_ATLAUNCHERS) then {
 	if (secondaryWeapon player != "") then {player removeWeapon (secondaryWeapon player)};
 	uisleep 0.2;
 	player addWeapon _vehtype;
