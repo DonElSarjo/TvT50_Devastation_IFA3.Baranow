@@ -52,4 +52,4 @@ player setCustomAimCoef 0.4;
 waitUntil {!isNil "des_ppEffect"};
 if (paramsArray select 28 == 1) then {
 	[des_ppEffect] call RIP_fnc_ppEffect; //too lazy to change the tag :P
-}
+};

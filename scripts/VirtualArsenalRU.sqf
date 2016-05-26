@@ -4,126 +4,166 @@ nameOfBox - Object
 type - Number, 0: all gear, 1: only ammo
 
 you can use it on whatever you want :)
-/* && (((configname _entry) splitstring "_") select 2) == "GER"*
+
 author: reyhard the grey
 */
-private ["_return", "_path","_entry"];
-_return = [];
-_path = configfile >> "cfgWeapons";
-for "_i" from 0 to (count(configfile >> "cfgWeapons"))-1 do {
-	_entry = _path select _x;
-	if (getNumber (_entry >> "scope") == 2) then {
-		_return pushback  configname _entry
-	};
-};
-copytoclipboard str _return
-[]
 
 private["_ammoBox","_type","_lib_magazines","_lib_weapons","_lib_items","_lib_backpacks"];
 params["_ammoBox","_type"];
 
 _lib_weapons = [
 	"Binocular",
-	"LIB_P38",
-	"LIB_M1908",
-	"LIB_FLARE_PISTOL",
-	"LIB_MP40",
-	"LIB_K98",
-	"LIB_K98ZF39",
-	"LIB_MP44",
-	"LIB_G43",
-	"LIB_MG42",
-	"LIB_MLMG42",
-	"LIB_PzFaust_30m",
-	"LIB_RPzB"
+	"LIB_TT33",
+	"LIB_M1895",
+	"LIB_PPSh41_d",
+	"LIB_PPSh41_m",
+	"LIB_M9130",
+	"LIB_DP28",
+	"LIB_RPzB",
+	"LIB_M9130PU",
+	"LIB_DT_OPTIC",
+	"LIB_DT",
+	"LIB_FLARE_PISTOL"
 ];
 _lib_magazines = [
-	"lib_8Rnd_9x19",
-	"lib_1Rnd_flare_white",
-	"lib_1Rnd_flare_red",
-	"lib_1Rnd_flare_green",
-	"lib_1Rnd_flare_yellow",
-	"LIB_32Rnd_9x19",
-	"lib_5Rnd_792x57",
-	"lib_30Rnd_792x33",
-	"lib_10Rnd_792x57",
-	"lib_50Rnd_792x57",
-	"lib_250Rnd_792x57",
-	"1Rnd_LIB_PzFaust_30m",
-	"LIB_1Rnd_RPzB"
+
+	"LIB_1Rnd_flare_yellow",
+	"LIB_1Rnd_flare_green",
+	"LIB_1Rnd_flare_red",
+	"LIB_1Rnd_flare_white",
+
+	"lib_63Rnd_762x54d",
+	"lib_63Rnd_762x54",
+
+	"lib_5Rnd_762x54",
+	"lib_5Rnd_762x54_t46",
+	"lib_5Rnd_762x54_t30",
+	"lib_5Rnd_762x54_D",
+
+	"lib_8Rnd_762x25",
+
+	"lib_47Rnd_762x54",
+	"lib_47Rnd_762x54d",
+	"LIB_1Rnd_RPzB",
+
+	"lib_35Rnd_762x25",
+	"lib_35Rnd_762x25_t",
+	"lib_35Rnd_762x25_t2",
+	"lib_35Rnd_762x25_ap",
+
+	"lib_71Rnd_762x25",
+	"lib_71Rnd_762x25_t",
+	"lib_71Rnd_762x25_t2",
+	"lib_71Rnd_762x25_ap",
+
+	"lib_10Rnd_762x54",
+
+	"lib_7Rnd_762x38",
+
+	"lib_10Rnd_762x54_t46",
+	"lib_10Rnd_762x54_t30",
+	"lib_10Rnd_762x54_t462",
+	"lib_10Rnd_762x54_t302",
+	"lib_10Rnd_762x54_d",
+
+	"lib_pwm",
+	"lib_m39",
+	"lib_shg24",
+	"lib_shg24x7",
+	"lib_nb39",
+	"lib_f1",
+	"lib_rg42",
+	"lib_rpg6",
+
+	"LIB_Ladung_PM_MINE_mag",
+	"LIB_PM_Provod_100",
+	"LIB_PM_Provod_50",
+	"LIB_PM_Provod_75",
+	"LIB_shumine_42_MINE_mag",
+	"LIB_SMI_35_MINE_mag",
+	"LIB_SMI_35_1_MINE_mag",
+	"LIB_Ladung_Small_MINE_mag",
+	"LIB_Ladung_Big_MINE_mag",
+	"LIB_STMI_MINE_mag",
+	"LIB_TMI_42_MINE_mag",
+	"LIB_M3_MINE_mag",
+	"LIB_PMD6_MINE_mag",
+	"LIB_pomzec_MINE_mag",
+	"LIB_TM44_MINE_mag"
 ];
 
 _lib_items = [
-//	"itemRadio",
 	"itemMap",
 	"itemcompass",
 	"itemWatch",
-	//misc items
 	"toolkit",
 	"medikit",
 	"firstaidkit",
 	"LIB_Binocular_SU",
-	"LIB_w"
-	//uniforms
-	V_LIB_GER_VestG43
-V_LIB_GER_VestKar98
-V_LIB_GER_VestMG
-V_LIB_GER_VestMP40
-V_LIB_GER_VestSTG
-	//vests
+	"LIB_w",
 
-	//headgear
-
-	// Beret
-
-
-	//facewear
-
-
-	//accesories
-
+	"U_LIB_SOV_Strelok",
+	"U_LIB_SOV_Strelokart",
+	"U_LIB_SOV_Tank_private_field",
+	"U_LIB_SOV_Starshina",
+	"U_LIB_SOV_Efreitor",
+	"U_LIB_SOV_Sergeant",
+	"U_LIB_SOV_Sergeant_inset_pocket",
+	"U_LIB_SOV_Stsergeant",
+	"U_LIB_SOV_Leutenant",
+	"U_LIB_SOV_Pilot",
+	"U_LIB_SOV_Leutenant_inset_pocket",
+	"U_LIB_SOV_Artleutenant",
+	"U_LIB_SOV_Stleutenant",
+	"U_LIB_SOV_Kapitan",
+	"U_LIB_SOV_Razvedchik_am",
+	"U_LIB_SOV_Razvedchik_lis",
+	"U_LIB_SOV_Razvedchik_mix",
+	"U_LIB_SOV_Sniper",
+	"U_LIB_SOV_Tank_ryadovoi",
+	"U_LIB_SOV_Tank_sergeant",
+	"U_LIB_SOV_Tank_leutenant",
+	"U_LIB_SOV_Tank_kapitan",
+	"H_LIB_SOV_RA_PrivateCap",
+	"H_LIB_SOV_RA_OfficerCap",
+	"H_LIB_SOV_RA_Helmet",
+	"H_LIB_SOV_TankHelmet",
+	"H_LIB_SOV_PilotHelmet",
+	"V_LIB_SOV_IShBrVestMG",
+	"V_LIB_SOV_IShBrVestPPShMag",
+	"V_LIB_SOV_IShBrVestPPShDisc",
+	"V_LIB_SOV_RA_OfficerVest",
+	"V_LIB_SOV_RA_SniperVest",
+	"V_LIB_SOV_RA_Belt",
+	"V_LIB_SOV_RA_TankOfficerSet",
+	"V_LIB_SOV_RA_PPShBelt",
+	"V_LIB_SOV_RA_MosinBelt",
+	"V_LIB_SOV_RA_SVTBelt",
+	"V_LIB_SOV_RA_MGBelt",
+	"V_LIB_SOV_RAZV_SVTBelt",
+	"V_LIB_SOV_RAZV_OfficerVest",
+	"V_LIB_SOV_RAZV_MGBelt",
+	"V_LIB_SOV_RAZV_PPShBelt"
 ];
 
-if (isClass(configFile >> "cfgPatches" >> "rhsusf_c_weapons")) then
-{
-	{_lib_items pushback _x}foreach (getArray (configFile >> "rhs_western_rifle_scopes_slot" >> "compatibleItems"));
-};
-
 _lib_backpacks = [
-	"rhs_assault_umbts",
-//	"rhs_assault_umbts_engineer",
-	"rhs_assault_umbts_engineer_empty",
-//	"rhs_assault_umbts_medic",
-//	"rhs_rpg",
-	"rhs_rpg_empty",
-	"rhs_sidor"
-/*	"rhs_sidorMG",
-	"RHS_NSV_Gun_Bag",
-	"RHS_NSV_Tripod_Bag",
-	"RHS_DShkM_Gun_Bag",
-	"RHS_DShkM_TripodHigh_Bag",
-	"RHS_DShkM_TripodLow_Bag",
-	"RHS_Kord_Gun_Bag",
-	"RHS_Kord_Tripod_Bag",
-	"RHS_Metis_Gun_Bag",
-	"RHS_Metis_Tripod_Bag",
-	"RHS_Kornet_Gun_Bag",
-	"RHS_Kornet_Tripod_Bag",
-	"RHS_AGS30_Gun_Bag",
-	"RHS_AGS30_Tripod_Bag",
-	"RHS_SPG9_Gun_Bag",
-	"RHS_SPG9_Tripod_Bag",
-	"RHS_Podnos_Gun_Bag",
-	"RHS_Podnos_Bipod_Bag"*/
+	"B_LIB_SOV_RA_GasBag",
+	"B_LIB_SOV_RA_Paradrop",
+	"B_LIB_SOV_RA_MedicalBag",
+	"B_LIB_SOV_RA_Radio",
+	"B_LIB_SOV_RA_Rucksack",
+	"B_LIB_SOV_RA_RucksackMines",
+	"B_LIB_SOV_RA_RucksackMines2",
+	"B_LIB_SOV_RA_MGAmmoBag"
 ];
 
 //adding stuff
 
-["AmmoboxInit",[_ammoBox]] call rhs_fnc_arsenal;
+["AmmoboxInit",[_ammoBox]] call BIS_fnc_arsenal;
 
 if(_type == 0)then{
 	[_ammoBox,_lib_weapons,true] call BIS_fnc_addVirtualWeaponCargo;
-	[_ammoBox,_lib_items,true] call rhs_fnc_addVirtualItemCargo;
+	[_ammoBox,_lib_items,true] call BIS_fnc_addVirtualItemCargo;
 	[_ammoBox,_lib_backpacks,true] call BIS_fnc_addVirtualBackPackCargo;
 };
 
