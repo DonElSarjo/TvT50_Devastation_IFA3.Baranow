@@ -33,8 +33,8 @@ if (RIP3DPERSONDISABLE == 1) then {
 };
 
 switch _dikCode do {
-	/*LWIN
-	case 35:
+	//LWIN
+	case 0xDB:
 	{
 		if (_ctrl) then
 		{
@@ -42,13 +42,13 @@ switch _dikCode do {
 			_handled = true;
 		};
 	};
-	//RWIN*/
+	/*RWIN
 	case 49: {
 		if (_ctrl) then {
 			showCommandingMenu "#USER:RIP_MENU_inCommunication";
 			_handled = true;
 		};
-	};
+	};*/
 	//Esc
 	case 1: {
 		[] spawn RIP_fnc_RespawnButtonDelay;
