@@ -41,16 +41,14 @@ while {_i < (count _roads)} do {
 
 	_outpost = createVehicle [_x, _outpostpos, [], 0, "NONE"];
 	_outpost addEventHandler ["HandleDamage",{0}];
-	if (_x isEqualTo "land_lib_kostel_1") then {
-		_outpost setVectorUp [0,0,1];
-	};
 	switch (_forEachIndex) do {
 		case 0: {
 			_outpost setPosASL [
 				(getPosASL _outpost select 0),
 				(getPosASL _outpost select 1),
-				(getPosASL _outpost select 2)-1
+				(getPosASL _outpost select 2) - 0.7
 			];
+			_outpost setVectorUp [0,0,1];
 			RIP_OutpostFlag1 setPosASL [
 				(getPosASL _outpost select 0) + 6.2,
 				(getPosASL _outpost select 1) - 17.3,
@@ -64,6 +62,7 @@ while {_i < (count _roads)} do {
 				(getPosASL _outpost select 1),
 				(getPosASL _outpost select 2)
 			];
+			RIP_OutpostFlag2 setVectorUp [0,0,1];
 		};
 		case 2: {
 			RIP_OutpostFlag3 setPosASL [
@@ -71,6 +70,7 @@ while {_i < (count _roads)} do {
 				(getPosASL _outpost select 1),
 				(getPosASL _outpost select 2)
 			];
+			RIP_OutpostFlag3 setVectorUp [0,0,1];
 		};
 	};
 	RIPMISSIONOBJ pushBack _outpost;

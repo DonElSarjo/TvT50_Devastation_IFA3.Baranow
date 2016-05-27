@@ -21,8 +21,9 @@ _lib_weapons = [
 	"LIB_DP28",
 	"LIB_RPzB",
 	"LIB_M9130PU",
-	"LIB_DT_OPTIC",
+//	"LIB_DT_OPTIC",
 	"LIB_DT",
+	"LIB_SVT_40",
 	"LIB_FLARE_PISTOL"
 ];
 _lib_magazines = [
