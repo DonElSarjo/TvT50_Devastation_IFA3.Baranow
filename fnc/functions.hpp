@@ -22,8 +22,9 @@ class rip_devastation {
 
         file = "fnc\client";
 
-		class initViewDistanceControl {postInit = 1;};
+		//class initViewDistanceControl {postInit = 1;};
 		//class initVolumeControl {postInit = 1;};
+		class newTargetClient {};
 		class ppEffect {};
         class MarkersPlayer {};
         class MarkersVehicles {};
@@ -55,7 +56,8 @@ class rip_devastation {
 
         file = "fnc\server";
 
-        class FastTime {};
+		class newTargetServer {};
+		class FastTime {};
 		class Bonus {};
 		class DynamicWeather {};
 		class Mapper {};
