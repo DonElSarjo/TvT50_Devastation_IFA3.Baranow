@@ -43,52 +43,55 @@ RIP_ATGMMISSILE =
 AVAILABLEVEHICLEE =
 [
 	//Tank
-	["LIB_JS2_43", 50],
-	["LIB_SU85", 50],
+	["LIB_JS2_43", 65],
+	["LIB_SU85", 60],
 	["LIB_t34_76", 50],
 	["LIB_t34_85", 50],
-	["LIB_M4A2_SOV", 50],
+	["LIB_M4A2_SOV", 40],
 	//APC
-	["LIB_SOV_M3_Halftrack", 20],
-	["Lib_SdKfz251_captured", 20],
+	["LIB_SOV_M3_Halftrack", 30],
+	["Lib_SdKfz251_captured", 35],
 	//Car
-	["lib_zis5v", 5],
-	["LIB_Scout_m3", 5],
+	["lib_zis5v", 10],
+	["LIB_Scout_m3", 25],
 	//Turret
-	["LIB_61k", 30],
-	["LIB_Zis3", 30],
-	["LIB_BM37", 30],
-	["lib_maxim_m30_base", 30],
-	["lib_maxim_m30_trench", 30]
+	["LIB_61k", 10],
+	["LIB_Zis3", 10],
+	["LIB_BM37", 10],
+	["lib_maxim_m30_base", 10],
+	["lib_maxim_m30_trench", 10],
+	//Planes
+	["LIB_P39", 60],
+	["LIB_Pe2", 65]
 ];
 // ToDo set right prices
 AVAILABLEVEHICLEW =
 [
 	//Tanks blufor
-	["LIB_PzKpfwIV_H", 50],
-	["LIB_PzKpfwV", 50],
-	["LIB_PzKpfwVI_B", 50],
-	["LIB_PzKpfwVI_B_camo", 50],
-	["LIB_PzKpfwVI_E", 50],
+	["LIB_PzKpfwIV_H", 60],
+	["LIB_PzKpfwV", 65],
+	["LIB_PzKpfwVI_B", 70],
+	["LIB_PzKpfwVI_B_camo", 70],
+	["LIB_PzKpfwVI_E", 70],
 	["LIB_StuG_III_G", 50],
 	["LIB_StuG_III_G_WS", 50],
 	//APC
-	["Lib_sdkfz251", 20],
+	["Lib_sdkfz251", 30],
 	["LIB_SdKfz_7", 20],
-	["LIB_SdKfz_7_AA", 20],
+	["LIB_SdKfz_7_AA", 30],
 	//Car
-	["LIB_kfz1", 5],
+	["LIB_kfz1", 10],
 	//Turret
-	["LIB_FlaK_38", 30],
-	["LIB_Flakvierling_38", 30],
-	["LIB_GrWr34", 30],
-	["LIB_MG42_Lafette", 30],
-	["LIB_MG42_Lafette_low", 30],
-	["LIB_MG42_Lafette_trench", 30],
+	["LIB_FlaK_38", 10],
+	["LIB_Flakvierling_38", 10],
+	["LIB_GrWr34", 10],
+	["LIB_MG42_Lafette", 10],
+	["LIB_MG42_Lafette_low", 10],
+	["LIB_MG42_Lafette_trench", 10],
 	["LIB_Pak40", 30],
 	//Planes
 	["LIB_FW190F8", 60],
-	["LIB_Ju87", 60]
+	["LIB_Ju87", 65]
 ];
 
 AVAILABLEBACKPACK =
