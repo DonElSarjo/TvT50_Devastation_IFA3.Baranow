@@ -25,7 +25,7 @@ while {_i < _count} do {
 	_mortars pushBack _arty;
 	_arty setVariable ["RIPArtyReloadTime", 0];
 
-	[_pos, _dir, "Composition\SandBags.sqf", false] call RIP_fnc_Mapper;
+	[_pos, _dir, "scripts\mortarComposition.sqf", false] call RIP_fnc_Mapper;
 
 	_group = createGroup Resistance;
 	_grpskill = RIPAIDEFAULTSKILL;
