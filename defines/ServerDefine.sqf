@@ -22,7 +22,7 @@ switch (worldName) do
 		RIPSUNRISE 		= 4.5;
 		RIPSUNSET 		= 19.5;
 	};
-	default {
+	case "Baranow": {
 		RIPTARGETARRAY 	= [RTown1,RTown2,RTown3,RTown4,RTown5,RTown6,RTown7,RTown8,RTown9,RTown10,RTown11,RTown12,RTown13,RTown14,RTown15];
 		RIPSUNRISE 		= 4.5;
 		RIPSUNSET 		= 19.5;
@@ -146,7 +146,8 @@ RIPMINESTYPE = [
 
 RIPSTATICTYPE = [
 	"lib_maxim_m30_base",
-	"LIB_MG42_Lafette"
+	"LIB_MG42_Lafette",
+	"LIB_MG42_Lafette_low"
 ];
 
 RIPARTYTYPE = [

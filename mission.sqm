@@ -8,18 +8,18 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1083;
+		nextID=1207;
 	};
 	class LayerIndexProvider
 	{
-		nextID=68;
+		nextID=72;
 	};
 	class Camera
 	{
-		pos[]={944.20569,168.92143,7196.6606};
-		dir[]={-0.30599782,-0.50411886,0.80765116};
-		up[]={-0.17861797,0.86361885,0.47144648};
-		aside[]={0.93516362,-4.3434557e-007,0.35430896};
+		pos[]={6210.2949,72.768463,4864.916};
+		dir[]={-0.055802871,-0.32290369,0.94479573};
+		up[]={-0.019038888,0.94643372,0.32234517};
+		aside[]={0.99827367,3.6307028e-009,0.058960982};
 	};
 };
 binarizationWanted=0;
@@ -46,7 +46,8 @@ addons[]=
 	"Ind_Tank",
 	"task_force_radio_items",
 	"cba_main",
-	"lib_buildings2"
+	"lib_buildings2",
+	"A3_Structures_F_System"
 };
 randomSeed=6242763;
 class ScenarioData
@@ -77,7 +78,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=189;
+		items=204;
 		class Item0
 		{
 			dataType="Marker";
@@ -117,7 +118,7 @@ class Mission
 		class Item3
 		{
 			dataType="Marker";
-			position[]={6586.7725,9.7516823,7007.4214};
+			position[]={6613.7354,9.5950079,6997.1035};
 			name="RIP_LANDSERVICE_MARKERE";
 			type="mil_dot";
 			colorName="ColorBlue";
@@ -363,7 +364,7 @@ class Mission
 				name="RIP_NewTaskTrServer";
 				text="RIP_NewTaskTrServer";
 				condition="!(Server getVariable ""RIPMISSIONCREATED"") && (Server getVariable ""RIPMISSIONCOMPLETED"")";
-				onActivation="null = [] execVM ""Scripts\NewTarget.sqf"";";
+				onActivation="_nul = [] spawn RIP_fnc_NewTargetServer;";
 				sizeA=0;
 				sizeB=0;
 				interuptable=1;
@@ -383,7 +384,7 @@ class Mission
 				name="RIP_NewTaskTrClient";
 				text="RIP_NewTaskTrClient";
 				condition="!(Server getVariable ""RIPMISSIONCOMPLETED"") && (Server getVariable ""RIPMISSIONCREATED"")";
-				onActivation="null = [] execVM ""Scripts\NewTargetClient.sqf"";";
+				onActivation="_nul = [] spawn RIP_fnc_NewTargetClient;";
 				sizeA=0;
 				sizeB=0;
 				interuptable=1;
@@ -502,7 +503,6 @@ class Mission
 						skill=0.60000002;
 						name="east1";
 						description="Schütze";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=46;
@@ -1572,7 +1572,7 @@ class Mission
 		class Item85
 		{
 			dataType="Marker";
-			position[]={2146.7305,31.252823,1186.0574};
+			position[]={2158.4436,31.723038,1176.7844};
 			name="RIP_LANDSERVICE_MARKERW";
 			type="mil_dot";
 			colorName="ColorBlue";
@@ -1847,6 +1847,7 @@ class Mission
 						skill=0.60000002;
 						name="west1";
 						description="Schütze";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=148;
@@ -6568,6 +6569,243 @@ class Mission
 			id=1081;
 			type="FlagCarrierUSA";
 			atlOffset=0.027992249;
+		};
+		class Item189
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2002.7271,31.938101,962.14703};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1192;
+			type="Land_ClutterCutter_large_F";
+		};
+		class Item190
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2006.6329,31.938091,965.22559};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1193;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-9.5367432e-006;
+		};
+		class Item191
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2006.5734,31.938072,959.966};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1194;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-2.8610229e-005;
+		};
+		class Item192
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2003.2009,31.938057,953.9964};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1195;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-4.3869019e-005;
+		};
+		class Item193
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1998.3282,31.938101,960.01404};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1196;
+			type="Land_ClutterCutter_large_F";
+		};
+		class Item194
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1993.2542,31.938057,961.87415};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1197;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-4.3869019e-005;
+		};
+		class Item195
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1995.0242,31.938068,952.86847};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1198;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-3.2424927e-005;
+		};
+		class Item196
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2001.7493,31.938046,948.44879};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1199;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-5.531311e-005;
+		};
+		class Item197
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1995.849,31.93807,941.79803};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1200;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item198
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1988.3695,31.938072,946.85455};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1201;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-2.8610229e-005;
+		};
+		class Item199
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6744.7617,8.4991579,7341.6265};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1202;
+			type="Land_ClutterCutter_large_F";
+		};
+		class Item200
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6746.2505,8.6683865,7330.6587};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1203;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-1.8119812e-005;
+		};
+		class Item201
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6736.2383,8.6396027,7336.853};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1204;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=6.4849854e-005;
+		};
+		class Item202
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6744.8916,8.8177853,7325.3003};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1205;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-1.7166138e-005;
+		};
+		class Item203
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6734.998,8.7942772,7329.041};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1206;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-2.9563904e-005;
 		};
 	};
 };
