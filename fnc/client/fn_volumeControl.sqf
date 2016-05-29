@@ -12,14 +12,24 @@ des_global_soundLast = 0;
 
 des_fnc_changeSoundVolume = {
 	params["_delta"];
-	private["_ind"];
+	private["_ind","_icon"];
 	des_global_soundIndex = 0 max round((des_global_soundCount - 1) min (des_global_soundIndex + _delta));
 	des_global_soundVolume = 1 min (0.001 max (des_soundVolumeArray select des_global_soundIndex));
 	1 fadeSound des_global_soundVolume;
 	_ind = toArray ("-------------------------" select [0, des_global_soundCount]);
 	_ind set [des_global_soundIndex, 124];
 	des_timeToHideHint = diag_tickTime + 2;
-	hintSilent parseText format ["Umgebungsgeräusche: %1<br /><t color='#00ff00' size='2'>%2</t>", des_global_soundIndex, toString _ind];
+    if (_delta == 1) then {
+        _icon = "pics\VolumeUP.paa";
+    } else {
+        _icon = "pics\VolumeDown.paa";
+    };
+
+    _icon = parseText format ["<br/><img size = '4' image = '%1'/><br/>", _icon];
+    _sndTxt = parseText format ["<t font='TahomaB'>Umgebungsgeräusche: %1</t>", des_global_soundIndex];
+    _sndBr = parseText format ["<t size='2'>%1</t>", toString _ind];
+    _txt = composeText [_icon, lineBreak, _sndTxt, linebreak, _sndBr];
+	hintSilent _txt;
 	if(isNil 'des_handler_hintHider' || {scriptDone des_handler_hintHider})then {
 		des_handler_hintHider = [] spawn {
 			waitUntil {

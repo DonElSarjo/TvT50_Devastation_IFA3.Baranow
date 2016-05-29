@@ -9,7 +9,7 @@ des_viewDistanceLast = 0;
 
 des_fncchangeViewDistance = {
 	params ["_delta"];
-	private["_vd", "_ind"];
+	private["_vd", "_ind","_icon"];
 
 	_vd = viewDistance;
 	_vd = des_max_viewDistance min (500 max (round (_vd / 500) * 500 + _delta));
@@ -17,8 +17,17 @@ des_fncchangeViewDistance = {
 	setObjectViewDistance _vd;
 	_ind = toArray (" -------------------------" select [0, des_max_viewDistance / 500 + 1]);
 	_ind set [_vd / 500, 124];
+	if (_delta == 500) then {
+		_icon = "pics\ArrowUP.paa";
+	} else {
+		_icon = "pics\ArrowDown.paa";
+	};
+	_icon = parseText format ["<br/><img size = '4' image = '%1'/><br/>", _icon];
+	_sndTxt = parseText format ["<t font='TahomaB'>Sichtweite: %1m</t>", _vd];
+	_sndBr = parseText format ["<t size='2'>%1</t>", toString _ind];
+	_txt = composeText [_icon, lineBreak, _sndTxt, linebreak, _sndBr];
+	hintSilent _txt;
 	des_timeToHideHint = diag_tickTime + 2;
-	hintSilent parseText format ["Sichtweite: %1<br /><t color='#ffff00' size='2'>%2</t>", _vd, toString _ind];
 	if(isNil 'des_handler_hintHider' || {scriptDone des_handler_hintHider})then {
 		des_handler_hintHider = [] spawn {
 			waitUntil {
