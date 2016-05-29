@@ -1,3 +1,12 @@
+class ZADE_BOC
+{
+	tag = "ZADE_BOC";
+	class functions
+	{
+		file = "fnc\client";
+		class backpackOnChest {postinit = 1};
+	};
+};
 class rip_devastation {
 
 	tag = "RIP";

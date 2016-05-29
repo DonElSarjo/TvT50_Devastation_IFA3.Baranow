@@ -959,15 +959,15 @@
 			<Spanish>Specify the endpoint of the teleporter.</Spanish>
 		</Key>
 		<Key ID="STR_RIP_INTROTEXT">
-			<Original>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4</Original>
-			<German>Welcome %1&lt;br/&gt;Game menu - 'STRG + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4</German>
-			<French>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4</French>
-			<Polish>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4</Polish>
-			<Portuguese>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4</Portuguese>
-			<Italian>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4</Italian>
-			<Czech>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4</Czech>
-			<Russian>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4</Russian>
-			<Spanish>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4</Spanish>
+			<Original>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4&lt;br/&gt;Backpack on chest/back: F5</Original>
+			<German>Welcome %1&lt;br/&gt;Game menu - 'STRG + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4&lt;br/&gt;Backpack on chest/back: F5</German>
+			<French>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4&lt;br/&gt;Backpack on chest/back: F5</French>
+			<Polish>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4&lt;br/&gt;Backpack on chest/back: F5</Polish>
+			<Portuguese>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4&lt;br/&gt;Backpack on chest/back: F5</Portuguese>
+			<Italian>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4&lt;br/&gt;Backpack on chest/back: F5</Italian>
+			<Czech>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4&lt;br/&gt;Backpack on chest/back: F5</Czech>
+			<Russian>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4&lt;br/&gt;Backpack on chest/back: F5</Russian>
+			<Spanish>Welcome %1&lt;br/&gt;Game menu - 'CTRL + WIN' button&lt;br/&gt;Mission rules can be found under 'briefing'&lt;br/&gt;TeamSpeak Server - 79.133.47.8:4019&lt;br/&gt;Adjust View Distance: F1 - F2&lt;br/&gt;Adjust Sound: F3 - F4&lt;br/&gt;Backpack on chest/back: F5</Spanish>
 		</Key>
 		<Key ID="STR_RIP_HINT_TARGET">
 			<Original>Target: %1</Original>

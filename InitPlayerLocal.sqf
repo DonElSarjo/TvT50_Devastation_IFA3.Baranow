@@ -1,8 +1,5 @@
 #include "defines\Define.sqf"
 
-//[]execVM "zade_boc\functions\fn_initialization.sqf";
-
-
 if (isNil "paramsArray") then {
 	if (isClass (missionConfigFile/"Params")) then {
 		for "_i" from 0 to (count (missionConfigFile/"Params") - 1) do {

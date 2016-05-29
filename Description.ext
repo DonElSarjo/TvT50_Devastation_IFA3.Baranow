@@ -8,7 +8,6 @@ loadScreen = "Pics\LoadingScreen.paa";
 overviewPicture = "Pics\LoadingScreen.paa";
 
 class CfgFunctions {
-	#include "zade_boc\functions.hpp"
 	#include "fnc\functions.hpp"
 }
 
