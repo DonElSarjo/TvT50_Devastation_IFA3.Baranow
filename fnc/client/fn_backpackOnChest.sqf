@@ -25,7 +25,6 @@ ZADE_BOC_fnc_addChestBackpack = {
     	_added = true;
 
     };
-
     _added
 };
 
@@ -36,7 +35,7 @@ ZADE_BOC_fnc_AttachTo = {
 
     _weapon_holder = createVehicle ["groundWeaponHolder", (getPos _caller) , [], 0, "can_collide"];
     _weapon_holder addBackpackCargoGlobal [_pack, 1];
-    _weapon_holder attachTo [_caller,[-0.1,0.75,-0.4],"pelvis"];
+    _weapon_holder attachTo [_caller,[-0.1,0.15,-0.4],"pelvis"];
     _weapon_holder setVectorDirAndUp [[0,0,-1],[0,1,0]];
 
     if (_anim == "halofreefall_non") then {
@@ -51,15 +50,22 @@ ZADE_BOC_fnc_AttachTo = {
 
 ZADE_BOC_fnc_BackpackonBack = {
     if ((_this select 0) getVariable ["Zade_ChestBackpack",""] != "" and backpack (_this select 0) == "") then {
-    	_caller = player;
+        private ["_caller","_pack","_cargo","_items"];
+        _caller = player;
 
     	_pack = _caller getVariable ["Zade_ChestBackpack",""];
     	_cargo = _caller getVariable ["Zade_ChestBackpack_Cargo",[]];
-
     	_caller addBackpackGlobal _pack;
+        //necessary for preconfigured backpacks
+        //"B_LIB_GER_SapperBackpack" breaks everything
 
+        _items = backpackItems _caller;
+        {
+            _caller removeItemFromBackpack _x;
+        } foreach _items;
+        //clearAllItemsFromBackpack _caller; //crashes game
     	{
-    	_caller addItemToBackpack _x;
+    	    _caller addItemToBackpack _x;
     	} forEach _cargo;
 
     	[_caller] call ZADE_BOC_fnc_removeChestBackpack;
@@ -77,22 +83,22 @@ ZADE_BOC_fnc_BackpackonChest = {
 };
 des_fnc_hint = {
     params["_state"];
-    private ["_icon","_Bckpcktxt"];
+    private ["_icon","_bckpckTxt"];
 
-    _icon = "pics\backpack.paa";
-    _icon = parseText format ["<br/><img size = '3' image = '%1'/><br/>", _icon];
+    _icon = parseText "<br/><img size = '4' image = 'pics\backpack.paa'/><br/>";
+
     switch (_state) do {
         case 0: {
-            _Bckpcktxt = parseText "<t font='TahomaB'>Backpack on Chest</t>";
+            _bckpckTxt = parseText "<t font='TahomaB'>Backpack on Chest</t>";
         };
         case 1: {
-            _Bckpcktxt = parseText "<t font='TahomaB'>Backpack on Back</t>";
+            _bckpckTxt = parseText "<t font='TahomaB'>Backpack on Back</t>";
         };
         case -1: {
-            _Bckpcktxt = parseText "<t font='TahomaB'>No Backpack</t>";
+            _bckpckTxt = parseText "<t font='TahomaB'>No Backpack</t>";
         }
     };
-    _txt = composeText [_icon, lineBreak, _Bckpcktxt];
+    _txt = composeText [_icon, lineBreak, _bckpckTxt];
     hintSilent _txt;
 };
 ZADE_BOC_fnc_checkState = {
