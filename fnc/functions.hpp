@@ -1,3 +1,4 @@
+/* broken -.-
 class ZADE_BOC
 {
 	tag = "ZADE_BOC";
@@ -7,6 +8,7 @@ class ZADE_BOC
 		class backpackOnChest {postinit = 1};
 	};
 };
+*/
 class rip_devastation {
 
 	tag = "RIP";

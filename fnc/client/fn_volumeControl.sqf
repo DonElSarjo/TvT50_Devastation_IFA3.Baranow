@@ -43,6 +43,7 @@ des_fnc_changeSoundVolume = {
 	true
 };
 
-["Hotkeys","des_decSoundVolume_key", "Umgebungsgeräusche [-]", {[-1] call des_fnc_changeSoundVolume}, {}, [KEY_F3, [false, false, false]]] call CBA_fnc_addKeybind;
-
-["Hotkeys","des_incSoundVolume_key", "Umgebungsgeräusche [+]", {[1] call des_fnc_changeSoundVolume}, {}, [KEY_F4, [false, false, false]]] call CBA_fnc_addKeybind;
+//["Hotkeys","des_decSoundVolume_key", "Umgebungsgeräusche [-]", {[-1] call des_fnc_changeSoundVolume}, {}, [KEY_F3, [false, false, false]]] call CBA_fnc_addKeybind;
+des_decSoundVolume_key = (findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F3) then {[-1] call des_fnc_changeSoundVolume}}];
+//["Hotkeys","des_incSoundVolume_key", "Umgebungsgeräusche [+]", {[1] call des_fnc_changeSoundVolume}, {}, [KEY_F4, [false, false, false]]] call CBA_fnc_addKeybind;
+des_decViewDistance_key = (findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F4) then {[1] call des_fnc_changeSoundVolume}}];

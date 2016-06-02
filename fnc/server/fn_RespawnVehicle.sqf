@@ -50,11 +50,6 @@ if (_varname in ["EMHQ1","EMHQ2","WMHQ1","WMHQ2"]) then {
 if (_varname == "WMHQ2") then {_newveh  lockTurret [[0],true]};
 if (_varname == "EMHQ2") then {_newveh  lockTurret [[0],true]};
 
-if (_varname in ["WTHELI1","WTHELI2","WTHELI3"]) then {
-	_newveh setObjectTextureGlobal [0, "rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_fuselage_co.paa"];
-	_newveh setObjectTextureGlobal [1, "rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_engine_co.paa"];
-};
-
 if (_varname in ["ETHELI1","ETHELI2","ETHELI3","WTHELI1","WTHELI2","WTHELI3"]) then {
 	_newveh addMPEventHandler ["mpkilled", {if (isServer) then {[(_this select 0)] spawn RIP_fnc_DetachVehicle}}];
 	_newveh addEventHandler ["GetOut",{if (isServer) then {[(_this select 0)] spawn RIP_fnc_DesertedVehicle}}];

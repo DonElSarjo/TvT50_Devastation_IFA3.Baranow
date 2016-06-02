@@ -1,6 +1,6 @@
 #include "dialogs\Dialog.hpp"
 showGps = 1;
-author="Created for 6. russische Armee & URALSERVER66";
+//author="Created for 6. russische Armee & URALSERVER66";
 onLoadName = "TvT DEVASTATION [Iron Front 3]";
 onLoadMissionTime = 0;
 onLoadMission = "www.6rus-arma.de \ www.uralserver66.ru";
@@ -212,7 +212,7 @@ class Params {
 		title = "Enable random pp effects"
 		values[] = {0,1};
 		texts[] = {"ON", "OFF"};
-		default = 1;
+		default = 0;
 	}
 };
 
@@ -268,33 +268,4 @@ class CfgNotifications {
 		priority = 0;
 		duration = 5;
 	};
-};
-
-class CfgRemoteExec {
-    class Commands {
-            mode = 1;
-
-            class addScore {allowedTargets = 2;};
-            class setFuel {allowedTargets = 0;};
-            class engineOn {allowedTargets = 0;};
-            class lock {allowedTargets = 0;};
-            class setDir {allowedTargets = 0;};
-            class setVelocity {allowedTargets = 0;};
-            class setFlagTexture {allowedTargets = 2;};
-    };
-    class Functions {
-            mode = 1;
-
-            class RIP_func_PunishTeamKiller {allowedTargets = 0;};
-            class RIP_func_EjectFromVehicle {allowedTargets = 0;};
-            class RIP_func_DeployMHQ {allowedTargets = 0;};
-            class RIP_func_UnDeployMHQ {allowedTargets = 0;};
-            class BIS_fnc_endMission {allowedTargets = 0;};
-            class RIP_func_EndMission {allowedTargets = 0;};
-            class RIP_func_AddEHIncomingMissile {allowedTargets = 0;};
-            class RIP_func_RecivedPointNotif {allowedTargets = 0;};
-            class RIP_func_ChangeSideProtection {allowedTargets = 2;};
-            class RIP_func_ServerLog {allowedTargets = 2;};
-	    	class RIP_func_CityCapturedClient {allowedTargets = 0;};
-    };
 };

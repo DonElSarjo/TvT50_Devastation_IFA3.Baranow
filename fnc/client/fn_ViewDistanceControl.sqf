@@ -42,6 +42,10 @@ des_fncchangeViewDistance = {
 	true
 };
 
+des_decViewDistance_key = (findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F1) then {[-500] call des_fncchangeViewDistance}}];
+
+des_incViewDistance_key = (findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F2) then {[+500] call des_fncchangeViewDistance}}];
+/*
 ["Hotkeys","des_decViewDistance_key", "Sichtweite [-]", {[-500] call des_fncchangeViewDistance}, {}, [KEY_F1, [false, false, false]]] call CBA_fnc_addKeybind;
 
 ["Hotkeys","des_incViewDistance_key", "Sichtweite [+]", {[500] call des_fncchangeViewDistance}, {}, [KEY_F2, [false, false, false]]] call CBA_fnc_addKeybind;
