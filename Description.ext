@@ -62,7 +62,7 @@ class Params {
 		title = $STR_RIP_DISTANCE;
 		values[]={2500,3000,3500,4000,5000,7500,10000};
 		texts[]={"2500","3000","3500","4000","5000","7500","10000"};
-		default=5000;
+		default=2500;
 	};
 	class RIPCHANGESIDE {
 		title = $STR_RIP_CHANGESIDE;

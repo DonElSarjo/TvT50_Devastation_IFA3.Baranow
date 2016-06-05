@@ -1,0 +1,3 @@
+//load establishing shot
+_handle = [] spawn RIP_fnc_establishingShotClient; // too lazy to chance to des_fnc ...
+waitUntil {scriptDone _handle};

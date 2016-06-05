@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=2;
+	toggles=130;
 	class ItemIDProvider
 	{
 		nextID=1229;
 	};
 	class LayerIndexProvider
 	{
-		nextID=100;
+		nextID=104;
 	};
 	class Camera
 	{
-		pos[]={2216.958,143.17143,951.07861};
-		dir[]={-0.88681716,-0.3390384,0.31406534};
-		up[]={-0.31959781,0.94076997,0.11318543};
-		aside[]={0.33383524,4.1107705e-007,0.94264925};
+		pos[]={2057.2019,145.30037,814.46655};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -635,6 +635,7 @@ class Mission
 						skill=0.60000002;
 						name="east1";
 						description="Schütze";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=46;
@@ -2023,7 +2024,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -2648,7 +2668,6 @@ class Mission
 						skill=0.60000002;
 						name="west21";
 						description="Pilot";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=186;
@@ -6338,7 +6357,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6740.3052,8.7309389,7333.1187};
-						angles[]={0.051205322,1.1259294,6.2644358};
+						angles[]={0.05120796,1.1259294,6.2644405};
 					};
 					side="East";
 					flags=6;
@@ -6372,7 +6391,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};

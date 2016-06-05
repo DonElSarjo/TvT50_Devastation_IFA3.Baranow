@@ -13,7 +13,7 @@ if (isNil "paramsArray") then {
 	};
 };
 
-10 cutText ["","BLACK FADED"];
+//10 cutText ["","BLACK FADED"];
 waitUntil {!isNull player};
 waitUntil {player == player};
 waitUntil {(local player)};

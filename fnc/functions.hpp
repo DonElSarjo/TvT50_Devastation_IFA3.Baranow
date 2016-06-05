@@ -33,6 +33,7 @@ class rip_devastation {
 
         file = "fnc\client";
 
+		class establishingShotClient {};
 		class ViewDistanceControl {postinit = 1};
 		class VolumeControl {postinit = 1};
 		class newTargetClient {};

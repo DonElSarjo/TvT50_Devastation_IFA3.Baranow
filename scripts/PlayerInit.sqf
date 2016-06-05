@@ -29,7 +29,7 @@ player addEventHandler ["killed", {[(_this select 0)] spawn RIP_fnc_SaveGear}];
 player addMPEventHandler ["mpkilled", {if (isServer) then {_this spawn RIP_fnc_MPKilledEH}}];
 player addEventHandler ["HandleRating", {0}];
 player addEventHandler ["InventoryClosed", {[] spawn RIP_fnc_ChangeEquipment}];
-
+waitUntil {!isnil "BIS_fnc_establishingShot_playing" && {!BIS_fnc_establishingShot_playing}};
 if (RIP3DPLAYERMARKER == 1) then {
 	RIP3DMARKERMODE = 2;
 	addMissionEventHandler ["Draw3D",{ [] call RIP_fnc_Player3DTags; }];
