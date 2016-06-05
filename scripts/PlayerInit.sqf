@@ -19,17 +19,15 @@ enableSaving [false,false];
 [] spawn RIP_fnc_AddPlayerActions;
 
 (findDisplay 46) displayAddEventHandler ["keyDown","_this call RIP_fnc_CheckKey"];
-//(findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F1) then {[-500] call des_fnc_changeViewDistance;}}];
-//(findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F2) then {[500] call des_fnc_changeViewDistance}}];
-//(findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F3) then {[-1] call des_fnc_changeSoundVolume}}];
-//(findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F4) then {[1] call des_fnc_changeSoundVolume}}];
 
 player addEventHandler ["Respawn", {[(_this select 1)] spawn RIP_fnc_RespawnEH}];
 player addEventHandler ["killed", {[(_this select 0)] spawn RIP_fnc_SaveGear}];
 player addMPEventHandler ["mpkilled", {if (isServer) then {_this spawn RIP_fnc_MPKilledEH}}];
 player addEventHandler ["HandleRating", {0}];
 player addEventHandler ["InventoryClosed", {[] spawn RIP_fnc_ChangeEquipment}];
+
 waitUntil {!isnil "BIS_fnc_establishingShot_playing" && {!BIS_fnc_establishingShot_playing}};
+
 if (RIP3DPLAYERMARKER == 1) then {
 	RIP3DMARKERMODE = 2;
 	addMissionEventHandler ["Draw3D",{ [] call RIP_fnc_Player3DTags; }];
