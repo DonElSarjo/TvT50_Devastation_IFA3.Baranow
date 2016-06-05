@@ -1,9 +1,3 @@
-#define KEY_F3 0x3D
-#define KEY_F4 0x3E
-
-if(!hasInterface) exitWith {};
-waitUntil {player == player};
-
 des_soundVolumeArray = [0.001, 0.0035, 0.005, 0.0076, 0.01, 0.016, 0.02, 0.038, 0.05, 0.065, 0.08, 0.18, 0.3, 0.7, 1];
 des_global_soundCount = count des_soundVolumeArray;
 des_global_soundIndex = des_global_soundCount - 1;
@@ -42,8 +36,3 @@ des_fnc_changeSoundVolume = {
 	des_global_soundLast = 0;
 	true
 };
-
-//["Hotkeys","des_decSoundVolume_key", "Umgebungsgeräusche [-]", {[-1] call des_fnc_changeSoundVolume}, {}, [KEY_F3, [false, false, false]]] call CBA_fnc_addKeybind;
-des_decSoundVolume_key = (findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F3) then {[-1] call des_fnc_changeSoundVolume}}];
-//["Hotkeys","des_incSoundVolume_key", "Umgebungsgeräusche [+]", {[1] call des_fnc_changeSoundVolume}, {}, [KEY_F4, [false, false, false]]] call CBA_fnc_addKeybind;
-des_decViewDistance_key = (findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F4) then {[1] call des_fnc_changeSoundVolume}}];

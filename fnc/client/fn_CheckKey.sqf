@@ -54,6 +54,26 @@ switch _dikCode do {
 		[] spawn RIP_fnc_RespawnButtonDelay;
 		_handled = false;
 	};
+	//F1
+	case 0x3B: {
+		[-500] call des_fnc_changeViewDistance;
+		_handled = true;
+	};
+	//F2
+	case 0x3C: {
+		[500] call des_fnc_changeViewDistance;
+		_handled = true;
+	};
+	//F3
+	case 0x3D: {
+		[-1] call des_fnc_changeSoundVolume;
+		_handled = true;
+	};
+	//F4
+	case 0x3E: {
+		[1] call des_fnc_changeSoundVolume;
+		_handled = true;
+	}
 };
 
 _handled;

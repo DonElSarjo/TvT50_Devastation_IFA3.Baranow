@@ -33,8 +33,8 @@ class rip_devastation {
 
         file = "fnc\client";
 
-		class ViewDistanceControl {postInit = 1;};
-		class VolumeControl {postInit = 1;};
+		class ViewDistanceControl {postinit = 1};
+		class VolumeControl {postinit = 1};
 		class newTargetClient {};
 		class ppEffect {};
         class MarkersPlayer {};
