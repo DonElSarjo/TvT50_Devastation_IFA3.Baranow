@@ -73,6 +73,11 @@ switch _dikCode do {
 	case 0x3E: {
 		[1] call des_fnc_changeSoundVolume;
 		_handled = true;
+	};
+	//F5
+	case 0x3F: {
+		[player] call ZADE_BOC_fnc_CheckState;
+		_handled = true;
 	}
 };
 

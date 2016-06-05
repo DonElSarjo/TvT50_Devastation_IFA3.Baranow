@@ -34,11 +34,11 @@ ZADE_BOC_fnc_AttachTo = {
 
     _weapon_holder = createVehicle ["groundWeaponHolder", (getPos _caller) , [], 0, "can_collide"];
     _weapon_holder addBackpackCargoGlobal [_pack, 1];
-    _weapon_holder attachTo [_caller,[-0.1,0.15,-0.4],"pelvis"];
+    _weapon_holder attachTo [_caller,[-0.1,0.8,-0.05],"pelvis"];
     _weapon_holder setVectorDirAndUp [[0,0,-1],[0,1,0]];
 
     if (_anim == "halofreefall_non") then {
-    	_weapon_holder attachTo [_caller,[-0.1,-0.4,-0.75],"pelvis"];
+    	_weapon_holder attachTo [_caller,[-0.1,0.8,-0.05],"pelvis"];
     	_weapon_holder setVectorDirandup [[0,-1,0],[0,0,-1]];
     };
 
@@ -96,6 +96,9 @@ des_fnc_hint = {
             _pack = getText (configfile >> "CfgVehicles" >> _pack >> "displayName");
             _bckpckTxt = parseText format ["<t font='TahomaB'>%1 on Back</t>", _pack];
         };
+        case 2: {
+            _bckpckTxt = parseText "<t font='TahomaB'>No Backpack switch possible</t>";
+        };
         case -1: {
             _bckpckTxt = parseText "<t font='TahomaB'>No Backpack</t>";
         }
@@ -142,7 +145,7 @@ ZADE_BOC_fnc_handleVehicle = {
 
 ZADE_BOC_fnc_checkState = {
     if (backpack (_this select 0) == "" && (_this select 0) getVariable ["Zade_ChestBackpack",""] == "") exitWith {[-1] call des_fnc_hint};
-
+    if (backpack (_this select 0) != "" && (_this select 0) getVariable ["Zade_ChestBackpack",""] != "") exitWith {[2] call des_fnc_hint};
     if ((_this select 0) getVariable ["Zade_ChestBackpack",""] == "" and backpack (_this select 0) != "") then {
         [player] call ZADE_BOC_fnc_BackpackOnChest;
         [0, player] call des_fnc_hint;
@@ -151,10 +154,3 @@ ZADE_BOC_fnc_checkState = {
         [1, player] call des_fnc_hint;
     };
 };
-
-if(!hasInterface) exitWith {};
-waitUntil {player == player;};
-
-ifa3_BackpackOnCheast = (findDisplay 46) displayAddEventHandler ["KeyDown", {if (_this select 1 == KEY_F5) then {[player] call ZADE_BOC_fnc_CheckState}}];
-
-//["des_Hotkeys","des_backpackOnChest", "Backpack", {[player] call ZADE_BOC_fnc_CheckState}, {}, [KEY_F5, [false, false, true]]] call CBA_fnc_addKeybind;

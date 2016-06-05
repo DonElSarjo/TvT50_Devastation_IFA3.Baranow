@@ -36,6 +36,7 @@ class rip_devastation {
 		class establishingShotClient {};
 		class ViewDistanceControl {postinit = 1};
 		class VolumeControl {postinit = 1};
+		class backpackOnChest {postinit = 1};
 		class newTargetClient {};
 		class ppEffect {};
         class MarkersPlayer {};
